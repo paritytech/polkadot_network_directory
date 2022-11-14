@@ -1,0 +1,28 @@
+name: Rococo
+network_type: testnet
+chain:
+    type: relaychain
+    # parent: n/a
+    consensus: POS
+    sudo: true
+goals:
+    - Testnet
+validators:
+  - Parity Only / Community ran nodes.
+release_cycle: 'Following the Polkadot 3 weeks cycle'
+specs:
+    block_time: 6
+    era: 42
+    ed: 42
+    decimals: 12
+    token: WND
+contacts: []
+faucet: '#foobar-faucet:matrix.org'
+documentation:
+    - http://example.com
+expectations:
+    - 'parity: ...'
+    - 'community: ...'
+features:
+    - 'parachains: TODO'
+notes: []

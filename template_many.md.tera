@@ -1,0 +1,43 @@
+
+
+{% for chain in chains %}
+
+## {{chain.name}}
+
+{{chain.name}} is a {{chain.network_type}} {{chain.chain_type}} using {{chain.consensus}} as consensus.
+
+### sudo:
+{% if sudo %}
+Sudo is available on {{chain.name}}.
+{% else %}
+Sudo is **not** available on {{chain.name}}.
+{% endif %}
+
+### Goals:
+{% for goal in chain.goals %}
+{{goal }}
+{% endfor %}
+
+### Validators
+
+- validators:
+    - 16 Parity managed invulnerable validators
+    - 0..5 with decentralized network of Validators.
+- release_cycle: Following the polkadot 3w release cycle
+- expectations:
+    - community
+       - validators: Validators should be able to run nodes for the network.
+       - parachains: No community parachains will be running here.
+    - parity
+        - validators: Control >= 2/3 of the validation set.
+- contacts:
+    - matrix: @santiago:matrix.parity.io
+- faucet: #westend_faucet:matrix.org
+- documentation:
+    - http://...
+- features:
+   -  Auctions & Crowdloans: pallets available but unsused
+   -  Governance: pallet NOT available (why ?)
+   -  parachains: 2 system paras: Westmint & Collectives
+
+{% endfor %}

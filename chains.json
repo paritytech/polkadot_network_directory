@@ -1,0 +1,171 @@
+{
+  "chains": [
+    {
+      "name": "Polkadot",
+      "network_type": "mainnet",
+      "chain": {
+        "type": "relaychain",
+        "consensus": "POS",
+        "sudo": true
+      },
+      "goals": [
+        "Testnet"
+      ],
+      "validators": [
+        "Parity Only / Community ran nodes."
+      ],
+      "release_cycle": "Following the Polkadot 3 weeks cycle",
+      "specs": {
+        "block_time": 6,
+        "era": 42,
+        "ed": 42,
+        "decimals": 12,
+        "token": "WND"
+      },
+      "contacts": [],
+      "faucet": "#foobar-faucet:matrix.org",
+      "documentation": [
+        "http://example.com"
+      ],
+      "expectations": [
+        "parity: ...",
+        "community: ..."
+      ],
+      "features": [
+        "parachains: TODO"
+      ],
+      "notes": []
+    },
+    {
+      "name": "Rococo",
+      "network_type": "testnet",
+      "chain": {
+        "type": "relaychain",
+        "consensus": "POS",
+        "sudo": true
+      },
+      "goals": [
+        "Testnet"
+      ],
+      "validators": [
+        "Parity Only / Community ran nodes."
+      ],
+      "release_cycle": "Following the Polkadot 3 weeks cycle",
+      "specs": {
+        "block_time": 6,
+        "era": 42,
+        "ed": 42,
+        "decimals": 12,
+        "token": "WND"
+      },
+      "contacts": [],
+      "faucet": "#foobar-faucet:matrix.org",
+      "documentation": [
+        "http://example.com"
+      ],
+      "expectations": [
+        "parity: ...",
+        "community: ..."
+      ],
+      "features": [
+        "parachains: TODO"
+      ],
+      "notes": []
+    },
+    {
+      "name": "Westend",
+      "network_type": "testnet",
+      "chain": {
+        "type": "relaychain",
+        "consensus": "POS",
+        "sudo": false
+      },
+      "goals": [
+        "Testnet"
+      ],
+      "validators": [
+        "Parity Only / Community ran nodes."
+      ],
+      "release_cycle": "Following the Polkadot 3 weeks cycle",
+      "specs": {
+        "block_time": 6,
+        "era": 42,
+        "ed": 42,
+        "decimals": 12,
+        "token": "WND"
+      },
+      "contacts": [
+        {
+          "type": "matrix",
+          "contact": "@westend:example.org"
+        },
+        {
+          "type": "email",
+          "contact": "westend@example.org"
+        }
+      ],
+      "faucet": "#foobar-faucet:matrix.org",
+      "documentation": [
+        "http://example.com"
+      ],
+      "expectations": [
+        "parity: foo",
+        "community: bar"
+      ],
+      "features": [
+        "parachains: TODO"
+      ],
+      "notes": [
+        "lorem ipsum",
+        "lorem lorem"
+      ]
+    },
+    {
+      "name": "Westmint",
+      "network_type": "testnet",
+      "chain": {
+        "type": "parachain",
+        "parent": "Westend",
+        "sudo": false
+      },
+      "goals": [
+        "Testnet"
+      ],
+      "validators": [
+        "Parity Only / Community ran nodes."
+      ],
+      "release_cycle": "Following the Polkadot 3 weeks cycle",
+      "specs": {
+        "block_time": 6,
+        "era": 42,
+        "ed": 42,
+        "decimals": 12,
+        "token": "WND"
+      },
+      "contacts": [
+        {
+          "type": "matrix",
+          "contact": "@westend:example.org"
+        },
+        {
+          "type": "email",
+          "contact": "westend@example.org"
+        }
+      ],
+      "faucet": "#foobar-faucet:matrix.org",
+      "documentation": [
+        "http://example.com"
+      ],
+      "expectations": [
+        "parity: foo",
+        "community: bar"
+      ],
+      "features": [
+        "parachains: TODO"
+      ],
+      "notes": [
+        "foo"
+      ]
+    }
+  ]
+}

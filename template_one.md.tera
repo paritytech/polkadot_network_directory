@@ -1,0 +1,64 @@
+# {{name}}
+
+## Chain information:
+
+- {{network_type}}
+- {{chain.type}}
+- sudo: {{ chain.sudo }}
+{%- if chain.consensus %}
+- consensus: {{chain.consensus}}
+{%- endif -%}
+{%- if chain.parent %}
+- parent: {{chain.parent}}
+{%- endif %}
+
+## Goals:
+
+{% for goal in goals -%}
+{{ goal }}
+{%- endfor %}
+
+## Validators
+
+{% for v in validators -%}
+- {{ v }}
+{%- endfor %}
+
+## Release_cycle
+
+{{ release_cycle }}
+
+## Expectations
+
+{% for e in expectations -%}
+- {{ e }}
+{% endfor %}
+
+## Contacts
+
+{% for c in contacts -%}
+- {{ c.type }}: {{ c.contact }}
+{% endfor %}
+
+## Faucet
+{% if faucet %}
+A faucet can be found at: `{{ faucet }}`
+{% else %}
+No faucet available
+{% endif %}
+
+## Documentation:
+{% for d in documentation %}
+- [{{ d }}]({{ d }})
+{% endfor %}
+
+## Features
+{% for f in features %}
+- {{ f }}
+{% endfor %}
+
+## Notes
+{% for note in notes %}
+{{ note }}
+
+{% endfor %}
