@@ -1,5 +1,7 @@
 # Polkadot
 
+repository: [https://github.com/paritytech/polkadot](https://github.com/paritytech/polkadot)
+
 ## Chain information:
 
 - mainnet
@@ -35,7 +37,8 @@ Following the Polkadot 3 weeks cycle
 
 ## Faucet
 
-A faucet can be found at: `#foobar-faucet:matrix.org`
+
+A faucet can be found at: [`#foobar-faucet:matrix.org`](https://matrix.to/#/#foobar-faucet:matrix.org)
 
 
 ## Documentation:

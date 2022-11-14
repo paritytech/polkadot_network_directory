@@ -8,6 +8,7 @@ chain:
 # parent: n/a
 goals:
     - TODO
+repository: https://github.com/paritytech/polkadot
 validators:
   - Parity Only / Community ran nodes.
 release_cycle: 'Following the Polkadot 3 weeks cycle'

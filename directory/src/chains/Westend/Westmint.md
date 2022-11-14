@@ -1,5 +1,7 @@
 # Westmint
 
+repository: [https://github.com/paritytech/cumulus](https://github.com/paritytech/cumulus)
+
 ## Chain information:
 
 - testnet
@@ -36,7 +38,8 @@ Following the Polkadot 3 weeks cycle
 
 ## Faucet
 
-A faucet can be found at: `#foobar-faucet:matrix.org`
+
+A faucet can be found at: [`#foobar-faucet:matrix.org`](https://matrix.to/#/#foobar-faucet:matrix.org)
 
 
 ## Documentation:

@@ -1,5 +1,7 @@
 # {{name}}
 
+repository: [{{ repository }}]({{ repository }})
+
 ## Chain information:
 
 - {{network_type}}
@@ -44,8 +46,9 @@
 {% endfor %}
 
 ## Faucet
+
 {% if faucet %}
-A faucet can be found at: `{{ faucet }}`
+A faucet can be found at: [`{{ faucet }}`](https://matrix.to/#/{{ faucet }})
 {% else %}
 No faucet available
 {% endif %}
