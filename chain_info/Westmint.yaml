@@ -6,7 +6,7 @@ chain:
     # consensus: n/a
     sudo: false
 goals:
-    - Testnet
+    - TODO
 validators:
   - Parity Only / Community ran nodes.
 release_cycle: 'Following the Polkadot 3 weeks cycle'

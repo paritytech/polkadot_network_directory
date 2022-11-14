@@ -7,9 +7,6 @@
 - sudo: {{ chain.sudo }}
 {%- if chain.consensus %}
 - consensus: {{chain.consensus}}
-{%- endif -%}
-{%- if chain.parent %}
-- parent: {{chain.parent}}
 {%- endif %}
 
 ## Goals:

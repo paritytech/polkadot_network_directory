@@ -9,7 +9,7 @@
 
 ## Goals:
 
-Testnet
+TODO
 
 ## Validators
 

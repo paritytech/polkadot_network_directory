@@ -81,7 +81,7 @@
         "sudo": false
       },
       "goals": [
-        "Testnet"
+        "TODO"
       ],
       "validators": [
         "Parity Only / Community ran nodes."

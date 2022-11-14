@@ -5,7 +5,6 @@
 - testnet
 - parachain
 - sudo: false
-- parent: Westend
 
 ## Goals:
 

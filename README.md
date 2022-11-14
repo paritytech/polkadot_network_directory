@@ -9,6 +9,7 @@ WARNING: THIS REPO IS WIP AND THE INFORMATION MAYBE NOT YET BE ACCURATE.
 - [`yq`](https://github.com/mikefarah/yq)
 - [`tera`](https://github.com/chevdor/tera-cli)
 - [`mdbook`](https://github.com/rust-lang/mdBook)
+- [`just`](https://github.com/casey/just)
 
 ## Folders
 
