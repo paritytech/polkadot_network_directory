@@ -9,11 +9,15 @@
 
 ## Goals:
 
-Testnet
+TODO
 
 ## Validators
 
 - Parity Only / Community ran nodes.
+
+## RPC Endpoints
+
+- `wss://todo`
 
 ## Release_cycle
 

@@ -15,6 +15,10 @@ TODO
 
 - Parity Only / Community ran nodes.
 
+## RPC Endpoints
+
+- `wss://westend-rpc.polkadot.io`
+
 ## Release_cycle
 
 Following the Polkadot 3 weeks cycle
@@ -50,8 +54,6 @@ A faucet can be found at: `#foobar-faucet:matrix.org`
 
 lorem ipsum
 
-
 lorem lorem
-
 
 

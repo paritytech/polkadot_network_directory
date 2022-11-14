@@ -24,6 +24,8 @@ contacts:
 faucet: '#foobar-faucet:matrix.org'
 documentation:
     - http://example.com
+rpc_endpoints:
+    - wss://todo
 expectations:
     - 'parity: foo'
     - 'community: bar'

@@ -21,6 +21,12 @@
 - {{ v }}
 {%- endfor %}
 
+## RPC Endpoints
+
+{% for endpoint in rpc_endpoints -%}
+- `{{ endpoint }}`
+{%- endfor %}
+
 ## Release_cycle
 
 {{ release_cycle }}
@@ -57,5 +63,4 @@ No faucet available
 ## Notes
 {% for note in notes %}
 {{ note }}
-
 {% endfor %}

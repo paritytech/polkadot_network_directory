@@ -14,7 +14,7 @@ mkdir -p "$PATH_MD"
 pushd "$PATH_INFO" > /dev/null
 for f in *.yaml
 do
-    echo Found $f
+    # echo "Found $f"
     chain_name=$(cat $f | yq -r .name)
     chain_type=$(cat $f | yq -r .chain.type)
     chain_parent=$(cat $f | yq -r .chain.parent)
@@ -25,7 +25,6 @@ do
     else
         DIR="$chain_parent"
     fi
-    echo DIR: $DIR
     mkdir -p "$PATH_MD/$DIR"
 
     tera --template "$TEMPLATE" "$f" > "$PATH_MD/$DIR/$chain_name.md"

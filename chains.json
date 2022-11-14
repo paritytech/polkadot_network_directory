@@ -9,7 +9,7 @@
         "sudo": true
       },
       "goals": [
-        "Testnet"
+        "TODO"
       ],
       "validators": [
         "Parity Only / Community ran nodes."
@@ -26,6 +26,9 @@
       "faucet": "#foobar-faucet:matrix.org",
       "documentation": [
         "http://example.com"
+      ],
+      "rpc_endpoints": [
+        "wss://todo"
       ],
       "expectations": [
         "parity: ...",
@@ -45,7 +48,7 @@
         "sudo": true
       },
       "goals": [
-        "Testnet"
+        "TODO"
       ],
       "validators": [
         "Parity Only / Community ran nodes."
@@ -62,6 +65,9 @@
       "faucet": "#foobar-faucet:matrix.org",
       "documentation": [
         "http://example.com"
+      ],
+      "rpc_endpoints": [
+        "wss://todo"
       ],
       "expectations": [
         "parity: ...",
@@ -105,6 +111,9 @@
         }
       ],
       "faucet": "#foobar-faucet:matrix.org",
+      "rpc_endpoints": [
+        "wss://westend-rpc.polkadot.io"
+      ],
       "documentation": [
         "http://example.com"
       ],
@@ -129,7 +138,7 @@
         "sudo": false
       },
       "goals": [
-        "Testnet"
+        "TODO"
       ],
       "validators": [
         "Parity Only / Community ran nodes."
@@ -155,6 +164,9 @@
       "faucet": "#foobar-faucet:matrix.org",
       "documentation": [
         "http://example.com"
+      ],
+      "rpc_endpoints": [
+        "wss://todo"
       ],
       "expectations": [
         "parity: foo",
