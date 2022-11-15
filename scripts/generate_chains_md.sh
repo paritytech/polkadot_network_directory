@@ -6,7 +6,7 @@
 PATH_INFO="chain_info"
 PATH_DATA="../chain_data"
 PATH_MD="../directory/src/chains"
-TEMPLATE="../template_one.md.tera"
+TEMPLATE="../templates/one.md.tera"
 
 mkdir -p "$PATH_DATA"
 mkdir -p "$PATH_MD"

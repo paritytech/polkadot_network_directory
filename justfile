@@ -11,7 +11,11 @@ concat_json:
 
 # Render all chains, we probably don't need that
 _render_chains: concat_json
-	tera --template template_many.md.tera chains.json
+	tera --template templates/many.md.tera chains.json
+
+_render_summary:
+    tera --template templates/SUMMARY.md.tera chains.json
+
 
 # Fetch data onchain
 fetch_data chain:
