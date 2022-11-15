@@ -1,3 +1,6 @@
+# Set global variables
+export chains_json := "directory/src/chains.json"
+
 # List available commands
 _default:
   just --choose --chooser "fzf +s -x --tac --cycle"
@@ -7,15 +10,13 @@ help:
 
 # Generate a json file with the information from all the chains
 concat_json:
-	yq ea '[.]' chain_info/*.yaml | yq ea -o=j '{"chains": .}' > chains.json
+	yq ea '[.]' chain_info/*.yaml | yq ea -o=j '{"chains": .}' > $chains_json
 
 # Render all chains, we probably don't need that
 _render_chains: concat_json
-	tera --template templates/many.md.tera chains.json
-
+	tera --template templates/many.md.tera $chains_json
 _render_summary:
-    tera --template templates/SUMMARY.md.tera chains.json
-
+    tera --template templates/SUMMARY.md.tera $chains_json
 
 # Fetch data onchain
 fetch_data chain:
