@@ -2,7 +2,7 @@
 
 repository: [{{ repository }}]({{ repository }})
 
-## Chain information:
+## Chain information
 
 | property | value |
 |-----|-------|
