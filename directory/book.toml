@@ -1,12 +1,12 @@
 [book]
-authors = ["Chevdor"]
+authors = ["Chevdor", "PierreBesson", "SBalaguer"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Polkadot Directory"
+title = "Polkadot Network Directory"
 
 # [book]
-# title = "Polkadot Directory"
+# title = "Polkadot Network Directory"
 # description = "A directory of the relay and parachains of the polkadot network"
 # authors = ["chevdor"]
 # language = "en"
