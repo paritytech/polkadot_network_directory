@@ -48,8 +48,8 @@ You can find the few templates using:
      find . -name "*.tera"
 
 There are 2 important templates:
-- `template_one.md.tera`: This template is used to convert the input `yaml` data into a markdown file per chain
-- `summary.md.tera`: This template is used to dynamically generate the summary of the book, it takes care of organising parachains under their `parent` relaychain
+- `templates/one.md.tera`: This template is used to convert the input `yaml` data into a markdown file per chain
+- `templates/summary.md.tera`: This template is used to dynamically generate the summary of the book, it takes care of organising parachains under their `parent` relaychain
 
 ## Reference file
 

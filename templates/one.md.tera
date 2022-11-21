@@ -2,13 +2,15 @@
 
 repository: [{{ repository }}]({{ repository }})
 
-## Chain information:
+## Chain information
 
-- {{network_type}}
-- {{chain.type}}
-- sudo: {{ chain.sudo }}
+| property | value |
+|-----|-------|
+| network type | {{network_type}} |
+| chain type   | {{chain.type}} |
+| sudo         | {{ chain.sudo }} |
 {%- if chain.consensus %}
-- consensus: {{chain.consensus}}
+| consensus    | {{chain.consensus}} |
 {%- endif %}
 
 ## Goals:
