@@ -55,4 +55,4 @@ There are 2 important templates:
 
 During the generate, all the data is aggregated into a json file containing the information about all the chains.
 
-This file can be found at https://raw.githubusercontent.com/paritytech/polkadot_network_directory/main/chains.json
+This file can be found at https://paritytech.github.io/polkadot_network_directory/chains.json
