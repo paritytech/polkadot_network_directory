@@ -14,6 +14,18 @@
 {% endif %}
 {% endfor %}
 
+# Canarynet chains
+
+{% for item in chains -%}
+{% if item.network_type == "canarynet" %}
+{% if item.chain.type == "relaychain" %}
+- [{{item.name}}](chains/{{item.name}}/{{item.name}}.md)
+{% else %}
+  - [{{item.name}}](chains/{{item.chain.parent}}/{{item.name}}.md)
+{% endif %}
+{% endif %}
+{% endfor %}
+
 # Testnet chains
 
 {% for item in chains -%}
