@@ -1,0 +1,38 @@
+name: Kusama
+network_type: canarynet
+chain:
+    type: relaychain
+    # parent: n/a
+    consensus: POS
+    sudo: false
+# parent: n/a
+goals:
+    - TODO
+repository: https://github.com/paritytech/polkadot
+validators:
+  - Community nodes
+release_cycle: 'Following the Polkadot 3 weeks cycle'
+specs:
+    block_time: 6
+    era: 42
+    ed: 42
+    decimals: 12
+    token: KSM
+contacts:
+    - type: matrix
+      contact:  '@kusama:example.org'
+    - type: email
+      contact: kusama@example.org
+faucet: null
+rpc_endpoints:
+    - wss://kusama-rpc.polkadot.io
+documentation:
+    - http://example.com
+expectations:
+    - 'parity: foo'
+    - 'community: bar'
+features:
+    - 'parachains: TODO'
+notes:
+    - lorem ipsum
+    - lorem lorem
