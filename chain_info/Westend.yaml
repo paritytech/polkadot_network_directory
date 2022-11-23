@@ -25,7 +25,11 @@ contacts:
       contact: westend@example.org
 faucet: '#foobar-faucet:matrix.org'
 rpc_endpoints:
-    - wss://westend-rpc.polkadot.io
+    - name: Parity
+      url: wss://westend-rpc.polkadot.io
+api_endpoints:
+    - name: subscan
+      url: https://westend.api.subscan.io
 documentation:
     - http://example.com
 expectations:

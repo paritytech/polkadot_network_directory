@@ -4,11 +4,11 @@ repository: [{{ repository }}]({{ repository }})
 
 ## Chain information
 
-| property | value |
-|-----|-------|
-| network type | {{network_type}} |
-| chain type   | {{chain.type}} |
-| sudo         | {{ chain.sudo }} |
+| Property     | Value               |
+|--------------|---------------------|
+| network type | {{network_type}}    |
+| chain type   | {{chain.type}}      |
+| sudo         | {{ chain.sudo }}    |
 {%- if chain.consensus %}
 | consensus    | {{chain.consensus}} |
 {%- endif %}
@@ -27,9 +27,24 @@ repository: [{{ repository }}]({{ repository }})
 
 ## RPC Endpoints
 
-{% for endpoint in rpc_endpoints -%}
-- `{{ endpoint }}`
+{%- if rpc_endpoints -%}
+{% for rpc_endpoint in rpc_endpoints %}
+- {{ rpc_endpoint.name }}: `{{ rpc_endpoint.url }}`
 {%- endfor %}
+{%- else %}
+No RPC endpoint found
+{%- endif %}
+
+
+## API Endpoints
+
+{%- if api_endpoints -%}
+{% for api_endpoint in api_endpoints %}
+- {{ api_endpoint.name }}: `{{ api_endpoint.url }}`
+{%- endfor %}
+{%- else %}
+No API endpoint found
+{%- endif %}
 
 ## Release_cycle
 
