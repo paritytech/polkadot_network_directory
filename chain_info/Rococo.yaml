@@ -5,6 +5,8 @@ chain:
     # parent: n/a
     consensus: POS
     sudo: true
+chainspec:
+  http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/rococo.json
 goals:
     - TODO
 repository: https://github.com/paritytech/polkadot
@@ -23,7 +25,7 @@ documentation:
     - http://example.com
 rpc_endpoints:
     - name: Parity
-      url: wss://todo
+      url: wss://rococo-rpc.polkadot.io
 expectations:
     - 'parity: ...'
     - 'community: ...'

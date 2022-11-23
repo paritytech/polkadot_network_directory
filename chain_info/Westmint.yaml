@@ -4,7 +4,9 @@ chain:
     type: parachain
     parent: Westend
     # consensus: n/a
-    sudo: false
+    sudo: true
+chainspec:
+  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/westmint.json
 goals:
     - TODO
 repository: https://github.com/paritytech/cumulus

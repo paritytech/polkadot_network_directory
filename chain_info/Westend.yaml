@@ -5,6 +5,8 @@ chain:
     # parent: n/a
     consensus: POS
     sudo: false
+chainspec:
+  http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/westend.json
 # parent: n/a
 goals:
     - TODO
