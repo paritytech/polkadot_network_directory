@@ -16,7 +16,7 @@ specs:
     era: null
     ed: null
     decimals: 10
-    token: null
+    token: DOT
 contacts: []
 faucet: null
 documentation:

@@ -16,7 +16,7 @@ specs:
     era: null
     ed: null
     decimals: 12
-    token: null
+    token: KSM
 contacts: []
 faucet: null
 documentation:
