@@ -12,9 +12,9 @@ validators:
   - Parity Only / Community ran nodes.
 release_cycle: 'Following the Polkadot 3 weeks cycle'
 specs:
-    block_time: 6
-    era: 42
-    ed: 42
+    block_time: 12
+    era: null
+    ed: null
     decimals: 12
     token: WND
 contacts:
@@ -27,7 +27,9 @@ documentation:
     - http://example.com
 rpc_endpoints:
     - name: Parity
-      url: wss://todo
+      url: wss://westmint-rpc.polkadot.io
+    - name: Dwellir
+      url: wss://westmint-rpc.dwellir.com
 expectations:
     - 'parity: foo'
     - 'community: bar'

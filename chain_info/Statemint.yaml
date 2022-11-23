@@ -1,0 +1,29 @@
+name: Statemint
+network_type: mainnet
+chain:
+    type: parachain
+    parent: Polkadot
+    # consensus: n/a
+    sudo: false
+goals:
+    - TODO
+repository: https://github.com/paritytech/cumulus
+validators:
+  - Open
+release_cycle: 'Following the Polkadot 3 weeks cycle'
+specs:
+    block_time: 12
+    era: null
+    ed: null
+    decimals: 10
+    token: DOT
+contacts: []
+faucet: null
+documentation:
+    - https://wiki.polkadot.network/docs/learn-statemint
+rpc_endpoints:
+    - name: Parity
+      url: wss://statemint-rpc.polkadot.io
+expectations: []
+features: []
+notes: []
