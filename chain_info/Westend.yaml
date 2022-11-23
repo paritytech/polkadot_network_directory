@@ -25,7 +25,7 @@ contacts:
       contact:  '@westend:example.org'
     - type: email
       contact: westend@example.org
-faucet: '#foobar-faucet:matrix.org'
+faucet: 'westend_faucet:matrix.org'
 rpc_endpoints:
     - name: Parity
       url: wss://westend-rpc.polkadot.io

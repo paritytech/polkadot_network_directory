@@ -1,5 +1,6 @@
 name: Westmint
 network_type: testnet
+para_id: 1000
 chain:
     type: parachain
     parent: Westend
@@ -19,12 +20,8 @@ specs:
     ed: null
     decimals: 12
     token: WND
-contacts:
-    - type: matrix
-      contact:  '@westend:example.org'
-    - type: email
-      contact: westend@example.org
-faucet: '#foobar-faucet:matrix.org'
+contacts: []
+faucet: '#westend_faucet:matrix.org'
 documentation:
     - http://example.com
 rpc_endpoints:
@@ -38,4 +35,4 @@ expectations:
 features:
     - 'parachains: TODO'
 notes:
-    - foo
+  - Teleport funds to your account from the Westend faucet with `!drip <Account>:1000`

@@ -20,7 +20,7 @@ specs:
     decimals: 12
     token: WND
 contacts: []
-faucet: '#foobar-faucet:matrix.org'
+faucet: '#rococo-faucet:matrix.org'
 documentation:
     - http://example.com
 rpc_endpoints:
