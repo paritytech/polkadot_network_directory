@@ -22,7 +22,8 @@ faucet: '#foobar-faucet:matrix.org'
 documentation:
     - http://example.com
 rpc_endpoints:
-    - wss://todo
+    - name: Parity
+      url: wss://todo
 expectations:
     - 'parity: ...'
     - 'community: ...'

@@ -25,7 +25,8 @@ contacts:
       contact: kusama@example.org
 faucet: null
 rpc_endpoints:
-    - wss://kusama-rpc.polkadot.io
+    - name: Parity
+      url: wss://kusama-rpc.polkadot.io
 documentation:
     - http://example.com
 expectations:
