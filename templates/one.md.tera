@@ -46,7 +46,7 @@ No RPC endpoint found
 - {{ api_endpoint.name }}: `{{ api_endpoint.url }}`
 {%- endfor %}
 {%- else %}
-No API endpoint found.
+No API endpoint found
 {%- endif %}
 
 ## Release_cycle
