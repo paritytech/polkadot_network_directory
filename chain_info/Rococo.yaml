@@ -10,7 +10,7 @@ goals:
     - XCM Playground for Parachains and Dapps on Parachains.
 repository: https://github.com/paritytech/polkadot
 validators:
-  - Parity Only.
+  - Parity Only
 release_cycle: 'Following the Polkadot 3 weeks cycle'
 specs:
     block_time: 6
