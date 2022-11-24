@@ -14,7 +14,7 @@ release_cycle: 'Following the Polkadot 3 weeks cycle'
 specs:
     block_time: 12
     era: null
-    ed: '3_333_333 Plank'
+    ed: '3333333 Plank'
     lease_period: null
     decimals: 12
     token: ROC

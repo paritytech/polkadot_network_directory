@@ -15,8 +15,8 @@ release_cycle: 'Following the Polkadot 3 weeks cycle'
 specs:
     block_time: 6
     era: 42
-    ed: '10_000_000_000 Plank'
-    lease_period: 403_200
+    ed: '10000000000 Plank'
+    lease_period: 403200
     decimals: 12
     token: WND
     ss58_format: 42
