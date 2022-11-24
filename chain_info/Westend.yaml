@@ -4,39 +4,39 @@ chain:
     type: relaychain
     # parent: n/a
     consensus: POS
-    sudo: false
+    sudo: true
 # parent: n/a
 goals:
-    - TODO
+    - Staging enviroment for Polkadot and Kusama.
 repository: https://github.com/paritytech/polkadot
 validators:
-  - Parity Only / Community ran nodes.
+  - 16 invulnerable validators ran by parity Parity and Community ran nodes (5 per cycle).
 release_cycle: 'Following the Polkadot 3 weeks cycle'
 specs:
     block_time: 6
     era: 42
-    ed: 42
+    ed: '10_000_000_000 Plank'
+    lease_period: 403_200
     decimals: 12
     token: WND
-contacts:
-    - type: matrix
-      contact:  '@westend:example.org'
-    - type: email
-      contact: westend@example.org
-faucet: '#foobar-faucet:matrix.org'
+    ss58_format: 42
+contacts: []
+faucet: '#westend_faucet:matrix.org'
 rpc_endpoints:
     - name: Parity
       url: wss://westend-rpc.polkadot.io
 api_endpoints:
     - name: subscan
       url: https://westend.api.subscan.io
-documentation:
-    - http://example.com
+documentation: null
 expectations:
-    - 'parity: foo'
-    - 'community: bar'
+    - 'parity: Part of the release cycle of Polkadot and Kusama. Burn-ins are done in this network.'
+    - 'community: Open for testing how to run nodes on a polkadot-like relay chain. No parachain testing here.'
 features:
-    - 'parachains: TODO'
+    - 'parachains: Modules exist, but only System Level parachains can register on Westend.'
+    - 'governance: Modules are available, however not used.'
+    - 'auctions / crowdloans: Both modules available, however not used.'
+    - 'XCM: XCM v2 available on Westend.'
+    - 'staking: Modules are available on Westend.'
 notes:
-    - lorem ipsum
-    - lorem lorem
+    - 

@@ -1,12 +1,12 @@
-name: Westmint
+name: Contracts
 network_type: testnet
 chain:
     type: parachain
-    parent: Westend
+    parent: Rococo
     # consensus: n/a
     sudo: true
 goals:
-    - "Westend's testnet parachain for Statemine/t"
+    - "Rococo's testnet parachain for Smart Contracts"
 repository: https://github.com/paritytech/cumulus
 validators:
   - Parity Only.
@@ -14,21 +14,24 @@ release_cycle: 'Following the Polkadot 3 weeks cycle'
 specs:
     block_time: 12
     era: null
-    ed: '1_000_000_000 Plank'
+    ed: '3_333_333 Plank'
     lease_period: null
     decimals: 12
-    token: WND
+    token: ROC
     ss58_format: null
-contacts: []
-faucet: '#westend_faucet:matrix.org'
+contacts:
+    - type: matrix
+      contact:  '#ink:matrix.parity.io'
+faucet: '#rococo-faucet:matrix.org'
 rpc_endpoints:
     - name: Parity
-      url:  wss://westend-westmint-rpc.polkadot.io
+      url:  wss://rococo-contracts-rpc.polkadot.io
 api_endpoints: []
-documentation: []
+documentation:
+    - https://use.ink/
 expectations:
     - 'parity: Run collator nodes; upgrade runtime.'
     - 'community: Test potential integrations with Statemine/t parachain.'
 features:
-    - 'asset_management: available on Westmint.'
+    - 'smart_contracts: available on Rockmine.'
 notes: []

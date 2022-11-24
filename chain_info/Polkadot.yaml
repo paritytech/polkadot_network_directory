@@ -4,29 +4,41 @@ chain:
     type: relaychain
     # parent: n/a
     consensus: POS
-    sudo: true
-goals:
-    - TODO
+    sudo: false
+goals: []
 repository: https://github.com/paritytech/polkadot
 validators:
-  - Parity Only / Community ran nodes.
+  - Community nodes.
 release_cycle: 'Following the Polkadot 3 weeks cycle'
 specs:
     block_time: 6
     era: 42
-    ed: 42
-    decimals: 12
-    token: WND
-contacts: []
-faucet: '#foobar-faucet:matrix.org'
-documentation:
-    - http://example.com
+    ed: '10_000_000_000 Plank'
+    lease_period: 1_209_600
+    decimals: 10
+    token: DOT
+    ss58_format: 0
+contacts:
+    - type: matrix
+      contact:  '#polkadot-direction:matrix.parity.io'
+    - type: matrix
+      contact: '#polkadotvalidatorlounge:web3.foundation'
+    - type: matrix
+      contact: '#polkadot-watercooler:web3.foundation'
+faucet: null
 rpc_endpoints:
     - name: Parity
-      url: wss://todo
-expectations:
-    - 'parity: ...'
-    - 'community: ...'
+    url: wss://rpc.polkadot.io
+api_endpoints:
+    - name: subscan
+      url: https://polkadot.api.subscan.io
+documentation:
+    - https://polkadot.network/
+    - https://forum.polkadot.network/
+expectations: []
 features:
-    - 'parachains: TODO'
+    - 'parachains: Parachains can register on Polkadot.'
+    - 'governance: Gov v1.'
+    - 'auctions / crowdloans: Both modules available.'
+    - 'XCM: XCM v2 available on Polkadot.'
 notes: []

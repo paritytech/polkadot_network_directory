@@ -1,12 +1,12 @@
-name: Westmint
+name: Collectmine
 network_type: testnet
 chain:
     type: parachain
-    parent: Westend
+    parent: Rococo
     # consensus: n/a
     sudo: true
 goals:
-    - "Westend's testnet parachain for Statemine/t"
+    - "Westends's testnet parachain for Collectives"
 repository: https://github.com/paritytech/cumulus
 validators:
   - Parity Only.
@@ -23,12 +23,12 @@ contacts: []
 faucet: '#westend_faucet:matrix.org'
 rpc_endpoints:
     - name: Parity
-      url:  wss://westend-westmint-rpc.polkadot.io
+      url:  wss://collectives-westmint-rpc.polkadot.io
 api_endpoints: []
 documentation: []
 expectations:
     - 'parity: Run collator nodes; upgrade runtime.'
     - 'community: Test potential integrations with Statemine/t parachain.'
 features:
-    - 'asset_management: available on Westmint.'
+    - 'collectives_pallet: available on Collectmine.'
 notes: []
