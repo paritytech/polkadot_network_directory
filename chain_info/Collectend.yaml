@@ -9,7 +9,7 @@ goals:
     - "Westends's testnet parachain for Collectives"
 repository: https://github.com/paritytech/cumulus
 validators:
-  - Parity Only.
+  - Parity Only
 release_cycle: 'Following the Polkadot 3 weeks cycle'
 specs:
     block_time: 12
