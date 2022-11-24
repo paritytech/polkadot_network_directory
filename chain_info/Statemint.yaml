@@ -14,9 +14,11 @@ release_cycle: 'Following the Polkadot 3 weeks cycle'
 specs:
     block_time: 12
     era: null
-    ed: null
+    ed: 1000000000
+    lease_period: null
     decimals: 10
     token: DOT
+    ss58_format: null
 contacts: []
 faucet: null
 documentation:
