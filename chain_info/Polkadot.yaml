@@ -8,7 +8,7 @@ chain:
 goals: []
 repository: https://github.com/paritytech/polkadot
 validators:
-  - Community nodes.
+  - Community nodes
 release_cycle: 'Following the Polkadot 3 weeks cycle'
 specs:
     block_time: 6
