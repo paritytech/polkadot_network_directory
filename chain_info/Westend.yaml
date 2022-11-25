@@ -5,6 +5,8 @@ chain:
     # parent: n/a
     consensus: POS
     sudo: false
+chainspec:
+  http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/westend.json
 # parent: n/a
 goals:
     - TODO
@@ -23,7 +25,7 @@ contacts:
       contact:  '@westend:example.org'
     - type: email
       contact: westend@example.org
-faucet: '#foobar-faucet:matrix.org'
+faucet: '#westend_faucet:matrix.org'
 rpc_endpoints:
     - name: Parity
       url: wss://westend-rpc.polkadot.io
