@@ -1,0 +1,18 @@
+{
+  "name": "Polkadot Network Directory",
+  "url": "https://paritytech.github.io/polkadot_network_directory/registry.json",
+  "items": {
+{%- for chain in chains %}
+    "{{ chain.name }}": [
+{%- for endpoint in chain.rpc_endpoints %}
+        {
+            "name": "{{ endpoint.name }}",
+            "url": "{{ endpoint.url }}"
+        }
+{%- if not loop.last -%},{%- endif -%}
+{% endfor %}
+    ]
+{%- if not loop.last -%},{%- endif -%}
+{% endfor %}
+    }
+}

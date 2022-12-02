@@ -1,0 +1,52 @@
+{
+  "name": "Polkadot Network Directory",
+  "url": "https://paritytech.github.io/polkadot_network_directory/registry.json",
+  "items": {
+    "Kusama": [
+      {
+        "name": "Parity",
+        "url": "wss://kusama-rpc.polkadot.io"
+      }
+    ],
+    "Polkadot": [
+      {
+        "name": "Parity",
+        "url": "wss://rpc.polkadot.io"
+      }
+    ],
+    "Rococo": [
+      {
+        "name": "Parity",
+        "url": "wss://rococo-rpc.polkadot.io"
+      }
+    ],
+    "Statemine": [
+      {
+        "name": "Parity",
+        "url": "wss://statemine-rpc.polkadot.io"
+      }
+    ],
+    "Statemint": [
+      {
+        "name": "Parity",
+        "url": "wss://statemint-rpc.polkadot.io"
+      }
+    ],
+    "Westend": [
+      {
+        "name": "Parity",
+        "url": "wss://westend-rpc.polkadot.io"
+      }
+    ],
+    "Westmint": [
+      {
+        "name": "Parity",
+        "url": "wss://westmint-rpc.polkadot.io"
+      },
+      {
+        "name": "Dwellir",
+        "url": "wss://westmint-rpc.dwellir.com"
+      }
+    ]
+  }
+}
