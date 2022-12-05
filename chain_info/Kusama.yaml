@@ -10,32 +10,37 @@ chainspec:
   http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/kusama.json
 goals:
     - TODO
+goals: []
 repository: https://github.com/paritytech/polkadot
 validators:
-  - Community nodes
+  - Community nodes. Check the 1000 validator program from the Web3 Foundation.
 release_cycle: 'Following the Polkadot 3 weeks cycle'
 specs:
     block_time: 6
-    era: 42
-    ed: 42
+    era: null
+    ed: 33333333
+    lease_period: 604800
     decimals: 12
     token: KSM
+    ss58_format: 2
 contacts:
     - type: matrix
-      contact:  '@kusama:example.org'
-    - type: email
-      contact: kusama@example.org
+      contact:  '#kusama:matrix.parity.io'
+    - type: matrix
+      contact: '#KusamaValidatorLounge:polkadot.builders'
 faucet: null
 rpc_endpoints:
     - name: Parity
-      url: wss://kusama-rpc.polkadot.io
+    url: wss://kusama-rpc.polkadot.io
+api_endpoints:
+    - name: subscan
+      url: https://kusama.api.subscan.io
 documentation:
-    - http://example.com
-expectations:
-    - 'parity: foo'
-    - 'community: bar'
+    - https://kusama.network/
+expectations: []
 features:
-    - 'parachains: TODO'
-notes:
-    - lorem ipsum
-    - lorem lorem
+    - 'parachains: Parachains can register on Kusama.'
+    - 'governance: openGov.'
+    - 'auctions / crowdloans: Both modules available.'
+    - 'XCM: XCM v2 available on Kusama.'
+notes: []

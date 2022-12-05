@@ -1,0 +1,37 @@
+name: Contracts
+network_type: testnet
+chain:
+    type: parachain
+    parent: Rococo
+    # consensus: n/a
+    sudo: true
+goals:
+    - "Rococo's testnet parachain for Smart Contracts"
+repository: https://github.com/paritytech/cumulus
+validators:
+  - Parity Only
+release_cycle: 'Following the Polkadot 3 weeks cycle'
+specs:
+    block_time: 12
+    era: null
+    ed: 3333333
+    lease_period: null
+    decimals: 12
+    token: ROC
+    ss58_format: null
+contacts:
+    - type: matrix
+      contact:  '#ink:matrix.parity.io'
+faucet: '#rococo-faucet:matrix.org'
+rpc_endpoints:
+    - name: Parity
+      url:  wss://rococo-contracts-rpc.polkadot.io
+api_endpoints: []
+documentation:
+    - https://use.ink/
+expectations:
+    - 'parity: Run collator nodes; upgrade runtime.'
+    - 'community: Test potential integrations with Statemine/t parachain.'
+features:
+    - 'smart_contracts: available on Rockmine.'
+notes: []
