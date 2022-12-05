@@ -27,5 +27,6 @@ do
     fi
     mkdir -p "$PATH_MD/$DIR"
 
+    echo " Rendering $f as $PATH_MD/$DIR/$chain_name.md"
     tera --template "$TEMPLATE" "$f" > "$PATH_MD/$DIR/$chain_name.md"
 done
