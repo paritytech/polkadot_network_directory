@@ -21,16 +21,8 @@ specs:
     lease_period: 403200
     decimals: 12
     token: WND
-<<<<<<< HEAD
     ss58_format: 42
 contacts: []
-=======
-contacts:
-    - type: matrix
-      contact:  '@westend:example.org'
-    - type: email
-      contact: westend@example.org
->>>>>>> master
 faucet: '#westend_faucet:matrix.org'
 rpc_endpoints:
     - name: Parity

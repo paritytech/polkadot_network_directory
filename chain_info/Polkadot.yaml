@@ -31,7 +31,6 @@ contacts:
 faucet: null
 rpc_endpoints:
     - name: Parity
-<<<<<<< HEAD
     url: wss://rpc.polkadot.io
 api_endpoints:
     - name: subscan
@@ -40,12 +39,6 @@ documentation:
     - https://polkadot.network/
     - https://forum.polkadot.network/
 expectations: []
-=======
-      url: wss://rpc.polkadot.io
-expectations:
-    - 'parity: ...'
-    - 'community: ...'
->>>>>>> master
 features:
     - 'parachains: Parachains can register on Polkadot.'
     - 'governance: Gov v1.'
