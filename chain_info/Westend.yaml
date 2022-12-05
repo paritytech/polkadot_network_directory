@@ -12,7 +12,7 @@ goals:
     - Staging enviroment for Polkadot and Kusama.
 repository: https://github.com/paritytech/polkadot
 validators:
-  - 16 invulnerable validators ran by parity Parity and Community ran nodes (5 per cycle).
+  - 16 invulnerable validators ran by Parity and Community ran nodes (5 per cycle)
 release_cycle: 'Following the Polkadot 3 weeks cycle'
 specs:
     block_time: 6
