@@ -15,12 +15,12 @@ pushd "$PATH_INFO" > /dev/null
 for f in *.yaml
 do
     # echo "Found $f"
-    chain_name=$(cat $f | yq -r .name)
-    chain_type=$(cat $f | yq -r .chain.type)
-    chain_parent=$(cat $f | yq -r .chain.parent)
+    chain_name=$(cat "$f" | yq -r .name | sed 's/ /_/g' )
+    chain_type=$(cat "$f" | yq -r .chain.type)
+    chain_parent=$(cat "$f" | yq -r .chain.parent)
 
     echo "Processing $chain_name..."
-    if [[ "$chain_type" ==  "relaychain" ]]; then
+    if [[ "$chain_type" ==  "relaychain" ]] || [[ "$chain_type" == "solo" ]]; then
         DIR="$chain_name"
     else
         DIR="$chain_parent"
