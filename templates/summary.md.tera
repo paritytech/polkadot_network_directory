@@ -42,11 +42,7 @@
 {# -#}
 {%- for item in chains -%}
 {%- if item.network_type == "solo_mainnet" -%}
-{%- if item.chain.type == "solo" -%}
 - [{{item.name}}](chains/{{item.name | replace(from=" ", to="_") }}/{{item.name | replace(from=" ", to="_")}}.md)
-{% else %}
-  - [{{item.name}}](chains/{{item.chain.parent}}/{{item.name}}.md)
-{% endif -%}
 {%- endif -%}
 {% endfor %}
 
@@ -54,10 +50,6 @@
 {# -#}
 {%- for item in chains -%}
 {%- if item.network_type == "solo_testnet" -%}
-{%- if item.chain.type == "solo" -%}
 - [{{item.name}}](chains/{{item.name | replace(from=" ", to="_") }}/{{item.name | replace(from=" ", to="_") }}.md)
-{% else %}
-  - [{{item.name}}](chains/{{item.chain.parent}}/{{item.name}}.md)
-{% endif -%}
 {%- endif -%}
 {% endfor -%}
