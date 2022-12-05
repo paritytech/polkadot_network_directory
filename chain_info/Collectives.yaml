@@ -1,8 +1,8 @@
-name: Collectmine
+name: Collectives
 network_type: testnet
 chain:
     type: parachain
-    parent: Rococo
+    parent: Westend
     # consensus: n/a
     sudo: true
 goals:
