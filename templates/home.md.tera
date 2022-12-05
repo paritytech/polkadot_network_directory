@@ -10,7 +10,9 @@ The directory data is also available as a [single JSON file](chains.json).
 In addition to the directory data mentioned above, you can also find the [rpc endpoints registry](registry.json)
 that is generated from the same source.
 
-## Contribute
+## Contributions
+
+### Guidelines
 
 Contributions are very welcome in the form of a new [Pull Request](https://github.com/paritytech/
 polkadot_network_directory/pulls) per chain. You can easily add a new chain to
@@ -25,3 +27,7 @@ modifications will be lost.
 
 If you notice inaccurate information or want to add an additional network to the directory,
 please submit a pull request to [paritytech/polkadot_network_directory](https://github.com/paritytech/polkadot_network_directory).
+
+### Naming
+
+Make sure to name the yaml for a chain exactly like the name of the chain inside the yaml file. If a chain contains spaces ` `, name your file with `_`.
