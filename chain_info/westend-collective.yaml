@@ -1,4 +1,4 @@
-name: Collectives
+name: westend-collective
 network_type: testnet
 chain:
     type: parachain
