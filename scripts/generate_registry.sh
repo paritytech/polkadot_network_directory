@@ -9,4 +9,4 @@ mkdir -p "$PATH_DATA"
 mkdir -p "$PATH_MD"
 
 pwd
-tera --template "$TEMPLATE" directory/src/chains.json | jq > directory/src/registry.json
+tera --template "$TEMPLATE" directory/src/chains.json | jq > "../directory/src/registry.json"
