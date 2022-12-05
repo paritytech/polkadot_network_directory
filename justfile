@@ -29,7 +29,7 @@ fetch_data chain:
 	echo Fetching data for {{chain}}
 
 # Render the book
-render: concat_json
+render: concat_json _render_rpc_registry
 	./scripts/generate_chains_md.sh
 	./scripts/generate_book.sh
 	./scripts/generate_registry.sh

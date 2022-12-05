@@ -4,39 +4,49 @@
 
 # Mainnet chains
 {# -#}
-{%- for item in chains -%}
-{%- if item.network_type == "mainnet" -%}
-{%- if item.chain.type == "relaychain" -%}
-- [{{item.name}}](chains/{{item.name | replace(from=" ", to="_") }}/{{item.name | replace(from=" ", to="_")}}.md)
-{% else %}
-  - [{{item.name}}](chains/{{item.chain.parent}}/{{item.name}}.md)
+{%- for relay in chains -%}
+{%- if relay.network_type == "mainnet" -%}
+{%- if relay.chain.type == "relaychain" -%}
+- [{{relay.name}}](chains/{{relay.name | replace(from=" ", to="_") }}/{{relay.name | replace(from=" ", to="_")}}.md)
+{%- for para in chains %}
+{%- if para.chain.parent and para.chain.parent == relay.name%}
+  - [{{para.name}}](chains/{{relay.name | replace(from=" ", to="_")}}/{{para.name | replace(from=" ", to="_")}}.md)
+{%- endif -%}
+{% endfor %}
 {% endif -%}
 {%- endif -%}
 {% endfor %}
 
 # Canarynet chains
 {# -#}
-{%- for item in chains -%}
-{%- if item.network_type == "canarynet" -%}
-{%- if item.chain.type == "relaychain" -%}
-- [{{item.name}}](chains/{{item.name | replace(from=" ", to="_") }}/{{item.name | replace(from=" ", to="_")}}.md)
-{% else %}
-  - [{{item.name}}](chains/{{item.chain.parent}}/{{item.name}}.md)
+{%- for relay in chains -%}
+{%- if relay.network_type == "canarynet" -%}
+{%- if relay.chain.type == "relaychain" -%}
+- [{{relay.name}}](chains/{{relay.name | replace(from=" ", to="_") }}/{{relay.name | replace(from=" ", to="_")}}.md)
+{%- for para in chains %}
+{%- if para.chain.parent and para.chain.parent == relay.name%}
+  - [{{para.name}}](chains/{{relay.name | replace(from=" ", to="_")}}/{{para.name | replace(from=" ", to="_")}}.md)
+{%- endif -%}
+{% endfor %}
 {% endif -%}
 {%- endif -%}
 {% endfor %}
 
 # Testnet chains
 {# -#}
-{%- for item in chains -%}
-{%- if item.network_type == "testnet" -%}
-{%- if item.chain.type == "relaychain" -%}
-- [{{item.name}}](chains/{{item.name | replace(from=" ", to="_") }}/{{item.name | replace(from=" ", to="_")}}.md)
-{% else %}
-  - [{{item.name}}](chains/{{item.chain.parent}}/{{item.name}}.md)
+{%- for relay in chains -%}
+{%- if relay.network_type == "testnet" -%}
+{%- if relay.chain.type == "relaychain" -%}
+- [{{relay.name}}](chains/{{relay.name | replace(from=" ", to="_") }}/{{relay.name | replace(from=" ", to="_")}}.md)
+{%- for para in chains %}
+{%- if para.chain.parent and para.chain.parent == relay.name%}
+  - [{{para.name}}](chains/{{relay.name | replace(from=" ", to="_")}}/{{para.name | replace(from=" ", to="_")}}.md)
+{%- endif -%}
+{% endfor %}
 {% endif -%}
 {%- endif -%}
 {% endfor %}
+
 
 # Solo Mainnet chains
 {# -#}
