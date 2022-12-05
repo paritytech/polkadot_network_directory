@@ -13,8 +13,9 @@ repository: [{{ repository }}]({{ repository }})
 | consensus    | {{chain.consensus}} |
 {%- endif %}
 | decimals    | {{specs.decimals | default(value="n/a")}} |
-| block time    | {{specs.block_time | default(value="n/a")}} seconds |
+| block time    | {{specs.block_time | default(value="n/a")}} second{{ specs.block_time | pluralize }} |
 | token    | {{specs.token | default(value="n/a")}} |
+| ED    | {{specs.ed | default(value="n/a")}} planks |
 
 ## Goals:
 
@@ -53,7 +54,7 @@ No API endpoint found
 
 {{ release_cycle }}
 
-{%- if expectations -%}
+{% if expectations -%}
 ## Expectations
 {% for e in expectations -%}
 - {{ e }}

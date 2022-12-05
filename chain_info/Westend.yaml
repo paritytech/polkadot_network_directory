@@ -30,7 +30,7 @@ rpc_endpoints:
 api_endpoints:
     - name: subscan
       url: https://westend.api.subscan.io
-documentation: null
+documentation: []
 expectations:
     - 'parity: Part of the release cycle of Polkadot and Kusama. Burn-ins are done in this network.'
     - 'community: Open for testing how to run nodes on a polkadot-like relay chain. No parachain testing here.'
