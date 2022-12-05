@@ -1,7 +1,22 @@
 # Polkadot Network Directory
 
-This website serves as a global directory of relay and parachain networks of the Polkadot ecosystem.
+This website serves as a global directory of relay and parachain networks of the Polkadot
+ecosystem. The repository can be found [here](https://github.com/paritytech/polkadot_network_directory).
 
 The directory data is also available as a [single JSON file](chains.json).
 
-If you notice inaccurate information or want to add an additional network to the directory, please submit a pull request to [paritytech/polkadot_network_directory](https://github.com/paritytech/polkadot_network_directory).
+## Contribute
+
+Contributions are very welcome in the form of a new [Pull Request](https://github.com/paritytech/
+polkadot_network_directory/pulls) per chain. You can easily add a new chain to
+the directory or fix information about an exsting chain.
+
+Editing the data is really simple and the only files to edit are located in the
+[chain_info](https://github.com/paritytech/polkadot_network_directory/tree/master/chain_info)
+folder.
+
+You should **not** be editing any of the markdown files, those are generated and your
+modifications will be lost.
+
+If you notice inaccurate information or want to add an additional network to the directory,
+please submit a pull request to [paritytech/polkadot_network_directory](https://github.com/paritytech/polkadot_network_directory).

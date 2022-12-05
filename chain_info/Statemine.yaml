@@ -5,6 +5,8 @@ chain:
     parent: Kusama
     # consensus: n/a
     sudo: false
+chainspec:
+  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/statemine.json
 goals:
     - TODO
 repository: https://github.com/paritytech/cumulus

@@ -5,6 +5,8 @@ chain:
     # parent: n/a
     consensus: POS
     sudo: true
+chainspec:
+  http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/westend.json
 # parent: n/a
 goals:
     - Staging enviroment for Polkadot and Kusama.
@@ -19,8 +21,16 @@ specs:
     lease_period: 403200
     decimals: 12
     token: WND
+<<<<<<< HEAD
     ss58_format: 42
 contacts: []
+=======
+contacts:
+    - type: matrix
+      contact:  '@westend:example.org'
+    - type: email
+      contact: westend@example.org
+>>>>>>> master
 faucet: '#westend_faucet:matrix.org'
 rpc_endpoints:
     - name: Parity

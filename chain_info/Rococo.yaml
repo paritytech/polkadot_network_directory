@@ -5,6 +5,8 @@ chain:
     # parent: n/a
     consensus: POA
     sudo: true
+chainspec:
+  http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/rococo.json
 goals:
     - Community Parachain testnet enviroment.
     - XCM Playground for Parachains and Dapps on Parachains.
