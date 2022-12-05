@@ -7,7 +7,7 @@
 {%- for item in chains -%}
 {%- if item.network_type == "mainnet" -%}
 {%- if item.chain.type == "relaychain" -%}
-- [{{item.name}}](chains/{{item.name}}/{{item.name}}.md)
+- [{{item.name}}](chains/{{item.name | replace(from=" ", to="_") }}/{{item.name | replace(from=" ", to="_")}}.md)
 {% else %}
   - [{{item.name}}](chains/{{item.chain.parent}}/{{item.name}}.md)
 {% endif -%}
@@ -19,7 +19,7 @@
 {%- for item in chains -%}
 {%- if item.network_type == "canarynet" -%}
 {%- if item.chain.type == "relaychain" -%}
-- [{{item.name}}](chains/{{item.name}}/{{item.name}}.md)
+- [{{item.name}}](chains/{{item.name | replace(from=" ", to="_") }}/{{item.name | replace(from=" ", to="_")}}.md)
 {% else %}
   - [{{item.name}}](chains/{{item.chain.parent}}/{{item.name}}.md)
 {% endif -%}
@@ -31,7 +31,31 @@
 {%- for item in chains -%}
 {%- if item.network_type == "testnet" -%}
 {%- if item.chain.type == "relaychain" -%}
-- [{{item.name}}](chains/{{item.name}}/{{item.name}}.md)
+- [{{item.name}}](chains/{{item.name | replace(from=" ", to="_") }}/{{item.name | replace(from=" ", to="_")}}.md)
+{% else %}
+  - [{{item.name}}](chains/{{item.chain.parent}}/{{item.name}}.md)
+{% endif -%}
+{%- endif -%}
+{% endfor %}
+
+# Solo Mainnet chains
+{# -#}
+{%- for item in chains -%}
+{%- if item.network_type == "solo_mainnet" -%}
+{%- if item.chain.type == "solo" -%}
+- [{{item.name}}](chains/{{item.name | replace(from=" ", to="_") }}/{{item.name | replace(from=" ", to="_")}}.md)
+{% else %}
+  - [{{item.name}}](chains/{{item.chain.parent}}/{{item.name}}.md)
+{% endif -%}
+{%- endif -%}
+{% endfor %}
+
+# Solo Testnet chains
+{# -#}
+{%- for item in chains -%}
+{%- if item.network_type == "solo_testnet" -%}
+{%- if item.chain.type == "solo" -%}
+- [{{item.name}}](chains/{{item.name | replace(from=" ", to="_") }}/{{item.name | replace(from=" ", to="_") }}.md)
 {% else %}
   - [{{item.name}}](chains/{{item.chain.parent}}/{{item.name}}.md)
 {% endif -%}

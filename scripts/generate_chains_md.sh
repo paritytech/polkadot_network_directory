@@ -15,9 +15,9 @@ pushd "$PATH_INFO" > /dev/null
 for f in *.yaml
 do
     # echo "Found $f"
-    chain_name=$(cat $f | yq -r .name)
-    chain_type=$(cat $f | yq -r .chain.type)
-    chain_parent=$(cat $f | yq -r .chain.parent)
+    chain_name=$(cat "$f" | yq -r .name)
+    chain_type=$(cat "$f" | yq -r .chain.type)
+    chain_parent=$(cat "$f" | yq -r .chain.parent)
 
     echo "Processing $chain_name..."
     if [[ "$chain_type" ==  "relaychain" ]]; then
