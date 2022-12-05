@@ -5,6 +5,11 @@ ecosystem. The repository can be found [here](https://github.com/paritytech/polk
 
 The directory data is also available as a [single JSON file](chains.json).
 
+## RPC Endpoint Registry
+
+In addition to the directory data mentioned above, you can also find the [rpc endpoints registry](registry.json)
+that is generated from the same source.
+
 ## Contribute
 
 Contributions are very welcome in the form of a new [Pull Request](https://github.com/paritytech/
