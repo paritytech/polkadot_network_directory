@@ -11,6 +11,10 @@ TEMPLATE="../templates/one.md.tera"
 mkdir -p "$PATH_DATA"
 mkdir -p "$PATH_MD"
 
+# Generate date, commit and footer
+export DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+export COMMIT=$(git rev-parse HEAD)
+
 pushd "$PATH_INFO" > /dev/null
 for f in *.yaml
 do
@@ -28,5 +32,5 @@ do
     mkdir -p "$PATH_MD/$DIR"
 
     echo " Rendering $f as $PATH_MD/$DIR/$chain_name.md"
-    tera --template "$TEMPLATE" "$f" > "$PATH_MD/$DIR/$chain_name.md"
+    tera --template "$TEMPLATE" "$f" --include --env --env-key env > "$PATH_MD/$DIR/$chain_name.md"
 done

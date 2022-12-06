@@ -4,7 +4,7 @@
 
 ## {{chain.name}}
 
-{{chain.name}} is a {{chain.network_type}} {{chain.chain_type}} using {{chain.consensus}} as consensus.
+{{chain.name}} is a {{chain.network_type}} {{chain.chain.type}} using {{chain.consensus | default(value="n/a")}} as consensus.
 
 ### sudo:
 {% if sudo %}
@@ -41,3 +41,6 @@ Sudo is **not** available on {{chain.name}}.
    -  parachains: 2 system paras: Westmint & Collectives
 
 {% endfor %}
+
+---
+{% include "footer.md.tera" %}

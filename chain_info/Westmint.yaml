@@ -29,7 +29,6 @@ rpc_endpoints:
     - name: Parity
       url:  wss://westend-westmint-rpc.polkadot.io
 api_endpoints: []
-documentation: []
 expectations:
     - 'parity: Run collator nodes; upgrade runtime.'
     - 'community: Test potential integrations with Statemine/t parachain.'
