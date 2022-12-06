@@ -94,3 +94,6 @@ No faucet available
 {{ note }}
 {% endfor %}
 {% endif %}
+
+---
+{% include "footer" %}

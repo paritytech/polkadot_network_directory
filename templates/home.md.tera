@@ -31,3 +31,6 @@ please submit a pull request to [paritytech/polkadot_network_directory](https://
 ### Naming
 
 Make sure to name the yaml for a chain exactly like the name of the chain inside the yaml file. If a chain contains spaces ` `, name your file with `_`.
+
+---
+{% include "footer" %}

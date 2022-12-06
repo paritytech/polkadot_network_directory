@@ -41,3 +41,6 @@ Sudo is **not** available on {{chain.name}}.
    -  parachains: 2 system paras: Westmint & Collectives
 
 {% endfor %}
+
+---
+{% include "footer" %}
