@@ -5,7 +5,7 @@ TEMPLATE="templates/registry.json.tera"
 
 # Generate date, commit and footer
 export DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-export COMMIT=$(git rev-parse HEAD > chain_data/commit)
+export COMMIT=$(git rev-parse HEAD)
 
 mkdir -p "$PATH_REG"
 
