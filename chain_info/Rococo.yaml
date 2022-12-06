@@ -35,7 +35,7 @@ api_endpoints:
 documentation:
     - https://substrate.io/developers/rococo-network/
 expectations:
-    - 'parity: Run the nodes from the system; keep the system updated (runtime and nodes) in line with Kusama updates; manage parachain onboarding (see contacts)'
+    - 'parity: Run the nodes for the system; keep the system updated (runtime and nodes) in line with Kusama updates; manage parachain onboarding (see contacts)'
     - 'community: Keep parachain updated; onboard their builders into their rococo parachain for testing; make the most out of XCM'
 features:
     - 'parachains: Parachains can register on Rococo.'
