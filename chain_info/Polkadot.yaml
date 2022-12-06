@@ -7,8 +7,7 @@ chain:
     sudo: true
 chainspec:
   http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/polkadot.json
-goals:
-    - TODO
+goals: []
 repository: https://github.com/paritytech/polkadot
 validators:
   - Community nodes
