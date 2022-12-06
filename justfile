@@ -15,13 +15,13 @@ concat_json:
 
 # Render all chains, we probably don't need that
 _render_chains: concat_json
-	@tera --template templates/many.md.tera $chains_json
+	@tera --include --env --env-key env --template templates/many.md.tera $chains_json
 
 _render_summary: concat_json
-    @tera --template templates/SUMMARY.md.tera $chains_json
+    @tera --include --env --env-key env --template templates/SUMMARY.md.tera $chains_json
 
 _render_rpc_registry: concat_json
-    tera --template templates/registry.json.tera $chains_json | jq > $registry_json
+    tera --include --env --env-key env --template templates/registry.json.tera $chains_json  | jq > $registry_json
 
 # Fetch data onchain
 fetch_data chain:

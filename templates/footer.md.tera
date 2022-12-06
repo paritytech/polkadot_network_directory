@@ -1,0 +1,2 @@
+
+Last updated: {{ env.DATE | date(format="%Y-%m-%d %H:%M") }} - commit `{{ env.COMMIT | truncate(length=8) }}`

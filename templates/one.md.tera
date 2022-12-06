@@ -96,4 +96,4 @@ No faucet available
 {% endif %}
 
 ---
-{% include "footer" %}
+{% include "footer.md.tera" %}
