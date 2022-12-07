@@ -27,8 +27,8 @@ rpc_endpoints:
 api_endpoints: []
 documentation: []
 expectations:
-    - 'parity: Run collator nodes; upgrade runtime.'
-    - 'community: Test potential integrations with Statemine/t parachain.'
+    - 'parity: Run collator nodes; upgrade runtime'
+    - 'community: Test potential integrations with Statemine/t parachain'
 features:
-    - 'collectives_pallet: available on Collectmine.'
+    - 'collectives_pallet: available on Collectmine'
 notes: []

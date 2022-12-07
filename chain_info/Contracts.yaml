@@ -30,8 +30,8 @@ api_endpoints: []
 documentation:
     - https://use.ink/
 expectations:
-    - 'parity: Run collator nodes; upgrade runtime.'
-    - 'community: Test potential integrations with Statemine/t parachain.'
+    - 'parity: Run collator nodes; upgrade runtime'
+    - 'community: Test potential integrations with Statemine/t parachain'
 features:
-    - 'smart_contracts: available on Rockmine.'
+    - 'smart_contracts: available on Rockmine'
 notes: []

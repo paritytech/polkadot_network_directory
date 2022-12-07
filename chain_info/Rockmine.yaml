@@ -31,8 +31,8 @@ api_endpoints:
       url: https://rockmine.api.subscan.io
 documentation: []
 expectations:
-    - 'parity: Run collator nodes; upgrade runtime.'
-    - 'community: Test potential integrations with Statemine/t parachain.'
+    - 'parity: Run collator nodes; upgrade runtime'
+    - 'community: Test potential integrations with Statemine/t parachain'
 features:
-    - 'asset_management: available on Rockmine.'
+    - 'asset_management: available on Rockmine'
 notes: []

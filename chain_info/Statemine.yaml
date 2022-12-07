@@ -8,7 +8,8 @@ chain:
 chainspec:
   http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/statemine.json
 goals:
-    - TODO
+    - Statemine handles your assets, whether fungible or not (NFT)
+expectations: []
 repository: https://github.com/paritytech/cumulus
 validators:
   - Open
@@ -28,6 +29,5 @@ documentation:
 rpc_endpoints:
     - name: Parity
       url: wss://statemine-rpc.polkadot.io
-expectations: []
 features: []
 notes: []

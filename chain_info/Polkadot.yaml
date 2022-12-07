@@ -39,8 +39,8 @@ documentation:
     - https://forum.polkadot.network/
 expectations: []
 features:
-    - 'parachains: Parachains can register on Polkadot.'
-    - 'governance: Gov v1.'
-    - 'auctions / crowdloans: Both modules available.'
-    - 'XCM: XCM v2 available on Polkadot.'
+    - 'parachains: Parachains can register on Polkadot'
+    - 'governance: Gov v1'
+    - 'auctions / crowdloans: Both modules available'
+    - 'XCM: XCM v2 available on Polkadot'
 notes: []

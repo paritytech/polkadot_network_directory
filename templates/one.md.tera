@@ -7,6 +7,27 @@
 - chain specs: n/a
 {% endif %}
 
+{% if goals -%}
+### Goals
+{% for g in goals -%}
+- {{ g }}
+{% endfor %}
+{% endif %}
+
+{% if features -%}
+### Features
+{% for f in features %}
+- {{ f }}
+{% endfor %}
+{% endif %}
+
+{% if expectations -%}
+### Expectations
+{% for e in expectations -%}
+- {{ e }}
+{% endfor %}
+{%- endif %}
+
 ## Chain information
 
 | Property     | Value               |
@@ -14,20 +35,18 @@
 | network type | {{network_type}}    |
 | chain type   | {{chain.type}}      |
 | sudo         | {{ chain.sudo }}    |
-{%- if chain.consensus %}
-| consensus    | {{chain.consensus}} |
-{%- endif %}
+{%- if chain.parent %}
+| consensus    | Same than `{{ chain.parent }}` |
+{% else %}
+{% if chain.consensus %}
+| consensus    | {{ chain.consensus }} |
+{% endif %}
+{% endif -%}
 | decimals    | {{specs.decimals | default(value="n/a")}} |
 | block time    | {{specs.block_time | default(value="n/a")}} second{{ specs.block_time | pluralize }} |
 | token    | {{specs.token | default(value="n/a")}} |
-| ED    | {{specs.ed | default(value="n/a")}} planks |
+| ED    | {{specs.ed | default(value="n/a")}} units |
 
-{% if goals -%}
-## Goals
-{% for g in goals -%}
-- {{ g }}
-{% endfor %}
-{% endif %}
 
 ## Validators
 
@@ -60,13 +79,6 @@ No API endpoint found
 
 {{ release_cycle }}
 
-{% if expectations -%}
-## Expectations
-{% for e in expectations -%}
-- {{ e }}
-{% endfor %}
-{%- endif %}
-
 {%- if contacts -%}
 ## Contacts
 {% for c in contacts -%}
@@ -86,13 +98,6 @@ No faucet available
 {% for d in documentation %}
 - [{{ d }}]({{ d }})
 {% endfor %}
-
-{% if features -%}
-## Features
-{% for f in features %}
-- {{ f }}
-{% endfor %}
-{% endif %}
 
 {%- if notes -%}
 ## Notes
