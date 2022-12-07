@@ -17,11 +17,12 @@ repository: [{{ repository }}]({{ repository }})
 | token    | {{specs.token | default(value="n/a")}} |
 | ED    | {{specs.ed | default(value="n/a")}} planks |
 
-## Goals:
-
-{% for goal in goals -%}
-{{ goal }}
-{%- endfor %}
+{% if goals -%}
+## Goals
+{% for g in goals -%}
+- {{ g }}
+{% endfor %}
+{% endif %}
 
 ## Validators
 

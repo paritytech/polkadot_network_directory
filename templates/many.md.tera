@@ -13,9 +13,9 @@ Sudo is available on {{chain.name}}.
 Sudo is **not** available on {{chain.name}}.
 {% endif %}
 
-### Goals:
-{% for goal in chain.goals %}
-{{goal }}
+### Goals
+{% for g in chain.goals -%}
+- {{ g }}
 {% endfor %}
 
 ### Validators
