@@ -45,7 +45,7 @@
 | decimals    | {{specs.decimals | default(value="n/a")}} |
 | block time    | {{specs.block_time | default(value="n/a")}} second{{ specs.block_time | pluralize }} |
 | token    | {{specs.token | default(value="n/a")}} |
-| ED    | {{specs.ed | default(value="n/a")}} planks |
+| ED    | {{specs.ed | default(value="n/a")}} units |
 
 
 ## Validators
