@@ -14,9 +14,8 @@ that is generated from the same source.
 
 ### Guidelines
 
-Contributions are very welcome in the form of a new [Pull Request](https://github.com/paritytech/
-polkadot_network_directory/pulls) per chain. You can easily add a new chain to
-the directory or fix information about an exsting chain.
+Contributions are very welcome in the form of a new [Pull Request](https://github.com/paritytech/polkadot_network_directory/pulls)
+per chain. You can easily add a new chain to the directory or fix information about an exsting chain.
 
 Editing the data is really simple and the only files to edit are located in the
 [chain_info](https://github.com/paritytech/polkadot_network_directory/tree/master/chain_info)
