@@ -1,0 +1,45 @@
+name: Karura
+network_type: mainnet
+para_id: 2000
+chain:
+  type: parachain
+  parent: Kusama
+  consensus: POS
+  sudo: false
+chainspec:
+  http_url: https://raw.githubusercontent.com/AcalaNetwork/Acala/master/resources/acala-dist.json
+goals:
+  - The Decentralized Stablecoin of Kusama
+repository: https://github.com/AcalaNetwork/Acala
+specs:
+  block_time: 12
+  ed: 100000000000
+  decimals: 12
+  token: KAR
+  ss58_format: 10
+contacts:
+  - type: email
+    contact: hello@acala.network
+documentation:
+  - https://wiki.acala.network
+validators: []
+release_cycle: null
+rpc_endpoints:
+  - name: Dwellir
+    url: wss://karura-rpc.dwellir.com
+  - name: Acala Foundation 0
+    url: wss://karura-rpc-0.aca-api.network
+  - name: Acala Foundation 1
+    url: wss://karura-rpc-1.aca-api.network
+  - name: Acala Foundation 2
+    url: wss://karura-rpc-2.aca-api.network/ws
+  - name: Acala Foundation 3
+    url: wss://karura-rpc-3.aca-api.network/ws
+  - name: Polkawallet
+    url: wss://karura.polkawallet.io
+  - name: OnFinality
+    url: wss://karura.api.onfinality.io/public-ws
+api_endpoints: []
+expectations: []
+features: []
+notes: []
