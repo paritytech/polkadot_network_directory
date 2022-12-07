@@ -1,0 +1,47 @@
+name: Acala
+network_type: mainnet
+para_id: 2000
+chain:
+  type: parachain
+  parent: Polkadot
+  consensus: POS
+  sudo: false
+chainspec:
+  http_url: https://raw.githubusercontent.com/AcalaNetwork/Acala/master/resources/acala-dist.json
+goals:
+  - The Decentralized Stablecoin of Polkadot
+repository: https://github.com/AcalaNetwork/Acala
+specs:
+  block_time: 12
+  ed: 100000000000
+  decimals: 12
+  token: ACA
+  ss58_format: 10
+contacts:
+  - type: email
+    contact: hello@acala.network
+documentation:
+  - https://wiki.acala.network
+validators: []
+release_cycle: null
+rpc_endpoints:
+  - name: Dwellir
+    url: wss://acala-rpc.dwellir.com,
+  - name: Acala Foundation 0
+    url: wss://acala-rpc-0.aca-api.network,
+  - name: Acala Foundation 1
+    url: wss://acala-rpc-1.aca-api.network,
+  - name: Acala Foundation 2
+    url: wss://acala-rpc-2.aca-api.network/ws,
+  - name: Acala Foundation 3
+    url: wss://acala-rpc-3.aca-api.network/ws,
+  - name: Polkawallet
+    url: wss://acala.polkawallet.io,
+  - name: OnFinality
+    url: wss://acala-polkadot.api.onfinality.io/public-ws,
+  - name: Automata 1RPC
+    url: wss://1rpc.io/aca
+api_endpoints: []
+expectations: []
+features: []
+notes: []

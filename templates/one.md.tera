@@ -1,6 +1,11 @@
 # {{name}}
 
-repository: [{{ repository }}]({{ repository }})
+- repository: [{{ repository }}]({{ repository }})
+{% if chainspec.http_url -%}
+- chain specs: [{{chainspec.http_url}}]({{chainspec.http_url}})
+{% else -%}
+- chain specs: n/a
+{% endif %}
 
 ## Chain information
 
