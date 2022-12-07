@@ -25,7 +25,7 @@ contacts:
 faucet: '#rococo-faucet:matrix.org'
 rpc_endpoints:
     - name: Parity
-      url:  wss://rococo-rockmine-rpc.polkadot.io
+      url:  wss://rococo-rockmine-rpc.polkadot.io:443
 api_endpoints:
     - name: subscan
       url: https://rockmine.api.subscan.io

@@ -1,7 +1,9 @@
 {
   "name": "Polkadot Network Directory",
   "url": "https://paritytech.github.io/polkadot_network_directory/registry.json",
-  "items": {
+  "labels": ["Generated", "Parity"],
+  "last_updated": "{{ env.DATE }}",
+  "rpc_endpoints": {
 {%- for chain in chains %}
     "{{ chain.name }}": [
 {%- for endpoint in chain.rpc_endpoints %}

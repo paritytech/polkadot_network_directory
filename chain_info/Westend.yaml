@@ -26,7 +26,7 @@ contacts: []
 faucet: "#westend_faucet:matrix.org"
 rpc_endpoints:
     - name: Parity
-      url: wss://westend-rpc.polkadot.io
+      url: wss://westend-rpc.polkadot.io:443
 api_endpoints:
     - name: subscan
       url: https://westend.api.subscan.io

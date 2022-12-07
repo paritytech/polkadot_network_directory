@@ -26,21 +26,21 @@ validators: []
 release_cycle: null
 rpc_endpoints:
   - name: Dwellir
-    url: wss://acala-rpc.dwellir.com
+    url: wss://acala-rpc.dwellir.com:443
   - name: Acala Foundation 0
-    url: wss://acala-rpc-0.aca-api.network
+    url: wss://acala-rpc-0.aca-api.network:443
   - name: Acala Foundation 1
-    url: wss://acala-rpc-1.aca-api.network
+    url: wss://acala-rpc-1.aca-api.network:443
   - name: Acala Foundation 2
-    url: wss://acala-rpc-2.aca-api.network/ws
+    url: wss://acala-rpc-2.aca-api.network:443/ws
   - name: Acala Foundation 3
-    url: wss://acala-rpc-3.aca-api.network/ws
+    url: wss://acala-rpc-3.aca-api.network:443/ws
   - name: Polkawallet
-    url: wss://acala.polkawallet.io
+    url: wss://acala.polkawallet.io:443
   - name: OnFinality
-    url: wss://acala-polkadot.api.onfinality.io/public-ws
+    url: wss://acala-polkadot.api.onfinality.io:443/public-ws
   - name: Automata 1RPC
-    url: wss://1rpc.io/aca
+    url: wss://1rpc.io:443/aca
 api_endpoints: []
 expectations: []
 features: []

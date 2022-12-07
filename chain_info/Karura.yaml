@@ -26,19 +26,19 @@ validators: []
 release_cycle: null
 rpc_endpoints:
   - name: Dwellir
-    url: wss://karura-rpc.dwellir.com
+    url: wss://karura-rpc.dwellir.com:443
   - name: Acala Foundation 0
-    url: wss://karura-rpc-0.aca-api.network
+    url: wss://karura-rpc-0.aca-api.network:443
   - name: Acala Foundation 1
-    url: wss://karura-rpc-1.aca-api.network
+    url: wss://karura-rpc-1.aca-api.network:443
   - name: Acala Foundation 2
-    url: wss://karura-rpc-2.aca-api.network/ws
+    url: wss://karura-rpc-2.aca-api.network:443/ws
   - name: Acala Foundation 3
-    url: wss://karura-rpc-3.aca-api.network/ws
+    url: wss://karura-rpc-3.aca-api.network:443/ws
   - name: Polkawallet
-    url: wss://karura.polkawallet.io
+    url: wss://karura.polkawallet.io:443
   - name: OnFinality
-    url: wss://karura.api.onfinality.io/public-ws
+    url: wss://karura.api.onfinality.io:443/public-ws
 api_endpoints: []
 expectations: []
 features: []

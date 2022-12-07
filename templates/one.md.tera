@@ -35,24 +35,26 @@
 | network type | {{network_type}}    |
 | chain type   | {{chain.type}}      |
 | sudo         | {{ chain.sudo }}    |
-{%- if chain.parent %}
-| consensus    | Same than `{{ chain.parent }}` |
-{% else %}
-{% if chain.consensus %}
-| consensus    | {{ chain.consensus }} |
-{% endif %}
-{% endif -%}
 | decimals    | {{specs.decimals | default(value="n/a")}} |
 | block time    | {{specs.block_time | default(value="n/a")}} second{{ specs.block_time | pluralize }} |
 | token    | {{specs.token | default(value="n/a")}} |
 | ED    | {{specs.ed | default(value="n/a")}} units |
-
+{%- if chain.parent %}
+| consensus    | Same than `{{ chain.parent }}` |
+{% else -%}
+{% if chain.consensus %}
+| consensus    | {{ chain.consensus }} |
+{% endif -%}
+{% endif %}
 
 ## Validators
-
-{% for v in validators -%}
+{%- if validators -%}
+{% for v in validators %}
 - {{ v }}
-{%- endfor %}
+{%- endfor -%}
+{%- else %}
+No information provided.
+{%- endif %}
 
 ## RPC Endpoints
 
@@ -77,20 +79,23 @@ No API endpoint found
 
 ## Release_cycle
 
+{%- if release_cycle -%}
 {{ release_cycle }}
+{%- else %}
+No information provided
+{%- endif %}
 
-{%- if contacts -%}
+{% if contacts -%}
 ## Contacts
 {% for c in contacts -%}
-- {{ c.type }}: {{ c.contact }}
-{% endfor %}
+- {{ c.type }}: `{{ c.contact }}`
+{% endfor -%}
 {%- endif %}
 
 ## Faucet
-
-{% if faucet %}
+{% if faucet -%}
 A faucet can be found at: [`{{ faucet }}`](https://matrix.to/#/{{ faucet }})
-{% else %}
+{% else -%}
 No faucet available
 {% endif %}
 
