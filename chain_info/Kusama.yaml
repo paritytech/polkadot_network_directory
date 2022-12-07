@@ -37,8 +37,8 @@ documentation:
     - https://kusama.network/
 expectations: []
 features:
-    - 'parachains: Parachains can register on Kusama.'
-    - 'governance: openGov.'
-    - 'auctions / crowdloans: Both modules available.'
-    - 'XCM: XCM v2 available on Kusama.'
+    - 'parachains: Parachains can register on Kusama'
+    - 'governance: openGov'
+    - 'auctions / crowdloans: Both modules available'
+    - 'XCM: XCM v2 available on Kusama'
 notes: []
