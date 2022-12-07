@@ -23,7 +23,7 @@ contacts: []
 faucet: '#westend_faucet:matrix.org'
 rpc_endpoints:
     - name: Parity
-      url:  wss://collectives-westmint-rpc.polkadot.io
+      url:  wss://collectives-westmint-rpc.polkadot.io:443
 api_endpoints: []
 documentation: []
 expectations:

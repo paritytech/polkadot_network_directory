@@ -15,13 +15,13 @@ concat_json:
 
 # Render all chains, we probably don't need that
 _render_chains: concat_json
-	@tera --include --env --env-key env --template templates/many.md.tera $chains_json
+	./scripts/generate_chains_md.sh
 
-_render_summary: concat_json
-    @tera --include --env --env-key env --template templates/SUMMARY.md.tera $chains_json
+_render_book: concat_json
+    ./scripts/generate_book.sh
 
 _render_rpc_registry: concat_json
-    tera --include --env --env-key env --template templates/registry.json.tera $chains_json  | jq > $registry_json
+    ./scripts/generate_registry.sh
 
 # Fetch data onchain
 fetch_data chain:
@@ -29,15 +29,13 @@ fetch_data chain:
 	echo Fetching data for {{chain}}
 
 # Render the book
-render: concat_json _render_rpc_registry
-	./scripts/generate_chains_md.sh
-	./scripts/generate_book.sh
-	./scripts/generate_registry.sh
+render: concat_json _render_rpc_registry _render_chains _render_book
 
 # Serve the book locally
 serve:
 	#!/usr/bin/env bash
-	pushd directory
+	pushd directory || exit
+	open http://localhost:3000/
 	mdbook serve
 
 # Cleanup generated files

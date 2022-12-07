@@ -28,6 +28,6 @@ documentation:
     - https://wiki.polkadot.network/docs/kusama-statemine
 rpc_endpoints:
     - name: Parity
-      url: wss://statemine-rpc.polkadot.io
+      url: wss://statemine-rpc.polkadot.io:443
 features: []
 notes: []

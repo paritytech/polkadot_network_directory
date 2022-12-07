@@ -27,7 +27,7 @@ faucet: '#westend_faucet:matrix.org'
 documentation: []
 rpc_endpoints:
     - name: Parity
-      url:  wss://westend-westmint-rpc.polkadot.io
+      url:  wss://westend-westmint-rpc.polkadot.io:443
 api_endpoints: []
 expectations:
     - 'parity: Run collator nodes; upgrade runtime'

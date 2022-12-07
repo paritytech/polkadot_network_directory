@@ -30,7 +30,7 @@ contacts:
 faucet: null
 rpc_endpoints:
     - name: Parity
-      url: wss://rpc.polkadot.io
+      url: wss://rpc.polkadot.io:443
 api_endpoints:
     - name: subscan
       url: https://polkadot.api.subscan.io

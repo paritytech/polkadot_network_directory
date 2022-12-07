@@ -29,7 +29,7 @@ contacts:
 faucet: null
 rpc_endpoints:
     - name: Parity
-      url: wss://kusama-rpc.polkadot.io
+      url: wss://kusama-rpc.polkadot.io:443
 api_endpoints:
     - name: subscan
       url: https://kusama.api.subscan.io
