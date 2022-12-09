@@ -1,0 +1,54 @@
+name: Moonbase Alpha
+network_type: testnet
+para_id: 1000
+chain:
+  type: parachain
+  parent: Moonbase Relay (based on Westend)
+  consensus: POS
+  sudo: true
+chainspec:
+  http_url: https://raw.githubusercontent.com/PureStake/moonbeam/master/specs/alphanet/parachain-embedded-specs-v8.json
+goals:
+  - Moonbeam testnet enviroment.
+  - XCM Playground for Parachains who want to interact with Moonbeam or Moonriver.
+repository: https://github.com/PureStake/moonbeam
+validators:
+  - Purestake nodes and Moonbeam Foundation nodes and Community nodes
+release_cycle: "Following the Moonbeam release cycle"
+specs:
+  block_time: 12
+  era: null
+  ed: 1000000000
+  lease_period: null
+  decimals: 18
+  token: DEV
+  ss58_format: 1287
+contacts:
+  - type: matrix
+    contact: "#moonbeam:matrix.parity.io"
+  - type: telegram
+    url: "https://t.me/Moonbeam_Official"
+  - type: website
+    url: https://moonbeam.network/contact/
+faucet: https://apps.moonbeam.network/moonbase-alpha/faucet
+documentation:
+  - https://docs.moonbeam.network/
+rpc_endpoints:
+  - name: Blast
+    url: wss://moonbase-alpha.public.blastapi.io
+  - name: Moonbeam Foundation
+    url: wss://wss.api.moonbase.moonbeam.network
+  - name: OnFinality
+    url: wss://moonbeam-alpha.api.onfinality.io/public-ws
+  - name: PinkNode
+    url: wss://public-rpc.pinknode.io/alphanet
+api_endpoints:
+    - name: subscan
+      url: https://moonbase.subscan.io/
+    - name: blockscout
+      url: https://moonbase-blockscout.testnet.moonbeam.network/
+expectations:
+  - "purestake: Run the nodes for the system; keep the system updated (runtime and nodes) in line with Moonbeam/Moonriver updates; manage parachain onboarding (see contacts)"
+  - "community: Test potential integrations with Moon* networks."
+features: []
+notes: []

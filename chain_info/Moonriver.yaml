@@ -1,0 +1,50 @@
+name: Moonriver
+network_type: mainnet
+para_id: 2023
+chain:
+  type: parachain
+  parent: Kusama
+  consensus: POS
+  sudo: false
+chainspec:
+  http_url: https://raw.githubusercontent.com/PureStake/moonbeam/master/specs/moonriver/parachain-embedded-specs.json
+goals: []
+repository: https://github.com/PureStake/moonbeam
+validators:
+  - Community nodes
+release_cycle: "Following the Moonbeam release cycle"
+specs:
+  block_time: 12
+  era: null
+  ed: 1000000000
+  lease_period: null
+  decimals: 18
+  token: MOVR
+  ss58_format: 1285
+contacts:
+  - type: matrix
+    contact: "#moonbeam:matrix.parity.io"
+  - type: telegram
+    url: "https://t.me/Moonbeam_Official"
+  - type: website
+    url: https://moonbeam.network/contact/
+faucet: null
+documentation:
+  - https://docs.moonbeam.network/
+rpc_endpoints:
+  - name: Blast
+    url: wss://moonriver.public.blastapi.io
+  - name: Moonbeam Foundation
+    url: wss://wss.api.moonriver.moonbeam.network
+  - name: OnFinality
+    url: wss://moonriver.api.onfinality.io/public-ws
+  - name: PinkNode
+    url: wss://public-rpc.pinknode.io/moonriver
+api_endpoints:
+    - name: subscan
+      url: https://moonriver.subscan.io/
+    - name: blockscout
+      url: https://blockscout.moonriver.moonbeam.network/
+expectations: []
+features: []
+notes: []
