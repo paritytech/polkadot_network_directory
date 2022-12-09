@@ -5,12 +5,13 @@ chain:
     parent: Rococo
     # consensus: n/a
     sudo: true
+    para_id: 1000
 goals:
     - "Rococo's testnet parachain for Statemine/t"
 repository: https://github.com/paritytech/cumulus
 validators:
-  - Parity Only
-release_cycle: 'Following the Polkadot 3 weeks cycle'
+    - Parity Only
+release_cycle: "Following the Polkadot 3 weeks cycle"
 specs:
     block_time: 12
     era: null
@@ -22,17 +23,17 @@ specs:
 contacts:
     - type: github
       contact: https://github.com/paritytech/subport
-faucet: '#rococo-faucet:matrix.org'
+faucet: "#rococo-faucet:matrix.org"
 rpc_endpoints:
     - name: Parity
-      url:  wss://rococo-rockmine-rpc.polkadot.io:443
+      url: wss://rococo-rockmine-rpc.polkadot.io:443
 api_endpoints:
     - name: subscan
       url: https://rockmine.api.subscan.io
 documentation: []
 expectations:
-    - 'parity: Run collator nodes; upgrade runtime'
-    - 'community: Test potential integrations with Statemine/t parachain'
+    - "parity: Run collator nodes; upgrade runtime"
+    - "community: Test potential integrations with Statemine/t parachain"
 features:
-    - 'asset_management: available on Rockmine'
+    - "asset_management: available on Rockmine"
 notes: []

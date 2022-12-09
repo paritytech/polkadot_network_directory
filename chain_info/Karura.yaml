@@ -1,11 +1,11 @@
 name: Karura
 network_type: mainnet
-para_id: 2000
 chain:
   type: parachain
   parent: Kusama
   consensus: POS
   sudo: false
+  para_id: 2000
 chainspec:
   http_url: https://raw.githubusercontent.com/AcalaNetwork/Acala/master/resources/acala-dist.json
 goals:

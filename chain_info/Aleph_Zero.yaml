@@ -1,10 +1,10 @@
 name: Aleph Zero
 network_type: solo_mainnet
 chain:
-    type: solo
-    # parent: n/a
-    consensus: null
-    sudo: true
+  type: solo
+  # parent: n/a
+  consensus: null
+  sudo: true
 chainspec:
   http_url: null
 goals: []
@@ -12,18 +12,18 @@ repository: https://github.com/aleph-zero-foundation/aleph-node
 validators: []
 release_cycle: null
 specs:
-    block_time: 1
-    era: null
-    ed: null
-    decimals: 12
-    token: AZERO
-    ss58_format: 42
+  block_time: 1
+  era: null
+  ed: null
+  decimals: 12
+  token: AZERO
+  ss58_format: 42
 contacts: []
 faucet: null
 documentation: []
 rpc_endpoints:
-    - name: Aleph Zero Fundation
-      url: wss://ws.azero.dev:443
+  - name: Aleph Zero Fundation
+    url: wss://ws.azero.dev:443
 expectations: []
 features: []
 notes: []

@@ -1,33 +1,34 @@
 name: Statemine
 network_type: canarynet
 chain:
-    type: parachain
-    parent: Kusama
-    # consensus: n/a
-    sudo: false
+  type: parachain
+  parent: Kusama
+  # consensus: n/a
+  sudo: false
+  para_id: 1000
 chainspec:
   http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/statemine.json
 goals:
-    - Statemine handles your assets, whether fungible or not (NFT)
+  - Statemine handles your assets, whether fungible or not (NFT)
 expectations: []
 repository: https://github.com/paritytech/cumulus
 validators:
   - Open
-release_cycle: 'Following the Polkadot 3 weeks cycle'
+release_cycle: "Following the Polkadot 3 weeks cycle"
 specs:
-    block_time: 12
-    era: null
-    ed: 3333333
-    lease_period: null
-    decimals: 12
-    token: KSM
-    ss58_format: null
+  block_time: 12
+  era: null
+  ed: 3333333
+  lease_period: null
+  decimals: 12
+  token: KSM
+  ss58_format: null
 contacts: []
 faucet: null
 documentation:
-    - https://wiki.polkadot.network/docs/kusama-statemine
+  - https://wiki.polkadot.network/docs/kusama-statemine
 rpc_endpoints:
-    - name: Parity
-      url: wss://statemine-rpc.polkadot.io:443
+  - name: Parity
+    url: wss://statemine-rpc.polkadot.io:443
 features: []
 notes: []

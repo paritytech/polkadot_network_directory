@@ -10,7 +10,7 @@
 - [{{relay.name}}](chains/{{relay.name | replace(from=" ", to="_") }}/{{relay.name | replace(from=" ", to="_")}}.md)
 {%- for para in chains %}
 {%- if para.chain.parent and para.chain.parent == relay.name%}
-  - [{{para.name}}](chains/{{relay.name | replace(from=" ", to="_")}}/{{para.name | replace(from=" ", to="_")}}.md)
+  - [{{para.name}}: `{{para.chain.para_id | default(value="n/a")}}`](chains/{{relay.name | replace(from=" ", to="_")}}/{{para.name | replace(from=" ", to="_")}}.md)
 {%- endif -%}
 {% endfor %}
 {% endif -%}
@@ -25,7 +25,7 @@
 - [{{relay.name}}](chains/{{relay.name | replace(from=" ", to="_") }}/{{relay.name | replace(from=" ", to="_")}}.md)
 {%- for para in chains %}
 {%- if para.chain.parent and para.chain.parent == relay.name%}
-  - [{{para.name}}](chains/{{relay.name | replace(from=" ", to="_")}}/{{para.name | replace(from=" ", to="_")}}.md)
+  - [{{para.name}}: `{{para.chain.para_id | default(value="n/a")}}`](chains/{{relay.name | replace(from=" ", to="_")}}/{{para.name | replace(from=" ", to="_")}}.md)
 {%- endif -%}
 {% endfor %}
 {% endif -%}
@@ -40,7 +40,7 @@
 - [{{relay.name}}](chains/{{relay.name | replace(from=" ", to="_") }}/{{relay.name | replace(from=" ", to="_")}}.md)
 {%- for para in chains %}
 {%- if para.chain.parent and para.chain.parent == relay.name%}
-  - [{{para.name}}](chains/{{relay.name | replace(from=" ", to="_")}}/{{para.name | replace(from=" ", to="_")}}.md)
+  - [{{para.name}}: `{{para.chain.para_id | default(value="n/a")}}`](chains/{{relay.name | replace(from=" ", to="_")}}/{{para.name | replace(from=" ", to="_")}}.md)
 {%- endif -%}
 {% endfor %}
 {% endif -%}
