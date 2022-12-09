@@ -45,6 +45,9 @@
 {% if chain.consensus %}
 | consensus    | {{ chain.consensus }} |
 {% endif -%}
+{% endif -%}
+{%- if chain.para_id -%}
+| Parachain ID    | {{ chain.para_id }} |
 {% endif %}
 
 ## Validators

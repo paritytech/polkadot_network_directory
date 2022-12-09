@@ -1,11 +1,11 @@
 name: Tinkernet
 network_type: mainnet
-para_id: 2125
 chain:
   type: parachain
   parent: Kusama
   consensus: POS
   sudo: true
+  para_id: 2125
 chainspec:
   http_url: https://raw.githubusercontent.com/InvArch/InvArch-Node/main/res/tinker/tinker-raw.json
 goals:
