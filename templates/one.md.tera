@@ -77,13 +77,13 @@ No RPC endpoint found
 No API endpoint found
 {%- endif %}
 
-## Release_cycle
+## Release Cycle
 
-{%- if release_cycle -%}
+{% if release_cycle %}
 {{ release_cycle }}
-{%- else %}
+{% else %}
 No information provided
-{%- endif %}
+{% endif %}
 
 {% if contacts -%}
 ## Contacts
