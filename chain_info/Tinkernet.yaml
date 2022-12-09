@@ -1,0 +1,37 @@
+name: Tinkernet
+network_type: mainnet
+para_id: 2125
+chain:
+  type: parachain
+  parent: Kusama
+  consensus: POS
+  sudo: true
+chainspec:
+  http_url: https://raw.githubusercontent.com/InvArch/InvArch-Node/main/res/tinker/tinker-raw.json
+goals:
+  - The Bleeding-Edge Of The Creator Economy.
+  - The InvArch Canary Parachain On The Kusama Network.
+repository: https://github.com/InvArch/InvArch-Node
+specs:
+  block_time: 12
+  ed: 1000000000
+  decimals: 12
+  token: TNKR
+  ss58_format: 117
+contacts:
+  - type: email
+    contact: dakota@invarch.network
+  - type: email
+    contact: gabriel@invarch.network
+documentation: []
+validators: []
+release_cycle: null
+rpc_endpoints:
+  - name: InvArch Team
+    url: wss://tinker.invarch.network
+  - name: OnFinality
+    url: wss://invarch-tinkernet.api.onfinality.io/public-ws
+api_endpoints: []
+expectations: []
+features: []
+notes: []
