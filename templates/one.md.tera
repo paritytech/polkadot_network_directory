@@ -47,7 +47,7 @@
 {% endif -%}
 {% endif -%}
 {%- if chain.para_id -%}
-| Parachain ID    | {{ chain.para_id }} |
+| Parachain ID    | `{{ chain.para_id }}` |
 {% endif %}
 
 ## Validators
