@@ -1,0 +1,35 @@
+name: Bajun
+network_type: mainnet
+chain:
+  type: parachain
+  parent: kusama
+  consensus: null
+  sudo: true
+  para_id: 2119
+chainspec:
+  http_url: https://raw.githubusercontent.com/ajuna-network/Ajuna/main/resources/bajun/bajun-raw.json
+goals: []
+repository: https://github.com/ajuna-network/Ajuna
+specs:
+  block_time: 12
+  ed: 1000000000
+  decimals: 12
+  token: BAJU
+  ss58_format: 1337
+contacts:
+  - type: email
+    contact: hello@ajuna.io
+documentation: []
+validators: []
+release_cycle: null
+rpc_endpoints:
+  - name: AjunaNetwork
+    url: "wss://rpc-parachain.bajun.network"
+  - name: Dwellir
+    url: "wss://bajun-rpc.dwellir.com"
+  - name: OnFinality
+    url: "wss://bajun.api.onfinality.io/public-ws"
+api_endpoints: []
+expectations: []
+features: []
+notes: []
