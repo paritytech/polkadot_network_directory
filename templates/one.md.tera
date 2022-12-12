@@ -86,7 +86,7 @@ No API endpoint found
 {{ release_cycle }}
 {% else -%}
 No information provided
-{%- endif -%}
+{% endif -%}
 
 {% if contacts -%}
 ## Contacts
