@@ -2,7 +2,7 @@ name: Bajun
 network_type: mainnet
 chain:
   type: parachain
-  parent: kusama
+  parent: Kusama
   consensus: null
   sudo: true
   para_id: 2119
