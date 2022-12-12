@@ -1,11 +1,11 @@
 name: Moonbeam
 network_type: mainnet
-para_id: 2004
 chain:
   type: parachain
   parent: Polkadot
   consensus: POS
   sudo: false
+  para_id: 2004
 chainspec:
   http_url: https://raw.githubusercontent.com/PureStake/moonbeam/master/specs/moonbeam/parachain-embedded-specs.json
 goals: []
