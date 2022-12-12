@@ -2,7 +2,7 @@ name: Ajuna
 network_type: mainnet
 chain:
   type: parachain
-  parent: polkadot
+  parent: Polkadot
   consensus: null
   sudo: true
   para_id: 2051
