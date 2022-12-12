@@ -1,0 +1,42 @@
+name: Moonbase Relay
+network_type: testnet
+chain:
+    type: relaychain
+    # parent: n/a
+    consensus: Aura
+    sudo: true
+chainspec:
+    http_url: https://github.com/PureStake/moonbeam-networks/blob/master/networks/alphanet/westend-raw-specs.json
+# parent: n/a
+goals:
+    - Relay chain for Moonbase Alpha and other parachains who want to tests in interactions with moonbase.
+repository: https://github.com/paritytech/polkadot
+validators:
+    - Purestake nodes only.
+release_cycle: "Following the Polkadot release cycle."
+specs:
+    block_time: 6
+    era: null
+    ed: 10000000000
+    lease_period: 403200
+    decimals: 12
+    token: UNIT
+    ss58_format: 42
+contacts:
+  - type: matrix
+    contact: "#moonbeam:matrix.parity.io"
+  - type: telegram
+    url: "https://t.me/Moonbeam_Official"
+  - type: website
+    url: https://moonbeam.network/contact/
+faucet: null
+rpc_endpoints:
+    - name: Purestake
+      url: wss://frag-moonbase-relay-rpc-ws.g.moonbase.moonbeam.network
+api_endpoints: []
+documentation: []
+expectations:
+  - "purestake: Run the nodes for the system; keep the system updated (runtime and nodes); manage parachain onboarding (see contacts)" 
+features: []
+notes:
+  - Based on Westend.
