@@ -2,7 +2,7 @@ name: Moonbase Alpha
 network_type: testnet
 chain:
   type: parachain
-  parent: Moonbase Relay (based on Westend)
+  parent: Moonbase Relay
   consensus: POS
   sudo: true
   para_id: 1000
