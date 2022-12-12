@@ -1,11 +1,11 @@
 name: Moonbase Alpha
 network_type: testnet
-para_id: 1000
 chain:
   type: parachain
   parent: Moonbase Relay (based on Westend)
   consensus: POS
   sudo: true
+  para_id: 1000
 chainspec:
   http_url: https://raw.githubusercontent.com/PureStake/moonbeam/master/specs/alphanet/parachain-embedded-specs-v8.json
 goals:
