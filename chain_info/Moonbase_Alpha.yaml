@@ -44,7 +44,7 @@ rpc_endpoints:
     url: wss://public-rpc.pinknode.io/alphanet
 api_endpoints:
     - name: subscan
-      url: https://moonbase.subscan.io/
+      url: https://moonbase.api.subscan.io
     - name: blockscout
       url: https://moonbase-blockscout.testnet.moonbeam.network/
 expectations:
