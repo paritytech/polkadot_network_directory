@@ -10,7 +10,7 @@ chainspec:
 # parent: n/a
 goals:
     - Relay chain for Moonbase Alpha and other parachains who want to tests in interactions with moonbase.
-repository: https://github.com/paritytech/polkadot
+repository: https://github.com/PureStake/polkadot
 validators:
     - Purestake nodes only.
 release_cycle: "Following the Polkadot release cycle."
