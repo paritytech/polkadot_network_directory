@@ -1,0 +1,53 @@
+name: Astar
+network_type: mainnet
+chain:
+  type: parachain
+  parent: Polkadot
+  consensus: POS
+  sudo: true
+  para_id: 2006
+chainspec:
+  http_url: https://raw.githubusercontent.com/AstarNetwork/Astar/master/bin/collator/res/astar.json
+goals:
+  - The Future of Smart Contracts for Multichain
+repository: https://github.com/AstarNetwork/Astar
+specs:
+  block_time: 12
+  ed: 1000000
+  decimals: 18
+  token: ASTR
+  ss58_format: 5
+contacts:
+  - type: email
+    contact: info@astar.network
+documentation:
+  - https://docs.astar.network/
+validators: []
+release_cycle: []
+rpc_endpoints:
+  - name: BlastAPI (WSS)
+    url: https://astar.public.blastapi.io
+  - name: Dwellir (WSS)
+    url: https://astar-rpc.dwellir.com
+  - name: OnFinality (WSS)
+    url: https://astar.api.onfinality.io/public
+  - name: Pinknode (WSS)
+    url: wss://public-rpc.pinknode.io/astar
+  - name: Automata 1RPC (WSS)
+    url: wss://1rpc.io/astr
+  - name: BlastAPI (HTTPS)
+    url: https://astar.public.blastapi.io
+  - name: Dwellir (HTTPS)
+    url: https://astar-rpc.dwellir.com
+  - name: OnFinality (HTTPS)
+    url: https://astar.api.onfinality.io/public
+  - name: Automata 1RPC (HTTPS)
+    url: https://1rpc.io/astr
+  - name: Alchemy
+    url: https://www.alchemy.com/astar 
+api_endpoints: [] 
+expectations: []
+features: []
+notes: []
+faucet:
+ - https://docs.astar.network/docs/quickstart/faucet
