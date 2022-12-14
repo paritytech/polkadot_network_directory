@@ -1,0 +1,35 @@
+name: Anagolay
+network_type: solo_mainnet
+chain:
+  type: solo
+  consensus: PoA
+  sudo: true
+goals: []
+repository: https://github.com/anagolay/anagolay-chain
+validators: []
+release_cycle: null
+specs:
+  block_time: 6
+  era: null
+  ed: null
+  decimals: 12
+  token: AGY
+  ss58_format: 42
+contact:
+  - type: matrix
+    contact: "@woss:matrix.org"
+  - type: matrix
+    contact: "#anagolay-general:matrix.org"
+  - type: website
+    url: https://mastodon.social/@anagolay
+  - type: website
+    url: https://anagolay.network
+faucet: null
+documentation: 
+  - type: website
+    url: https://anagolay.dev/
+rpc_endpoints: []
+expectations: []
+features: []
+notes: 
+  - not yet launched
