@@ -38,6 +38,10 @@ serve:
 	open http://localhost:3000/
 	mdbook serve
 
+# watch the files under the chain_info and render them
+watch: 
+	watchexec -w chain_info -- just render
+
 # Cleanup generated files
 clean:
 	rm -rf directory/book

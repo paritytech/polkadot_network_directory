@@ -1,0 +1,9 @@
+tasks:
+  - init: |
+      brew install yq mdbook just watchexec
+      cargo install --git https://github.com/chevdor/tera-cli
+  - command: just render && just serve
+
+ports:
+  - port: 3000
+    onOpen: open-preview
