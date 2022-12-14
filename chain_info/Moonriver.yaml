@@ -42,7 +42,7 @@ rpc_endpoints:
     url: wss://public-rpc.pinknode.io/moonriver
 api_endpoints:
     - name: subscan
-      url: moonriver.api.subscan.io
+      url: https://moonriver.api.subscan.io
     - name: blockscout
       url: https://blockscout.moonriver.moonbeam.network/
 expectations: []
