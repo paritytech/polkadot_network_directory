@@ -45,7 +45,9 @@ rpc_endpoints:
     url: https://1rpc.io/astr
   - name: Alchemy
     url: https://www.alchemy.com/astar 
-api_endpoints: [] 
+api_endpoints:
+  - name: subscan
+    url: https://astar.subscan.io/
 expectations: []
 features: []
 notes: []

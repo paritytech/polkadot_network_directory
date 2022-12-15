@@ -43,7 +43,9 @@ rpc_endpoints:
     url: https://shiden-rpc.dwellir.com
   - name: OnFinality (HTTPS)
     url: https://shiden.api.onfinality.io/public
-api_endpoints: [] 
+api_endpoints:
+  - name: subscan
+    url: https://shiden.subscan.io/
 expectations: []
 features: []
 notes: []
