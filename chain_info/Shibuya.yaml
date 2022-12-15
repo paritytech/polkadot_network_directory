@@ -1,4 +1,4 @@
-name: Shiden
+name: Shibuya
 network_type: testnet
 chain:
   type: parachain
@@ -29,16 +29,18 @@ rpc_endpoints:
   - name: BlastAPI (WSS)
     url: wss://shiden.public.blastapi.io
   - name: Dwellir (WSS)
-    url: wss://shiden-rpc.dwellir.com
+    url: wss://shibuya-rpc.dwellir.com
   - name: OnFinality (WSS)
-    url: wss://shiden.api.onfinality.io/public-ws
+    url: wss://shibuya.api.onfinality.io/public-ws
   - name: BlastAPI (HTTPS)
-    url: https://shiden.public.blastapi.io
+    url: https://shibuya.public.blastapi.io
   - name: Dwellir (HTTPS)
-    url: https://shiden-rpc.dwellir.com
+    url: https://shibuya-rpc.dwellir.com
   - name: OnFinality (HTTPS)
-    url: https://shiden.api.onfinality.io/public
-api_endpoints: [] 
+    url: https://shibuya.api.onfinality.io/public
+api_endpoints:
+  - name: subscan
+    url: https://shibuya.subscan.io/
 expectations: []
 features: []
 notes: []
