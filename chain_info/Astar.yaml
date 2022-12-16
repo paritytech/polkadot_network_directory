@@ -26,11 +26,11 @@ validators: []
 release_cycle: []
 rpc_endpoints:
   - name: BlastAPI (WSS)
-    url: https://astar.public.blastapi.io
+    url: wss://astar.public.blastapi.io
   - name: Dwellir (WSS)
-    url: https://astar-rpc.dwellir.com
+    url: wss://astar-rpc.dwellir.com
   - name: OnFinality (WSS)
-    url: https://astar.api.onfinality.io/public
+    url: wss://astar.api.onfinality.io/public-ws
   - name: Pinknode (WSS)
     url: wss://public-rpc.pinknode.io/astar
   - name: Automata 1RPC (WSS)
