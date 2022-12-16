@@ -2,7 +2,7 @@ name: Shibuya
 network_type: testnet
 chain:
   type: parachain
-  parent: Tokyo relay chain (hosted by Astar Foundation)
+  parent: Tokyo
   consensus: POS
   sudo: true
   para_id: 1000

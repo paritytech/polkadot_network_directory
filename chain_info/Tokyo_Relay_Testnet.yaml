@@ -1,0 +1,38 @@
+name: Tokyo
+network_type: testnet
+chain:
+    type: relaychain
+    # parent: n/a
+    consensus: POA
+    sudo: true
+chainspec:
+    http_url: https://raw.githubusercontent.com/AstarNetwork/Astar/master/bin/collator/res/tokyo.json
+goals:
+    - Astar Network testnet relay chain (for Shiubuya testnet).
+repository: https://github.com/AstarNetwork/Astar
+validators:
+    - Astar only
+release_cycle: []
+specs:
+    block_time: 6
+#    era: 42
+    ed: 33333333
+    lease_period: 14400
+    decimals: 18
+    token: TKY
+    ss58_format: 42
+contacts:
+  - type: email
+    contact: info@astar.network
+faucet: []
+rpc_endpoints:
+    - name: Astar
+      url: wss://tokyo.astar.network
+api_endpoints: []
+documentation:
+  - https://docs.astar.network/
+expectations:
+    - "Tokyo relay purpose is to validate Shibuya testnet and occasionally onboard testnet parachains for use cases not possible to test on Rococo."
+features:
+    - "parachains: Partner parachains can register on Tokyo in case of collaboration projects"
+    - "XCM: XCM v2 available on Tokyo"
