@@ -26,12 +26,16 @@ documentation:
 validators: []
 release_cycle: []
 rpc_endpoints:
+  - name: Astar Team (WSS)
+    url: wss://rpc.shibuya.astar.network
   - name: BlastAPI (WSS)
     url: wss://shiden.public.blastapi.io
   - name: Dwellir (WSS)
     url: wss://shibuya-rpc.dwellir.com
   - name: OnFinality (WSS)
     url: wss://shibuya.api.onfinality.io/public-ws
+  - name: Astar Team (HTTPS, only EVM/Ethereum RPC available)
+    url: https://evm.shibuya.astar.network
   - name: BlastAPI (HTTPS)
     url: https://shibuya.public.blastapi.io
   - name: Dwellir (HTTPS)
