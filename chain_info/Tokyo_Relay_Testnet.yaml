@@ -36,3 +36,4 @@ expectations:
 features:
     - "parachains: Partner parachains can register on Tokyo in case of collaboration projects"
     - "XCM: XCM v2 available on Tokyo"
+    
