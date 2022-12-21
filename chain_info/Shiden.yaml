@@ -31,12 +31,16 @@ documentation:
 validators: []
 release_cycle: []
 rpc_endpoints:
+  - name: Astar Team (WSS)
+    url: wss://rpc.shiden.astar.network
   - name: BlastAPI (WSS)
     url: wss://shiden.public.blastapi.io
   - name: Dwellir (WSS)
     url: wss://shiden-rpc.dwellir.com
   - name: OnFinality (WSS)
     url: wss://shiden.api.onfinality.io/public-ws
+  - name: Astar Team (HTTPS)
+    url: https://evm.shiden.astar.network
   - name: BlastAPI (HTTPS)
     url: https://shiden.public.blastapi.io
   - name: Dwellir (HTTPS)
