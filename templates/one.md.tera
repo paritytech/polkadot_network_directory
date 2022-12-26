@@ -40,7 +40,7 @@
 | token    | {{specs.token | default(value="n/a")}} |
 | ED    | {{specs.ed | default(value="n/a")}} units |
 {%- if chain.parent %}
-| consensus    | Same than `{{ chain.parent }}` |
+| consensus    | Same as `{{ chain.parent }}` |
 {% else -%}
 {% if chain.consensus %}
 | consensus    | {{ chain.consensus }} |
