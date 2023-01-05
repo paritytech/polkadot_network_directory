@@ -1,0 +1,35 @@
+name: Phala
+network_type: mainnet
+chain:
+  type: parachain
+  parent: Polkadot
+  consensus: POS
+  sudo: false
+  para_id: 2035
+chainspec:
+  http_url: https://github.com/Phala-Network/khala-parachain/raw/main/node/res/phala.json
+goals:
+  - Phala Network is a decentralized cloud that offers secure and scalable computing for Web3.
+repository: https://github.com/Phala-Network/khala-parachain
+specs:
+  block_time: 12
+  ed: 100000000000
+  decimals: 12
+  token: PHA
+  ss58_format: 30
+contacts:
+  - type: email
+    contact: support@phala.network
+documentation:
+  - https://wiki.phala.network
+validators: []
+release_cycle: null
+rpc_endpoints:
+  - name: OnFinality
+    url: wss://phala.api.onfinality.io:443/public-ws
+  - name: Phala
+    url: wss://api.phala.network:443/ws
+api_endpoints: []
+expectations: []
+features: []
+notes: []
