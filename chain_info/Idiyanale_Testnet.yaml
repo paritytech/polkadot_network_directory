@@ -1,0 +1,39 @@
+name: Idiyanale Testnet
+network_type: solo_testnet
+chain:
+  type: solo
+  consensus: PoA
+  parent: Anagolay
+  sudo: true
+chainspec:
+  http_url: https://github.com/anagolay/anagolay-chain/blob/main/resources/idiyanale/spec.json
+goals: []
+repository: https://github.com/anagolay/anagolay-chain
+validators: []
+release_cycle: null
+specs:
+  block_time: 6
+  era: null
+  ed: null
+  decimals: 12
+  token: IDI
+  ss58_format: 42
+contact:
+  - type: matrix
+    contact: "@woss:matrix.org"
+  - type: matrix
+    contact: "#anagolay-general:matrix.org"
+  - type: website
+    url: https://mastodon.social/@anagolay
+  - type: website
+    url: https://anagolay.network/idiyanale
+faucet: null
+documentation: 
+  - type: website
+    url: https://anagolay.dev/
+rpc_endpoints:
+  - name: Idiyanale Testnet
+    url: wss://idiyanale-testnet.anagolay.io
+expectations: []
+features: []
+notes: []
