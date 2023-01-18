@@ -1,0 +1,36 @@
+name: Basilisk
+network_type: mainnet
+chain:
+  type: parachain
+  parent: Kusama
+  consensus: POS
+  sudo: false
+  para_id: 2090
+chainspec:
+  http_url: https://github.com/galacticcouncil/Basilisk-node/blob/master/node/res/basilisk.json
+goals:
+  - Brings permissionless liquidity to Kusama.
+  - Support young projects. Swap tokens or flip NFTs and earn rewards.
+repository: https://github.com/galacticcouncil/Basilisk-node
+specs:
+  block_time: 12
+  ed: 1000000000000
+  decimals: 12
+  token: BSX
+  ss58_format: 10041
+contacts:
+  - type: telegram
+    url: https://t.me/bsx_fi
+documentation:
+  - https://docs.bsx.fi/
+validators: []
+release_cycle: null
+rpc_endpoints:
+  - name: Dwellir
+    url: wss://basilisk-rpc.dwellir.com
+  - name: Basilisk
+    url: wss://rpc.basilisk.cloud
+api_endpoints: []
+expectations: []
+features: []
+notes: []

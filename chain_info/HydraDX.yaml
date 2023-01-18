@@ -1,0 +1,36 @@
+name: HydraDX
+network_type: mainnet
+chain:
+  type: parachain
+  parent: Polkadot
+  consensus: POS
+  sudo: false
+  para_id: 2034
+chainspec:
+  http_url: https://github.com/galacticcouncil/HydraDX-node/blob/master/node/res/hydradx.json
+goals:
+  - An Ocean of Liquidity for Polkadot.
+  - Trade an abundance of assets in a single pool.
+repository: https://github.com/galacticcouncil/HydraDX-node
+specs:
+  block_time: 12
+  ed: 1000000000000
+  decimals: 12
+  token: HDX
+  ss58_format: 63
+contacts:
+  - type: telegram
+    url: https://t.me/hydradx
+documentation:
+  - https://docs.hydradx.io/
+validators: []
+release_cycle: null
+rpc_endpoints:
+  - name: Dwellir
+    url: wss://hydradx-rpc.dwellir.com
+  - name: HydraDX
+    url: wss://rpc.hydradx.cloud
+api_endpoints: []
+expectations: []
+features: []
+notes: []
