@@ -9,8 +9,8 @@ chain:
 chainspec:
   http_url: https://raw.githubusercontent.com/InvArch/InvArch-Node/main/res/tinker/tinker-raw.json
 goals:
-  - The Bleeding-Edge Of The Creator Economy.
-  - The InvArch Canary Parachain On The Kusama Network.
+  - The Bleeding-Edge Of The Creator Economy
+  - The InvArch Canary Parachain On The Kusama Network
 repository: https://github.com/InvArch/InvArch-Node
 specs:
   block_time: 12

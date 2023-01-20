@@ -7,11 +7,11 @@ chain:
     sudo: true
     para_id: 1000
 goals:
-    - "Rococo's testnet parachain for Statemine/t"
+    - Rococo's testnet parachain for Statemine/t
 repository: https://github.com/paritytech/cumulus
 validators:
     - Parity Only
-release_cycle: "Following the Polkadot 3 weeks cycle"
+release_cycle: Following the Polkadot 3 weeks cycle
 specs:
     block_time: 12
     era: null

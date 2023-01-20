@@ -28,7 +28,7 @@ contact:
   - type: website
     url: https://anagolay.network/idiyanale
 faucet: null
-documentation: 
+documentation:
   - type: website
     url: https://anagolay.dev/
 rpc_endpoints:

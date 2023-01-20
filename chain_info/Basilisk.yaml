@@ -20,7 +20,7 @@ specs:
   ss58_format: 10041
 contacts:
   - type: telegram
-    url: https://t.me/bsx_fi
+    contact: https://t.me/bsx_fi
 documentation:
   - https://docs.bsx.fi/
 validators: []

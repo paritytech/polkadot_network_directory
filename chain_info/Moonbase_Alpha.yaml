@@ -9,12 +9,12 @@ chain:
 chainspec:
   http_url: https://raw.githubusercontent.com/PureStake/moonbeam/master/specs/alphanet/parachain-embedded-specs-v8.json
 goals:
-  - Moonbeam testnet enviroment.
-  - XCM Playground for Parachains who want to interact with Moonbeam or Moonriver.
+  - Moonbeam testnet enviroment
+  - XCM Playground for Parachains who want to interact with Moonbeam or Moonriver
 repository: https://github.com/PureStake/moonbeam
 validators:
   - Purestake nodes and Moonbeam Foundation nodes and Community nodes
-release_cycle: "Following the Moonbeam release cycle"
+release_cycle: Following the Moonbeam release cycle
 specs:
   block_time: 12
   era: null
@@ -27,9 +27,9 @@ contacts:
   - type: matrix
     contact: "#moonbeam:matrix.parity.io"
   - type: telegram
-    url: "https://t.me/Moonbeam_Official"
+    contact: https://t.me/Moonbeam_Official
   - type: website
-    url: https://moonbeam.network/contact/
+    contact: https://moonbeam.network/contact/
 faucet: https://apps.moonbeam.network/moonbase-alpha/faucet
 documentation:
   - https://docs.moonbeam.network/
@@ -48,7 +48,7 @@ api_endpoints:
     - name: blockscout
       url: https://moonbase-blockscout.testnet.moonbeam.network/
 expectations:
-  - "purestake: Run the nodes for the system; keep the system updated (runtime and nodes) in line with Moonbeam/Moonriver updates; manage parachain onboarding (see contacts)"
-  - "community: Test potential integrations with Moon* networks."
+  - purestake: Run the nodes for the system; keep the system updated (runtime and nodes) in line with Moonbeam/Moonriver updates; manage parachain onboarding (see contacts)
+  - community: Test potential integrations with Moon* networks
 features: []
 notes: []

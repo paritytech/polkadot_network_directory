@@ -7,13 +7,12 @@ chain:
     sudo: true
 chainspec:
     http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/westend.json
-# parent: n/a
 goals:
     - Staging enviroment for Polkadot and Kusama.
 repository: https://github.com/paritytech/polkadot
 validators:
     - 16 invulnerable validators ran by Parity and Community ran nodes (5 per cycle)
-release_cycle: "Following the Polkadot 3 weeks cycle"
+release_cycle: Following the Polkadot 3 weeks cycle
 specs:
     block_time: 6
     era: null
@@ -32,12 +31,12 @@ api_endpoints:
       url: https://westend.api.subscan.io
 documentation: []
 expectations:
-    - "parity: Part of the release cycle of Polkadot and Kusama. Burn-ins are done in this network."
-    - "community: Open for testing how to run nodes on a polkadot-like relay chain. No parachain testing here."
+    - "parity: Part of the release cycle of Polkadot and Kusama. Burn-ins are done in this network"
+    - "community: Open for testing how to run nodes on a polkadot-like relay chain. No parachain testing here"
 features:
-    - "parachains: Modules exist, but only System Level parachains can register on Westend."
-    - "governance: Modules are available, however not used."
-    - "auctions / crowdloans: Both modules available, however not used."
-    - "XCM: XCM v2 available on Westend."
-    - "staking: Modules are available on Westend."
+    - "parachains: Modules exist, but only System Level parachains can register on Westend"
+    - "governance: Modules are available, however not used"
+    - "auctions / crowdloans: Both modules available, however not used"
+    - "XCM: XCM v2 available on Westend"
+    - "staking: Modules are available on Westend"
 notes: []
