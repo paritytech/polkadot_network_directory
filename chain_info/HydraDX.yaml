@@ -20,7 +20,7 @@ specs:
   ss58_format: 63
 contacts:
   - type: telegram
-    url: https://t.me/hydradx
+    contact: https://t.me/hydradx
 documentation:
   - https://docs.hydradx.io/
 validators: []

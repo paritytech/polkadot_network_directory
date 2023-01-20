@@ -26,9 +26,9 @@ contacts:
   - type: matrix
     contact: "#moonbeam:matrix.parity.io"
   - type: telegram
-    url: "https://t.me/Moonbeam_Official"
+    contact: "https://t.me/Moonbeam_Official"
   - type: website
-    url: https://moonbeam.network/contact/
+    contact: https://moonbeam.network/contact/
 faucet: null
 rpc_endpoints:
     - name: Purestake

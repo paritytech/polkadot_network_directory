@@ -24,9 +24,9 @@ documentation:
   - https://docs.webb.tools/
 validators: []
 release_cycle: []
-rpc_endpoints: 
-api_endpoints:
+rpc_endpoints: []
+api_endpoints: []
 expectations: []
 features: []
 notes: []
-faucet:
+faucet: null
