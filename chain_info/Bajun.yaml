@@ -24,11 +24,11 @@ validators: []
 release_cycle: null
 rpc_endpoints:
   - name: AjunaNetwork
-    url: "wss://rpc-parachain.bajun.network"
+    url: wss://rpc-parachain.bajun.network
   - name: Dwellir
-    url: "wss://bajun-rpc.dwellir.com"
+    url: wss://bajun-rpc.dwellir.com
   - name: OnFinality
-    url: "wss://bajun.api.onfinality.io/public-ws"
+    url: wss://bajun.api.onfinality.io/public-ws
 api_endpoints: []
 expectations: []
 features: []

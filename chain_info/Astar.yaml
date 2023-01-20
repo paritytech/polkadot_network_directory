@@ -25,7 +25,7 @@ documentation:
 validators: []
 release_cycle: []
 rpc_endpoints:
-  - name: Astar Team (WSS) 
+  - name: Astar Team (WSS)
     url: wss://rpc.astar.network
   - name: BlastAPI (WSS)
     url: wss://astar.public.blastapi.io
@@ -37,7 +37,7 @@ rpc_endpoints:
     url: wss://public-rpc.pinknode.io/astar
   - name: Automata 1RPC (WSS)
     url: wss://1rpc.io/astr
-  - name: Astar Team (HTTPS) 
+  - name: Astar Team (HTTPS)
     url: https://evm.astar.network
   - name: BlastAPI (HTTPS)
     url: https://astar.public.blastapi.io
@@ -48,7 +48,7 @@ rpc_endpoints:
   - name: Automata 1RPC (HTTPS)
     url: https://1rpc.io/astr
   - name: Alchemy
-    url: https://www.alchemy.com/astar 
+    url: https://www.alchemy.com/astar
 api_endpoints:
   - name: subscan
     url: https://astar.subscan.io/

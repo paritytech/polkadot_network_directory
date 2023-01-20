@@ -9,8 +9,8 @@ chain:
 chainspec:
   http_url: https://github.com/galacticcouncil/HydraDX-node/blob/master/node/res/hydradx.json
 goals:
-  - An Ocean of Liquidity for Polkadot.
-  - Trade an abundance of assets in a single pool.
+  - An Ocean of Liquidity for Polkadot
+  - Trade an abundance of assets in a single pool
 repository: https://github.com/galacticcouncil/HydraDX-node
 specs:
   block_time: 12

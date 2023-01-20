@@ -25,7 +25,7 @@ contacts:
   - type: matrix
     contact: "#moonbeam:matrix.parity.io"
   - type: telegram
-    contact: "https://t.me/Moonbeam_Official"
+    contact: https://t.me/Moonbeam_Official
   - type: website
     contact: https://moonbeam.network/contact/
 faucet: null

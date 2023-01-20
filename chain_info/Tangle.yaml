@@ -9,7 +9,7 @@ chain:
 chainspec:
   http_url: https://raw.githubusercontent.com/webb-tools/tangle/main/chainspecs/rococo/tangle-parachain-rococo.json
 goals:
-  - A canary network for cross-chain zero-knowledge messaging.
+  - A canary network for cross-chain zero-knowledge messaging
 repository: https://github.com/webb-tools/tangle
 specs:
   block_time: 12

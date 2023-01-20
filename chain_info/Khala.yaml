@@ -9,7 +9,7 @@ chain:
 chainspec:
   http_url: https://github.com/Phala-Network/khala-parachain/raw/main/node/res/khala.json
 goals:
-  - Phala Network is a decentralized cloud that offers secure and scalable computing for Web3.
+  - Phala Network is a decentralized cloud that offers secure and scalable computing for Web3
 repository: https://github.com/Phala-Network/khala-parachain
 specs:
   block_time: 12
