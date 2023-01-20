@@ -24,7 +24,7 @@ specs:
     ss58_format: 42
 contacts:
     - type: github
-      contact: "https://github.com/paritytech/subport"
+      contact: https://github.com/paritytech/subport
 faucet: "#rococo-faucet:matrix.org"
 rpc_endpoints:
     - name: Parity
