@@ -1,0 +1,39 @@
+name: Westend BridgeHub
+network_type: testnet
+chain:
+    type: parachain
+    parent: Westend
+    # consensus: n/a
+    sudo: true
+    para_id: 1002
+chainspec:
+  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/bridge-hub-westend.json
+goals:
+    - Westend's testnet parachain for BridgeHub
+repository: https://github.com/paritytech/cumulus
+validators:
+    - Parity Only
+release_cycle: Following the Polkadot 3 weeks cycle
+specs:
+    block_time: 12
+    era: null
+    ed: 3333333
+    lease_period: null
+    decimals: 12
+    token: ROC
+    ss58_format: null
+contacts:
+    - type: github
+      contact: https://github.com/paritytech/subport
+faucet: "#wococo-faucet:matrix.org"
+rpc_endpoints:
+    - name: Parity
+      url: wss://westend-bridge-hub-rpc.polkadot.io:443
+api_endpoints: []
+documentation: []
+expectations:
+    - "parity: Run collator nodes; upgrade runtime"
+    - "community: Test potential integrations with BridgeHub parachain"
+features:
+    - "bridge with Rococo"
+notes: []
