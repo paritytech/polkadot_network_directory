@@ -5,6 +5,17 @@ ecosystem. The repository can be found [here](https://github.com/paritytech/polk
 
 The directory data is also available as a [single JSON file](chains.json).
 
+## Statistics
+
+{% set nb_mainnet = chains | filter(attribute="chain.type", value="relaychain") | length -%}
+{% set nb_parachains = chains | filter(attribute="chain.type", value="parachain") | length -%}
+{% set nb_solo = chains | filter(attribute="chain.type", value="solo") | length -%}
+
+This directory contains the following Substrate-based chains:
+- {{ nb_mainnet }} relay chains
+- {{ nb_parachains }} para-chains
+- {{ nb_solo }} solo chains
+
 ## RPC Endpoint Registry
 
 In addition to the directory data mentioned above, you can also find the [rpc endpoints registry](registry.json)

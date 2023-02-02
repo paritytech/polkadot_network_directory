@@ -25,8 +25,8 @@ _render_rpc_registry: concat_json
 
 # Fetch data onchain
 fetch_data chain:
-	echo TODO
-	echo Fetching data for {{chain}}
+	echo "TODO"
+	echo "Fetching data for {{chain}}"
 
 # Render the book
 render: concat_json _render_rpc_registry _render_chains _render_book
@@ -39,7 +39,7 @@ serve:
 	mdbook serve
 
 # watch the files under the chain_info and render them
-watch: 
+watch:
 	watchexec -w chain_info -- just render
 
 # Cleanup generated files
