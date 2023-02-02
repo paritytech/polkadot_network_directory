@@ -5,7 +5,7 @@ ecosystem. The repository can be found [here](https://github.com/paritytech/polk
 
 The directory data is also available as a [single JSON file](chains.json).
 
-## Stats
+## Statistics
 
 {% set nb_mainnet = chains | filter(attribute="chain.type", value="relaychain") | length -%}
 {% set nb_parachains = chains | filter(attribute="chain.type", value="parachain") | length -%}
