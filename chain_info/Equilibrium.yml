@@ -1,0 +1,35 @@
+name: Equilibrium
+network_type: mainnet
+chain:
+  type: parachain
+  parent: Polkadot
+  consensus: Aura
+  sudo: false
+  para_id: 2011
+chainspec:
+  # http_url: n/a
+goals:
+  - All-in-one DeFi hub of Polkadot.
+# repository: n/a
+specs:
+  block_time: 12
+  ed: 100000000
+  decimals: 9
+  token: EQ
+  ss58_format: 68
+contacts:
+  - type: email
+    contact: support@equilibrium.io
+documentation:
+  - https://docs.equilibrium.io
+validators: []
+release_cycle: null
+rpc_endpoints:
+  - name: Dwellir
+    url: wss://equilibrium-rpc.dwellir.com
+  - name: Equilibrium
+    url: wss://node.pol.equilibrium.io
+api_endpoints: []
+expectations: []
+features: []
+notes: []
