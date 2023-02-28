@@ -24,9 +24,9 @@ documentation:
   - https://docs.webb.tools/
 validators: []
 release_cycle: []
-rpc_endpoints: 
+rpc_endpoints: ["https://tangle-rococo-archive.webb.tools/rpc"]
 api_endpoints:
 expectations: []
 features: []
 notes: []
-faucet:
+faucet: null
