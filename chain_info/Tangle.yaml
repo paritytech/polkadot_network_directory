@@ -24,7 +24,9 @@ documentation:
   - https://docs.webb.tools/
 validators: []
 release_cycle: []
-rpc_endpoints: ["https://tangle-rococo-archive.webb.tools/rpc"]
+rpc_endpoints: 
+  - name: Tangle
+    url: wss://tangle-rococo-archive.webb.tools
 api_endpoints:
 expectations: []
 features: []
