@@ -1,0 +1,32 @@
+name: Tangle
+network_type: testnet
+chain:
+  type: parachain
+  parent: Rococo
+  consensus: Aura
+  sudo: true
+  para_id: 4006
+chainspec:
+  http_url: https://raw.githubusercontent.com/webb-tools/tangle/main/chainspecs/rococo/tangle-parachain-rococo.json
+goals:
+  - A canary network for cross-chain zero-knowledge messaging.
+repository: https://github.com/webb-tools/tangle
+specs:
+  block_time: 12
+  ed: 1000000
+  decimals: 18
+  token: tTNT
+  ss58_format: 4006
+contacts:
+  - type: email
+    contact: drew@webb.tools
+documentation:
+  - https://docs.webb.tools/
+validators: []
+release_cycle: []
+rpc_endpoints: 
+api_endpoints:
+expectations: []
+features: []
+notes: []
+faucet:
