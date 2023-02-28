@@ -24,7 +24,7 @@ validators: []
 release_cycle: null
 rpc_endpoints:
   - name: AjunaNetwork
-    url: wss://rpc-parachain.ajuna.network
+    url: wss://rpc-parachain.ajuna.network:443
 api_endpoints: []
 expectations: []
 features: []

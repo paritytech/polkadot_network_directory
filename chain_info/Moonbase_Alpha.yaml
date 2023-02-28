@@ -35,13 +35,13 @@ documentation:
   - https://docs.moonbeam.network/
 rpc_endpoints:
   - name: Blast
-    url: wss://moonbase-alpha.public.blastapi.io
+    url: wss://moonbase-alpha.public.blastapi.io:443
   - name: Moonbeam Foundation
-    url: wss://wss.api.moonbase.moonbeam.network
+    url: wss://wss.api.moonbase.moonbeam.network:443
   - name: OnFinality
-    url: wss://moonbeam-alpha.api.onfinality.io/public-ws
+    url: wss://moonbeam-alpha.api.onfinality.io:443/public-ws
   - name: PinkNode
-    url: wss://public-rpc.pinknode.io/alphanet
+    url: wss://public-rpc.pinknode.io:443/alphanet
 api_endpoints:
     - name: subscan
       url: https://moonbase.api.subscan.io

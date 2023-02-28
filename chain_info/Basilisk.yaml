@@ -27,9 +27,9 @@ validators: []
 release_cycle: null
 rpc_endpoints:
   - name: Dwellir
-    url: wss://basilisk-rpc.dwellir.com
+    url: wss://basilisk-rpc.dwellir.com:443
   - name: Basilisk
-    url: wss://rpc.basilisk.cloud
+    url: wss://rpc.basilisk.cloud:443
 api_endpoints: []
 expectations: []
 features: []

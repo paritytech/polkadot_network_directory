@@ -28,9 +28,9 @@ validators: []
 release_cycle: null
 rpc_endpoints:
   - name: InvArch Team
-    url: wss://tinker.invarch.network
+    url: wss://tinker.invarch.network:443
   - name: OnFinality
-    url: wss://invarch-tinkernet.api.onfinality.io/public-ws
+    url: wss://invarch-tinkernet.api.onfinality.io:443/public-ws
 api_endpoints: []
 expectations: []
 features: []
