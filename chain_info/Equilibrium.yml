@@ -29,7 +29,8 @@ rpc_endpoints:
     url: wss://equilibrium-rpc.dwellir.com
   - name: Equilibrium
     url: wss://node.pol.equilibrium.io
-api_endpoints: []
+api_endpoints:
+   - https://equilibrium.api.subscan.io/api
 expectations: []
 features: []
 notes: []
