@@ -27,7 +27,7 @@ contacts:
 faucet: []
 rpc_endpoints:
     - name: Astar
-      url: wss://tokyo.astar.network
+      url: wss://tokyo.astar.network:443
 api_endpoints: []
 documentation:
   - https://docs.astar.network/

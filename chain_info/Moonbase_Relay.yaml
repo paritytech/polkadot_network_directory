@@ -31,7 +31,7 @@ contacts:
 faucet: null
 rpc_endpoints:
     - name: Purestake
-      url: wss://frag-moonbase-relay-rpc-ws.g.moonbase.moonbeam.network
+      url: wss://frag-moonbase-relay-rpc-ws.g.moonbase.moonbeam.network:443
 api_endpoints: []
 documentation: []
 expectations:

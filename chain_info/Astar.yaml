@@ -26,29 +26,29 @@ validators: []
 release_cycle: []
 rpc_endpoints:
   - name: Astar Team (WSS)
-    url: wss://rpc.astar.network
+    url: wss://rpc.astar.network:443
   - name: BlastAPI (WSS)
-    url: wss://astar.public.blastapi.io
+    url: wss://astar.public.blastapi.io:443
   - name: Dwellir (WSS)
-    url: wss://astar-rpc.dwellir.com
+    url: wss://astar-rpc.dwellir.com:443
   - name: OnFinality (WSS)
-    url: wss://astar.api.onfinality.io/public-ws
+    url: wss://astar.api.onfinality.io:443/public-ws
   - name: Pinknode (WSS)
-    url: wss://public-rpc.pinknode.io/astar
+    url: wss://public-rpc.pinknode.io:443/astar
   - name: Automata 1RPC (WSS)
-    url: wss://1rpc.io/astr
+    url: wss://1rpc.io:443/astr
   - name: Astar Team (HTTPS)
-    url: https://evm.astar.network
+    url: https://evm.astar.network:443
   - name: BlastAPI (HTTPS)
-    url: https://astar.public.blastapi.io
+    url: https://astar.public.blastapi.io:443
   - name: Dwellir (HTTPS)
-    url: https://astar-rpc.dwellir.com
+    url: https://astar-rpc.dwellir.com:443
   - name: OnFinality (HTTPS)
-    url: https://astar.api.onfinality.io/public
+    url: https://astar.api.onfinality.io:443/public
   - name: Automata 1RPC (HTTPS)
-    url: https://1rpc.io/astr
+    url: https://1rpc.io:443/astr
   - name: Alchemy
-    url: https://www.alchemy.com/astar
+    url: https://www.alchemy.com:443/astar
 api_endpoints:
   - name: subscan
     url: https://astar.subscan.io/

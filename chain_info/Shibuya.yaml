@@ -27,21 +27,21 @@ validators: []
 release_cycle: []
 rpc_endpoints:
   - name: Astar Team (WSS)
-    url: wss://rpc.shibuya.astar.network
+    url: wss://rpc.shibuya.astar.network:443
   - name: BlastAPI (WSS)
-    url: wss://shiden.public.blastapi.io
+    url: wss://shiden.public.blastapi.io:443
   - name: Dwellir (WSS)
-    url: wss://shibuya-rpc.dwellir.com
+    url: wss://shibuya-rpc.dwellir.com:443
   - name: OnFinality (WSS)
-    url: wss://shibuya.api.onfinality.io/public-ws
+    url: wss://shibuya.api.onfinality.io:443/public-ws
   - name: Astar Team (HTTPS, only EVM/Ethereum RPC available)
-    url: https://evm.shibuya.astar.network
+    url: https://evm.shibuya.astar.network:443
   - name: BlastAPI (HTTPS)
-    url: https://shibuya.public.blastapi.io
+    url: https://shibuya.public.blastapi.io:443
   - name: Dwellir (HTTPS)
-    url: https://shibuya-rpc.dwellir.com
+    url: https://shibuya-rpc.dwellir.com:443
   - name: OnFinality (HTTPS)
-    url: https://shibuya.api.onfinality.io/public
+    url: https://shibuya.api.onfinality.io:443/public
 api_endpoints:
   - name: subscan
     url: https://shibuya.subscan.io/

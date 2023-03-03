@@ -27,9 +27,9 @@ validators: []
 release_cycle: null
 rpc_endpoints:
   - name: Dwellir
-    url: wss://hydradx-rpc.dwellir.com
+    url: wss://hydradx-rpc.dwellir.com:443
   - name: HydraDX
-    url: wss://rpc.hydradx.cloud
+    url: wss://rpc.hydradx.cloud:443
 api_endpoints: []
 expectations: []
 features: []

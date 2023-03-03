@@ -33,13 +33,13 @@ documentation:
   - https://docs.moonbeam.network/
 rpc_endpoints:
   - name: Blast
-    url: wss://moonriver.public.blastapi.io
+    url: wss://moonriver.public.blastapi.io:443
   - name: Moonbeam Foundation
-    url: wss://wss.api.moonriver.moonbeam.network
+    url: wss://wss.api.moonriver.moonbeam.network:443
   - name: OnFinality
-    url: wss://moonriver.api.onfinality.io/public-ws
+    url: wss://moonriver.api.onfinality.io:443/public-ws
   - name: PinkNode
-    url: wss://public-rpc.pinknode.io/moonriver
+    url: wss://public-rpc.pinknode.io:443/moonriver
 api_endpoints:
     - name: subscan
       url: https://moonriver.api.subscan.io

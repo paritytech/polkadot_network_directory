@@ -32,21 +32,21 @@ validators: []
 release_cycle: []
 rpc_endpoints:
   - name: Astar Team (WSS)
-    url: wss://rpc.shiden.astar.network
+    url: wss://rpc.shiden.astar.network:443
   - name: BlastAPI (WSS)
-    url: wss://shiden.public.blastapi.io
+    url: wss://shiden.public.blastapi.io:443
   - name: Dwellir (WSS)
-    url: wss://shiden-rpc.dwellir.com
+    url: wss://shiden-rpc.dwellir.com:443
   - name: OnFinality (WSS)
-    url: wss://shiden.api.onfinality.io/public-ws
+    url: wss://shiden.api.onfinality.io:443/public-ws
   - name: Astar Team (HTTPS)
-    url: https://evm.shiden.astar.network
+    url: https://evm.shiden.astar.network:443
   - name: BlastAPI (HTTPS)
-    url: https://shiden.public.blastapi.io
+    url: https://shiden.public.blastapi.io:443
   - name: Dwellir (HTTPS)
-    url: https://shiden-rpc.dwellir.com
+    url: https://shiden-rpc.dwellir.com:443
   - name: OnFinality (HTTPS)
-    url: https://shiden.api.onfinality.io/public
+    url: https://shiden.api.onfinality.io:443/public
 api_endpoints:
   - name: subscan
     url: https://shiden.subscan.io/
