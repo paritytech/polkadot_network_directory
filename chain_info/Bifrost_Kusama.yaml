@@ -1,0 +1,39 @@
+name: Bifrost Kusama
+network_type: mainnet
+chain:
+  type: parachain
+  parent: Kusama
+  consensus: POS
+  sudo: false
+  para_id: 2001
+chainspec:
+  http_url: https://raw.githubusercontent.com/bifrost-finance/bifrost/develop/node/service/res/bifrost-kusama.json
+goals:
+  - A parachain focused on building bridges of chains based on PoS consensus.
+repository: https://github.com/bifrost-finance/bifrost
+specs:
+  block_time: 12
+  ed: 10000000000
+  decimals: 12
+  token: BNC
+  ss58_format: 6
+contacts:
+  - type: email
+    contact: hello@bifrost.finance
+documentation:
+  - https://wiki.bifrost.finance/
+validators: []
+release_cycle: null
+rpc_endpoints:
+  - name: Dwellir
+    url: wss://bifrost-rpc.dwellir.com
+  - name: Bifrost 
+    url: wss://bifrost-rpc.liebi.com/ws
+  - name: OnFinality
+    url: wss://bifrost-parachain.api.onfinality.io/public-ws
+api_endpoints:
+  - name: subscan
+    url: https://bifrost-kusama.subscan.io/
+expectations: []
+features: []
+notes: []
