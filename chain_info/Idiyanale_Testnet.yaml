@@ -33,7 +33,7 @@ documentation:
     url: https://anagolay.dev/
 rpc_endpoints:
   - name: Idiyanale Testnet
-    url: wss://idiyanale-testnet.anagolay.io
+    url: wss://idiyanale-testnet.anagolay.io:443
 expectations: []
 features: []
 notes: []

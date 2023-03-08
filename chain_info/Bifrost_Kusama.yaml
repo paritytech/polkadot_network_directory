@@ -26,11 +26,11 @@ validators: []
 release_cycle: null
 rpc_endpoints:
   - name: Dwellir
-    url: wss://bifrost-rpc.dwellir.com
-  - name: Bifrost 
-    url: wss://bifrost-rpc.liebi.com/ws
+    url: wss://bifrost-rpc.dwellir.com:443
+  - name: Bifrost
+    url: wss://bifrost-rpc.liebi.com:443/ws
   - name: OnFinality
-    url: wss://bifrost-parachain.api.onfinality.io/public-ws
+    url: wss://bifrost-parachain.api.onfinality.io:443/public-ws
 api_endpoints:
   - name: subscan
     url: https://bifrost-kusama.subscan.io/

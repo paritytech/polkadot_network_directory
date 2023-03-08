@@ -25,10 +25,10 @@ documentation:
 validators: []
 release_cycle: null
 rpc_endpoints:
-  - name: Bifrost 
-    url: wss://hk.p.bifrost-rpc.liebi.com/ws
+  - name: Bifrost
+    url: wss://hk.p.bifrost-rpc.liebi.com:443/ws
   - name: OnFinality
-    url: wss://bifrost-polkadot.api.onfinality.io/public-ws
+    url: wss://bifrost-polkadot.api.onfinality.io:443/public-ws
 api_endpoints:
   - name: subscan
     url: https://bifrost.subscan.io/
