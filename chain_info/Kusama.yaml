@@ -3,7 +3,7 @@ network_type: canarynet
 chain:
   type: relaychain
   # parent: n/a
-  consensus: POS
+  consensus: PoS
   sudo: false
 # parent: n/a
 chainspec:

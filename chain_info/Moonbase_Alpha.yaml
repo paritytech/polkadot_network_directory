@@ -3,7 +3,7 @@ network_type: testnet
 chain:
   type: parachain
   parent: Moonbase Relay
-  consensus: POS
+  consensus: PoS
   sudo: true
   para_id: 1000
 chainspec:

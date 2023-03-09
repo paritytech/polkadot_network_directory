@@ -35,11 +35,12 @@
             }
         },
         "goals": {
+            "title": "What are the goals of this chain ?",
+            "markdownDescription": "It is useful to users to understand exactly what the goals of chain are. It also helps setting sup the expectations.",
             "type": "array",
             "items": {
                 "type": "string"
-            },
-            "minItems": 1
+            }
         },
         "repository": {
             "$ref": "#/$defs/url"
@@ -69,7 +70,7 @@
         },
         "faucet": {
             "title": "The Matrix room users can use to request faucet drips",
-            "markdown": "Faucets are mainly used on testsnet and having one available greatly helps devs and testers",
+            "markdownDescription": "Faucets are mainly used on testsnet and having one available greatly helps devs and testers",
             "$ref": "#/$defs/matrix_room"
         },
         "documentation": {

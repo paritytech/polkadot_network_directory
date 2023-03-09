@@ -3,7 +3,7 @@ network_type: mainnet
 chain:
   type: relaychain
   # parent: n/a
-  consensus: POS
+  consensus: PoS
   sudo: true
 chainspec:
   http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/polkadot.json
