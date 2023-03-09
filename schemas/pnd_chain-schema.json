@@ -69,9 +69,7 @@
             }
         },
         "faucet": {
-            "title": "The Matrix room users can use to request faucet drips",
-            "markdownDescription": "Faucets are mainly used on testsnet and having one available greatly helps devs and testers",
-            "$ref": "#/$defs/matrix_room"
+            "$ref": "#/$defs/faucet"
         },
         "documentation": {
             "type": "array",
@@ -127,6 +125,18 @@
                 "null"
             ],
             "pattern": "#(.*):(.*)"
+        },
+        "faucet": {
+            "title": "A link to the faucet",
+            "markdownDescription": "Faucets are mainly used on testsnet and having one available greatly helps devs and testers",
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/matrix_room"
+                },
+                {
+                    "$ref": "#/$defs/url"
+                }
+            ]
         },
         "rpc_endpoint": {
             "type": "object",

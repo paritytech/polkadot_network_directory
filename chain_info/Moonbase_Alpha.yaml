@@ -28,11 +28,10 @@ contacts:
     contact: "#moonbeam:matrix.parity.io"
   - type: telegram
     contact: https://t.me/Moonbeam_Official
-  - type: website
-    contact: https://moonbeam.network/contact/
 faucet: https://apps.moonbeam.network/moonbase-alpha/faucet
 documentation:
   - https://docs.moonbeam.network/
+  - https://moonbeam.network/contact/
 rpc_endpoints:
   - name: Blast
     url: wss://moonbase-alpha.public.blastapi.io:443
@@ -48,7 +47,7 @@ api_endpoints:
     - name: blockscout
       url: https://moonbase-blockscout.testnet.moonbeam.network/
 expectations:
-  - purestake: Run the nodes for the system; keep the system updated (runtime and nodes) in line with Moonbeam/Moonriver updates; manage parachain onboarding (see contacts)
-  - community: Test potential integrations with Moon* networks
+  - "purestake: Run the nodes for the system; keep the system updated (runtime and nodes) in line with Moonbeam/Moonriver updates; manage parachain onboarding (see contacts)"
+  - "community: Test potential integrations with Moon* networks"
 features: []
 notes: []
