@@ -247,7 +247,8 @@
                         "matrix",
                         "telegram",
                         "twitter",
-                        "mastodon"
+                        "mastodon",
+                        "website"
                     ]
                 },
                 "contact": {
