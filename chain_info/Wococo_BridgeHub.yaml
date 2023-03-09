@@ -30,7 +30,8 @@ rpc_endpoints:
     - name: Parity
       url: wss://wococo-bridge-hub-rpc.polkadot.io:443
 api_endpoints: []
-documentation: []
+documentation:
+    - https://github.com/paritytech/cumulus
 expectations:
     - "parity: Run collator nodes; upgrade runtime"
     - "community: Test potential integrations with BridgeHub parachain"

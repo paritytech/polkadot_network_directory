@@ -30,7 +30,8 @@ rpc_endpoints:
 api_endpoints:
     - name: subscan
       url: https://rockmine.api.subscan.io
-documentation: []
+documentation:
+    - https://github.com/paritytech/cumulus
 expectations:
     - "parity: Run collator nodes; upgrade runtime"
     - "community: Test potential integrations with Statemine/t parachain"

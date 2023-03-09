@@ -19,7 +19,8 @@ specs:
 contacts:
   - type: email
     contact: hello@ajuna.io
-documentation: []
+documentation:
+  - https://github.com/ajuna-network/Ajuna
 validators: []
 release_cycle: null
 rpc_endpoints:

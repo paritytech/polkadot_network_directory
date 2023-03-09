@@ -48,5 +48,4 @@ api_endpoints:
 expectations: []
 features: []
 notes: []
-faucet:
- - https://docs.astar.network/docs/quickstart/faucet
+faucet: https://docs.astar.network/docs/quickstart/faucet

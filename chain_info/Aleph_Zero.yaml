@@ -20,7 +20,8 @@ specs:
   ss58_format: 42
 contacts: []
 faucet: null
-documentation: []
+documentation:
+  - https://github.com/aleph-zero-foundation/aleph-node
 rpc_endpoints:
   - name: Aleph Zero Fundation
     url: wss://ws.azero.dev:443

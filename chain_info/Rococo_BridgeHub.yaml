@@ -7,7 +7,7 @@ chain:
     sudo: true
     para_id: 1013
 chainspec:
-  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/bridge-hub-rococo.json
+    http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/bridge-hub-rococo.json
 goals:
     - Rococo's testnet parachain for BridgeHub
 repository: https://github.com/paritytech/cumulus
@@ -30,7 +30,8 @@ rpc_endpoints:
     - name: Parity
       url: wss://rococo-bridge-hub-rpc.polkadot.io:443
 api_endpoints: []
-documentation: []
+documentation:
+    - https://github.com/paritytech/cumulus
 expectations:
     - "parity: Run collator nodes; upgrade runtime"
     - "community: Test potential integrations with BridgeHub parachain"

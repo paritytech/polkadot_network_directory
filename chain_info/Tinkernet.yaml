@@ -23,7 +23,8 @@ contacts:
     contact: dakota@invarch.network
   - type: email
     contact: gabriel@invarch.network
-documentation: []
+documentation:
+  - https://github.com/InvArch/InvArch-Node
 validators: []
 release_cycle: null
 rpc_endpoints:

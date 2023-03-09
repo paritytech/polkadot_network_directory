@@ -1,5 +1,3 @@
-// 20220929121621
-// https://raw.githubusercontent.com/frontaid/schema/master/frontaid-schema.json
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Polkadot Network Directory Schema",
@@ -339,19 +337,6 @@
                     "$ref": "#/$defs/website"
                 }
             ]
-            // "type": {
-            //     "enum": [
-            //         "email",
-            //         "matrix",
-            //         "telegram",
-            //         "twitter",
-            //         "mastodon",
-            //         "website"
-            //     ]
-            // },
-            // "contact": {
-            //     "type": "string"
-            // }
         }
     },
     "required": [
