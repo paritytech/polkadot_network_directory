@@ -18,7 +18,7 @@ specs:
   decimals: 12
   token: IDI
   ss58_format: 42
-contact:
+contacts:
   - type: matrix
     contact: "@woss:matrix.org"
   - type: matrix
@@ -29,11 +29,11 @@ contact:
     url: https://anagolay.network/idiyanale
 faucet: null
 documentation:
-  - type: website
-    url: https://anagolay.dev/
+    - https://anagolay.dev
 rpc_endpoints:
   - name: Idiyanale Testnet
     url: wss://idiyanale-testnet.anagolay.io:443
+api_endpoints: []
 expectations: []
 features: []
 notes: []

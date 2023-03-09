@@ -2,8 +2,7 @@ name: Rococo
 network_type: testnet
 chain:
     type: relaychain
-    # parent: n/a
-    consensus: POA
+    consensus: PoA
     sudo: true
 chainspec:
     http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/rococo.json
@@ -23,7 +22,7 @@ specs:
     token: ROC
     ss58_format: 42
 contacts:
-    - type: github
+    - type: website
       contact: https://github.com/paritytech/subport
 faucet: "#rococo-faucet:matrix.org"
 rpc_endpoints:

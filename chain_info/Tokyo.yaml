@@ -2,8 +2,7 @@ name: Tokyo
 network_type: testnet
 chain:
     type: relaychain
-    # parent: n/a
-    consensus: POA
+    consensus: PoA
     sudo: true
 chainspec:
     http_url: https://raw.githubusercontent.com/AstarNetwork/Astar/master/bin/collator/res/tokyo.json
@@ -12,7 +11,7 @@ goals:
 repository: https://github.com/AstarNetwork/Astar
 validators:
     - Astar only
-release_cycle: []
+release_cycle: null
 specs:
     block_time: 6
 #    era: 42
@@ -24,7 +23,7 @@ specs:
 contacts:
   - type: email
     contact: info@astar.network
-faucet: []
+faucet: null
 rpc_endpoints:
     - name: Astar
       url: wss://tokyo.astar.network:443

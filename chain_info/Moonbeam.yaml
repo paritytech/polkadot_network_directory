@@ -3,7 +3,7 @@ network_type: mainnet
 chain:
   type: parachain
   parent: Polkadot
-  consensus: POS
+  consensus: PoS
   sudo: false
   para_id: 2004
 chainspec:

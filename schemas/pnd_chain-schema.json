@@ -1,0 +1,360 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Polkadot Network Directory Schema",
+    "description": "JSON Schema definition for Polkadot Gov Proposals",
+    "type": "object",
+    "properties": {
+        "name": {
+            "title": "Chain name",
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 64,
+            "markdownDescription": "The name of the chain/parachain"
+        },
+        "network_type": {
+            "title": "Network type",
+            "enum": [
+                "testnet",
+                "canarynet",
+                "mainnet",
+                "solo_testnet",
+                "solo_mainnet"
+            ]
+        },
+        "chain": {
+            "$ref": "#/$defs/chain"
+        },
+        "chainspec": {
+            "type": "object",
+            "properties": {
+                "http_url": {
+                    "$ref": "#/$defs/url"
+                }
+            }
+        },
+        "goals": {
+            "title": "What are the goals of this chain ?",
+            "markdownDescription": "It is useful to users to understand exactly what the goals of chain are. It also helps setting sup the expectations.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "repository": {
+            "$ref": "#/$defs/url"
+        },
+        "validators": {
+            "title": "Who are the validators allowed on this chain?",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "release_cycle": {
+            "title": "This is an approximate value to let users know how often updates are released in general",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "specs": {
+            "$ref": "#/$defs/specs"
+        },
+        "contacts": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/contact"
+            }
+        },
+        "faucet": {
+            "$ref": "#/$defs/faucet"
+        },
+        "documentation": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/url"
+            },
+            "minItems": 1
+        },
+        "rpc_endpoints": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/rpc_endpoint"
+            },
+            "minItems": 1
+        },
+        "api_endpoints": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/api_endpoint"
+            }
+        },
+        "expectations": {
+            "type": "array",
+            "title": "What is this chain for ?",
+            "items": {
+                "type": "string"
+            }
+        },
+        "features": {
+            "type": "array",
+            "title": "Optional list of features this chain offers",
+            "items": {
+                "type": "string"
+            }
+        },
+        "notes": {
+            "type": "array",
+            "title": "Optional notes related to this chain",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "$defs": {
+        "url": {
+            "type": "string",
+            "pattern": "https?://.*"
+        },
+        "matrix_room": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "pattern": "#(.*):(.*)"
+        },
+        "email": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "pattern": "^email$"
+                },
+                "contact": {
+                    "type": "string",
+                    "pattern": "(.+)@(.+).(.+)"
+                }
+            }
+        },
+        "matrix": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "pattern": "matrix"
+                },
+                "contact": {
+                    "type": "string",
+                    "pattern": "(@|#)(.+):(.+)"
+                }
+            }
+        },
+        "telegram": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "pattern": "telegram"
+                },
+                "contact": {
+                    "$ref": "#/$defs/url"
+                }
+            }
+        },
+        "twitter": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "pattern": "twitter"
+                },
+                "contact": {
+                    "type": "string",
+                    "pattern": "@.+"
+                }
+            }
+        },
+        "mastodon": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "pattern": "mastodon"
+                },
+                "contact": {
+                    "type": "string",
+                    "pattern": "@(.+)@(.+).(.+)"
+                }
+            }
+        },
+        "website": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "pattern": "website"
+                },
+                "contact": {
+                    "$ref": "#/$defs/url"
+                }
+            }
+        },
+        "faucet": {
+            "title": "A link to the faucet",
+            "markdownDescription": "Faucets are mainly used on testsnet and having one available greatly helps devs and testers",
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/matrix_room"
+                },
+                {
+                    "$ref": "#/$defs/url"
+                }
+            ]
+        },
+        "rpc_endpoint": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "title": "Name of the RPC Endpoint provider",
+                    "type": "string"
+                },
+                "url": {
+                    "title": "RPC Endpoint URL",
+                    "markdownDescription": "NOTE: You **must** provide the port",
+                    "type": "string",
+                    "pattern": "(http|ws)s?://.*(:\\d{2,5}).*"
+                }
+            }
+        },
+        "api_endpoint": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "title": "Name of the API Endpoint provider",
+                    "type": "string"
+                },
+                "url": {
+                    "title": "API Endpoint URL",
+                    "type": "string",
+                    "pattern": "(http)s?://.*"
+                }
+            }
+        },
+        "chain": {
+            "type": "object",
+            "description": "The chain.",
+            "properties": {
+                "type": {
+                    "title": "type",
+                    "enum": [
+                        "relaychain",
+                        "parachain",
+                        "solo"
+                    ]
+                },
+                "parent": {
+                    "type": "string"
+                },
+                "consensus": {
+                    "enum": [
+                        "Aura",
+                        "PoS",
+                        "PoA",
+                        "AlephBFT"
+                    ]
+                },
+                "sudo": {
+                    "type": "boolean"
+                },
+                "para_id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "type",
+                "consensus",
+                "sudo"
+            ]
+        },
+        "specs": {
+            "type": "object",
+            "description": "The specs",
+            "properties": {
+                "block_time": {
+                    "type": "number"
+                },
+                "era": {
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "ed": {
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "lease_period": {},
+                "decimals": {
+                    "type": "integer"
+                },
+                "token": {
+                    "type": "string"
+                },
+                "ss58_format": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "block_time",
+                "decimals",
+                "token"
+            ]
+        },
+        "contact": {
+            "type": "object",
+            "description": "Contact details",
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/email"
+                },
+                {
+                    "$ref": "#/$defs/matrix"
+                },
+                {
+                    "$ref": "#/$defs/telegram"
+                },
+                {
+                    "$ref": "#/$defs/twitter"
+                },
+                {
+                    "$ref": "#/$defs/mastodon"
+                },
+                {
+                    "$ref": "#/$defs/website"
+                }
+            ]
+        }
+    },
+    "required": [
+        "name",
+        "network_type",
+        "chain",
+        "chainspec",
+        "goals",
+        "repository",
+        "validators",
+        "release_cycle",
+        "specs",
+        "contacts",
+        "rpc_endpoints",
+        "api_endpoints",
+        "documentation",
+        "expectations",
+        "features"
+    ]
+}

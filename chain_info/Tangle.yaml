@@ -23,11 +23,11 @@ contacts:
 documentation:
   - https://docs.webb.tools/
 validators: []
-release_cycle: []
+release_cycle: null
 rpc_endpoints:
   - name: Tangle
     url: wss://tangle-rococo-archive.webb.tools:443
-api_endpoints:
+api_endpoints: []
 expectations: []
 features: []
 notes: []

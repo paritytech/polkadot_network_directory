@@ -3,7 +3,7 @@ network_type: mainnet
 chain:
   type: parachain
   parent: Polkadot
-  consensus: null
+  consensus: PoS
   sudo: true
   para_id: 2051
 chainspec:
@@ -19,7 +19,8 @@ specs:
 contacts:
   - type: email
     contact: hello@ajuna.io
-documentation: []
+documentation:
+  - https://github.com/ajuna-network/Ajuna
 validators: []
 release_cycle: null
 rpc_endpoints:

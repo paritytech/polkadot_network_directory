@@ -3,7 +3,7 @@ network_type: mainnet
 chain:
   type: parachain
   parent: Kusama
-  consensus: POS
+  consensus: PoS
   sudo: true
   para_id: 2007
 chainspec:
@@ -29,7 +29,7 @@ contacts:
 documentation:
   - https://docs.astar.network/
 validators: []
-release_cycle: []
+release_cycle: null
 rpc_endpoints:
   - name: Astar Team (WSS)
     url: wss://rpc.shiden.astar.network:443
@@ -53,5 +53,4 @@ api_endpoints:
 expectations: []
 features: []
 notes: []
-faucet:
- - https://docs.astar.network/docs/quickstart/faucet
+faucet: https://docs.astar.network/docs/quickstart/faucet

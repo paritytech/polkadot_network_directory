@@ -3,7 +3,7 @@ network_type: mainnet
 chain:
   type: parachain
   parent: Polkadot
-  # consensus: n/a
+  consensus: PoS
   sudo: false
   para_id: 1000
 chainspec:
@@ -29,6 +29,7 @@ documentation:
 rpc_endpoints:
   - name: Parity
     url: wss://statemint-rpc.polkadot.io:443
+api_endpoints: []
 expectations: []
 features: []
 notes: []

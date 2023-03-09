@@ -3,7 +3,7 @@ network_type: mainnet
 chain:
   type: parachain
   parent: Kusama
-  consensus: POS
+  consensus: PoS
   sudo: true
   para_id: 2125
 chainspec:
@@ -23,7 +23,8 @@ contacts:
     contact: dakota@invarch.network
   - type: email
     contact: gabriel@invarch.network
-documentation: []
+documentation:
+  - https://github.com/InvArch/InvArch-Node
 validators: []
 release_cycle: null
 rpc_endpoints:

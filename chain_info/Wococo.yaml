@@ -2,8 +2,7 @@ name: Wococo
 network_type: testnet
 chain:
     type: relaychain
-    # parent: n/a
-    consensus: POA (to be switched to POS)
+    consensus: PoA
     sudo: true
 chainspec:
     http_url: https://paritytech.github.io/chainspecs/wococo/relaychain/chainspec.json
@@ -22,7 +21,7 @@ specs:
     token: WOOK
     ss58_format: 42
 contacts:
-    - type: github
+    - type: website
       contact: https://github.com/paritytech/subport
 faucet: "#wococo-faucet:matrix.org"
 rpc_endpoints:
@@ -36,5 +35,5 @@ expectations:
 features:
     - "parachains: Community parachains cannot register on Wococo at this time"
 notes:
-    - |
-        Wococo is a community relay chain dedicated to testing bridges. It is running the Rococo runtime.
+    - Wococo is a community relay chain dedicated to testing bridges. It is running the Rococo runtime
+    - The consensus is planned to be switched to PoS
