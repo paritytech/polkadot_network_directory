@@ -1,0 +1,236 @@
+// 20220929121621
+// https://raw.githubusercontent.com/frontaid/schema/master/frontaid-schema.json
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Polkadot Network Directory Schema",
+    "description": "JSON Schema definition for Polkadot Gov Proposals",
+    "type": "object",
+    "properties": {
+        "name": {
+            "title": "Chain name",
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 64,
+            "markdownDescription": "The name of the chain/parachain"
+        },
+        "network_type": {
+            "title": "Network type",
+            "enum": [
+                "testnet",
+                "canarynet",
+                "mainnet",
+                "solo_testnet",
+                "solo_mainnet"
+            ]
+        },
+        "chain": {
+            "$ref": "#/$defs/chain"
+        },
+        "chainspec": {
+            "type": "object",
+            "properties": {
+                "http_url": {
+                    "$ref": "#/$defs/url"
+                }
+            }
+        },
+        "goals": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1
+        },
+        "repository": {
+            "$ref": "#/$defs/url"
+        },
+        "validators": {
+            "title": "Who are the validators allowed on this chain?",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "release_cycle": {
+            "title": "This is an approximate value to let users know how often updates are released in general",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "specs": {
+            "$ref": "#/$defs/specs"
+        },
+        "contacts": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/contact"
+            }
+        },
+        "faucet": {
+            "title": "The Matrix room users can use to request faucet drips",
+            "markdown": "Faucets are mainly used on testsnet and having one available greatly helps devs and testers",
+            "$ref": "#/$defs/matrix_room"
+        },
+        "documentation": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/url"
+            },
+            "minItems": 1
+        },
+        "rpc_endpoints": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/rpc_endpoint"
+            },
+            "minItems": 1
+        },
+        "api_endpoints": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/url"
+            },
+            "minItems": 1
+        },
+        "expectations": {
+            "type": "array",
+            "title": "What is this chain for ?",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1
+        },
+        "features": {
+            "type": "array",
+            "title": "Optional list of features this chain offers",
+            "items": {
+                "type": "string"
+            }
+        },
+        "notes": {
+            "type": "array",
+            "title": "Optional notes related to this chain",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "$defs": {
+        "url": {
+            "type": "string",
+            "pattern": "https?://.*"
+        },
+        "matrix_room": {
+            "type": "string",
+            "pattern": "#(.*):(.*)"
+        },
+        "rpc_endpoint": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "title": "Name of the RPC Endpoinr provider",
+                    "type": "string"
+                },
+                "url": {
+                    "title": "Endpoint URL",
+                    "markdownDescription": "NOTE: You **must** provide the port",
+                    "type": "string",
+                    "pattern": "(http|ws)s?://.*(:\\d{2,5}).*"
+                }
+            }
+        },
+        "chain": {
+            "type": "object",
+            "description": "The chain.",
+            "properties": {
+                "type": {
+                    "title": "type",
+                    "enum": [
+                        "relaychain",
+                        "parachain"
+                    ]
+                },
+                "parent": {
+                    "type": "string"
+                },
+                "consensus": {
+                    "enum": [
+                        "Aura",
+                        "PoS",
+                        "PoA"
+                    ]
+                },
+                "sudo": {
+                    "type": "boolean"
+                },
+                "para_id": {
+                    "type": "integer"
+                },
+                "required": [
+                    "type",
+                    "consensus",
+                    "sudo"
+                ]
+            }
+        },
+        "specs": {
+            "type": "object",
+            "description": "The specs",
+            "properties": {
+                "block_time": {
+                    "type": "number"
+                },
+                "era": {
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "ed": {
+                    "type": "number"
+                },
+                "lease_period": {},
+                "decimals": {
+                    "type": "integer"
+                },
+                "token": {
+                    "type": "string"
+                },
+                "ss58_format": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "required": [
+                    "block_time",
+                    "decimals",
+                    "token"
+                ]
+            }
+        },
+        "contact": {
+            "type": "object",
+            "description": "Contact details",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "email",
+                        "matrix",
+                        "telegram",
+                        "twitter",
+                        "mastodon"
+                    ]
+                },
+                "contact": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "required": [
+        "name",
+        "network_type"
+    ]
+}
