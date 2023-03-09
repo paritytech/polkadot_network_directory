@@ -3,7 +3,7 @@ network_type: mainnet
 chain:
   type: parachain
   parent: Kusama
-  consensus: null
+  consensus: PoS
   sudo: true
   para_id: 2119
 chainspec:

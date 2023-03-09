@@ -3,10 +3,9 @@ network_type: solo_testnet
 chain:
   type: solo
   # parent: n/a
-  consensus: null
   sudo: true
 chainspec:
-  http_url: null
+  http_url: https://github.com/aleph-zero-foundation/aleph-node/issues/16
 goals: []
 repository: https://github.com/aleph-zero-foundation/aleph-node
 validators: []
