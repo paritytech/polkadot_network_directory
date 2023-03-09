@@ -89,8 +89,7 @@
             "type": "array",
             "items": {
                 "$ref": "#/$defs/api_endpoint"
-            },
-            "minItems": 1
+            }
         },
         "expectations": {
             "type": "array",
