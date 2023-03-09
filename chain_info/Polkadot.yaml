@@ -31,6 +31,20 @@ faucet: null
 rpc_endpoints:
   - name: Parity
     url: wss://rpc.polkadot.io:443
+  - name: Automata 1RPC
+    url: wss://1rpc.io:443/dot
+  - name: Dotters Net
+    url: wss://rpc.dotters.network:443/polkadot
+  - name: Dwellir
+    url: wss://polkadot-rpc.dwellir.com:443
+  - name: Dwellir Tunisia
+    url: wss://polkadot-rpc-tn.dwellir.com:443
+  - name: IBP Network
+    url: wss://rpc.ibp.network:443/polkadot
+  - name: OnFinality
+    url: wss://polkadot.api.onfinality.io:443/public-ws
+  - name: Radium Block
+    url: wss://polkadot.public.curie.radiumblock.co:443/ws
 api_endpoints:
   - name: subscan
     url: https://polkadot.api.subscan.io
