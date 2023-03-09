@@ -26,6 +26,8 @@ release_cycle: null
 rpc_endpoints:
   - name: AjunaNetwork
     url: wss://rpc-parachain.ajuna.network:443
+  - name: RadiumBlock
+    url: wss://ajuna.public.curie.radiumblock.co:443/ws
 api_endpoints: []
 expectations: []
 features: []
