@@ -30,5 +30,6 @@ documentation:
 rpc_endpoints:
   - name: Parity
     url: wss://statemine-rpc.polkadot.io:443
+api_endpoints: []
 features: []
 notes: []

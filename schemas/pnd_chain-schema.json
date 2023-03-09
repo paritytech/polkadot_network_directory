@@ -259,7 +259,8 @@
                     "enum": [
                         "Aura",
                         "PoS",
-                        "PoA"
+                        "PoA",
+                        "AlephBFT"
                     ]
                 },
                 "sudo": {
