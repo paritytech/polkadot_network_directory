@@ -125,6 +125,82 @@
             ],
             "pattern": "#(.*):(.*)"
         },
+        "email": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "pattern": "^email$"
+                },
+                "contact": {
+                    "type": "string",
+                    "pattern": "(.+)@(.+).(.+)"
+                }
+            }
+        },
+        "matrix": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "pattern": "matrix"
+                },
+                "contact": {
+                    "type": "string",
+                    "pattern": "(@|#)(.+):(.+)"
+                }
+            }
+        },
+        "telegram": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "pattern": "telegram"
+                },
+                "contact": {
+                    "$ref": "#/$defs/url"
+                }
+            }
+        },
+        "twitter": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "pattern": "twitter"
+                },
+                "contact": {
+                    "type": "string",
+                    "pattern": "@.+"
+                }
+            }
+        },
+        "mastodon": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "pattern": "mastodon"
+                },
+                "contact": {
+                    "type": "string",
+                    "pattern": "@(.+)@(.+).(.+)"
+                }
+            }
+        },
+        "website": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "pattern": "website"
+                },
+                "contact": {
+                    "$ref": "#/$defs/url"
+                }
+            }
+        },
         "faucet": {
             "title": "A link to the faucet",
             "markdownDescription": "Faucets are mainly used on testsnet and having one available greatly helps devs and testers",
@@ -215,7 +291,10 @@
                     ]
                 },
                 "ed": {
-                    "type": "number"
+                    "type": [
+                        "number",
+                        "null"
+                    ]
                 },
                 "lease_period": {},
                 "decimals": {
@@ -240,21 +319,39 @@
         "contact": {
             "type": "object",
             "description": "Contact details",
-            "properties": {
-                "type": {
-                    "enum": [
-                        "email",
-                        "matrix",
-                        "telegram",
-                        "twitter",
-                        "mastodon",
-                        "website"
-                    ]
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/email"
                 },
-                "contact": {
-                    "type": "string"
+                {
+                    "$ref": "#/$defs/matrix"
+                },
+                {
+                    "$ref": "#/$defs/telegram"
+                },
+                {
+                    "$ref": "#/$defs/twitter"
+                },
+                {
+                    "$ref": "#/$defs/mastodon"
+                },
+                {
+                    "$ref": "#/$defs/website"
                 }
-            }
+            ]
+            // "type": {
+            //     "enum": [
+            //         "email",
+            //         "matrix",
+            //         "telegram",
+            //         "twitter",
+            //         "mastodon",
+            //         "website"
+            //     ]
+            // },
+            // "contact": {
+            //     "type": "string"
+            // }
         }
     },
     "required": [

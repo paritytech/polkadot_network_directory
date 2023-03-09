@@ -21,7 +21,7 @@ specs:
     token: ROC
     ss58_format: null
 contacts:
-    - type: github
+    - type: website
       contact: https://github.com/paritytech/subport
 faucet: "#rococo-faucet:matrix.org"
 rpc_endpoints:
