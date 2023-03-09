@@ -90,7 +90,7 @@
         "api_endpoints": {
             "type": "array",
             "items": {
-                "$ref": "#/$defs/url"
+                "$ref": "#/$defs/api_endpoint"
             },
             "minItems": 1
         },
@@ -99,8 +99,7 @@
             "title": "What is this chain for ?",
             "items": {
                 "type": "string"
-            },
-            "minItems": 1
+            }
         },
         "features": {
             "type": "array",
@@ -123,21 +122,38 @@
             "pattern": "https?://.*"
         },
         "matrix_room": {
-            "type": "string",
+            "type": [
+                "string",
+                "null"
+            ],
             "pattern": "#(.*):(.*)"
         },
         "rpc_endpoint": {
             "type": "object",
             "properties": {
                 "name": {
-                    "title": "Name of the RPC Endpoinr provider",
+                    "title": "Name of the RPC Endpoint provider",
                     "type": "string"
                 },
                 "url": {
-                    "title": "Endpoint URL",
+                    "title": "RPC Endpoint URL",
                     "markdownDescription": "NOTE: You **must** provide the port",
                     "type": "string",
                     "pattern": "(http|ws)s?://.*(:\\d{2,5}).*"
+                }
+            }
+        },
+        "api_endpoint": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "title": "Name of the API Endpoint provider",
+                    "type": "string"
+                },
+                "url": {
+                    "title": "API Endpoint URL",
+                    "type": "string",
+                    "pattern": "(http)s?://.*"
                 }
             }
         },
@@ -149,7 +165,8 @@
                     "title": "type",
                     "enum": [
                         "relaychain",
-                        "parachain"
+                        "parachain",
+                        "solo"
                     ]
                 },
                 "parent": {
