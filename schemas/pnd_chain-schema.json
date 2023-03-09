@@ -267,13 +267,13 @@
                 },
                 "para_id": {
                     "type": "integer"
-                },
-                "required": [
-                    "type",
-                    "consensus",
-                    "sudo"
-                ]
-            }
+                }
+            },
+            "required": [
+                "type",
+                "consensus",
+                "sudo"
+            ]
         },
         "specs": {
             "type": "object",
@@ -306,13 +306,13 @@
                         "integer",
                         "null"
                     ]
-                },
-                "required": [
-                    "block_time",
-                    "decimals",
-                    "token"
-                ]
-            }
+                }
+            },
+            "required": [
+                "block_time",
+                "decimals",
+                "token"
+            ]
         },
         "contact": {
             "type": "object",
@@ -341,6 +341,19 @@
     },
     "required": [
         "name",
-        "network_type"
+        "network_type",
+        "chain",
+        "chainspec",
+        "goals",
+        "repository",
+        "validators",
+        "release_cycle",
+        "specs",
+        "contacts",
+        "rpc_endpoints",
+        "api_endpoints",
+        "documentation",
+        "expectations",
+        "features"
     ]
 }
