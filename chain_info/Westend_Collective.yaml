@@ -3,7 +3,7 @@ network_type: testnet
 chain:
     type: parachain
     parent: Westend
-    # consensus: n/a
+    consensus: Aura
     sudo: true
     para_id: 1001
 chainspec:

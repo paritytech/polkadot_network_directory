@@ -2,7 +2,6 @@ name: Aleph Zero
 network_type: solo_mainnet
 chain:
   type: solo
-  # parent: n/a
   sudo: true
 chainspec:
   http_url: https://github.com/aleph-zero-foundation/aleph-node/issues/16

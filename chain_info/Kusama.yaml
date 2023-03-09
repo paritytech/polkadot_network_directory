@@ -2,10 +2,8 @@ name: Kusama
 network_type: canarynet
 chain:
   type: relaychain
-  # parent: n/a
   consensus: PoS
   sudo: false
-# parent: n/a
 chainspec:
   http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/kusama.json
 goals: []

@@ -2,7 +2,6 @@ name: Rococo
 network_type: testnet
 chain:
     type: relaychain
-    # parent: n/a
     consensus: PoA
     sudo: true
 chainspec:

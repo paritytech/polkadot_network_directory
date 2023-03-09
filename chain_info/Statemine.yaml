@@ -3,7 +3,7 @@ network_type: canarynet
 chain:
   type: parachain
   parent: Kusama
-  # consensus: n/a
+  consensus: PoS
   sudo: false
   para_id: 1000
 chainspec:

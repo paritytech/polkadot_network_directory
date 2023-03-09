@@ -3,7 +3,7 @@ network_type: testnet
 chain:
     type: parachain
     parent: Wococo
-    # consensus: n/a
+    consensus: PoA
     sudo: true
     para_id: 1014
 chainspec:

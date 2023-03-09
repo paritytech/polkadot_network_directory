@@ -3,6 +3,7 @@ network_type: testnet
 chain:
     type: parachain
     parent: Rococo
+    consensus: PoA
     sudo: true
     para_id: 1002
 goals:
