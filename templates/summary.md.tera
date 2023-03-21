@@ -61,5 +61,5 @@
 {%- for item in chains -%}
 {%- if item.network_type == "solo_testnet" -%}
 - [{{item.name}}](chains/{{item.name | replace(from=" ", to="_") }}/{{item.name | replace(from=" ", to="_") }}.md)
-{%- endif -%}
+{% endif -%}
 {% endfor -%}

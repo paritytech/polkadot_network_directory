@@ -3,7 +3,7 @@ network_type: solo_testnet
 chain:
   type: solo
   consensus: PoA
-  parent: Anagolay
+  # parent: Anagolay
   sudo: true
 chainspec:
   http_url: https://github.com/anagolay/anagolay-chain/blob/main/resources/idiyanale/spec.json
@@ -23,13 +23,11 @@ contacts:
     contact: "@woss:matrix.org"
   - type: matrix
     contact: "#anagolay-general:matrix.org"
-  - type: website
-    url: https://mastodon.social/@anagolay
-  - type: website
-    url: https://anagolay.network/idiyanale
 faucet: null
 documentation:
     - https://anagolay.dev
+    - https://mastodon.social/@anagolay
+    - https://anagolay.network/idiyanale
 rpc_endpoints:
   - name: Idiyanale Testnet
     url: wss://idiyanale-testnet.anagolay.io:443
