@@ -1,15 +1,15 @@
-name: Wococo BridgeHub
+name: Wococo Wockmint
 network_type: testnet
 chain:
     type: parachain
     parent: Wococo
     consensus: PoS
     sudo: true
-    para_id: 1014
+    para_id: 1000
 chainspec:
-    http_url: https://paritytech.github.io/chainspecs/wococo/parachain/bridge-hub/chainspec.json
+    http_url: https://paritytech.github.io/chainspecs/wococo/parachain/wockmint/chainspec.json
 goals:
-    - Wococo's testnet parachain for BridgeHub
+    - Wococo's testnet Asset parachain
 repository: https://github.com/paritytech/cumulus
 validators:
     - Parity Only
@@ -28,13 +28,11 @@ contacts:
 faucet: "#wococo-faucet:matrix.org"
 rpc_endpoints:
     - name: Parity
-      url: wss://wococo-bridge-hub-rpc.polkadot.io:443
+      url: wss://wococo-wockmint-rpc.polkadot.io:443
 api_endpoints: []
 documentation:
     - https://github.com/paritytech/cumulus
 expectations:
     - "parity: Run collator nodes; upgrade runtime"
-    - "community: Test potential integrations with BridgeHub parachain"
-features:
-    - "bridge with Rococo"
+    - "community: Test potential integrations with bridges and the Asset parachain"
 notes: []

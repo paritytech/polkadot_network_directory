@@ -1,0 +1,35 @@
+name: Kusama BridgeHub
+network_type: mainnet
+chain:
+  type: parachain
+  parent: Kusama
+  consensus: PoS
+  sudo: false
+  para_id: 1002
+chainspec:
+  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/bridge-hub-kusama.json
+goals:
+  - BridgeHub, a blockchain to support message passing between Substrate based chains like Polkadot and Kusama networks.
+repository: https://github.com/paritytech/cumulus
+validators:
+  - Open
+release_cycle: Following the Polkadot 3 weeks cycle
+specs:
+  block_time: 12
+  era: null
+  ed: 1000000000
+  lease_period: null
+  decimals: 10
+  token: DOT
+  ss58_format: null
+contacts: []
+faucet: null
+documentation:
+  - https://wiki.polkadot.network/docs/learn-bridges
+rpc_endpoints:
+  - name: Parity
+    url: wss://kusama-bridge-hub-rpc.polkadot.io:443
+api_endpoints: []
+expectations: []
+features: []
+notes: []

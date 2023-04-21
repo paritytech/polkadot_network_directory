@@ -2,21 +2,22 @@ name: Wococo
 network_type: testnet
 chain:
     type: relaychain
-    consensus: PoA
+    consensus: PoS
     sudo: true
 chainspec:
     http_url: https://paritytech.github.io/chainspecs/wococo/relaychain/chainspec.json
 goals:
-    - Bridge testing with Wococo
+    - A relay-chain for bridge testing with Rococo
 repository: https://github.com/paritytech/polkadot
 validators:
-    - Parity Only
+    - Parity
+    - Community
 release_cycle: "Following the Polkadot 3 weeks cycle"
 specs:
     block_time: 6
     era: 42
-    ed: 33333333
-    lease_period: 14400
+    ed: 10000000000
+    lease_period: 403200
     decimals: 12
     token: WOOK
     ss58_format: 42
@@ -35,5 +36,4 @@ expectations:
 features:
     - "parachains: Community parachains cannot register on Wococo at this time"
 notes:
-    - Wococo is a community relay chain dedicated to testing bridges. It is running the Rococo runtime
-    - The consensus is planned to be switched to PoS
+    - Wococo is a community relay chain dedicated to testing bridges. It is running a modified Westend runtime (6 times shorter epoch).
