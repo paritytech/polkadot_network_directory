@@ -1,0 +1,39 @@
+name: Mangata X
+network_type: mainnet
+chain:
+  type: parachain
+  parent: Kusama
+  # TODO: Consensus should be one of "Aura", "PoS", "PoA" or "AlephBFT" according to the `pnd_chain-schema.json`
+  # TODO: We need to validate that the value is right
+  consensus: PoS
+  sudo: true
+  para_id: 2110
+chainspec:
+  http_url: https://raw.githubusercontent.com/mangata-finance/chainspec/master/mangata-kusama-mainnet.json
+goals:
+  - An interchain DEX with the most capital-efficient price structure for traders and lottery providers
+repository: https://github.com/mangata-finance/mangata-node
+specs:
+  block_time: 12
+  # TODO: Check ed value is fine
+  ed: 10000000000
+  decimals: 18
+  token: MGX
+  # TODO: Check ss58_format value is fine
+  ss58_format: 6
+contacts:
+  - type: email
+    contact: hello@mangata.finance
+documentation:
+  - https://mangata-finance.notion.site/Welcome-to-Mangata-09bac178e4aa40069690f4f6cc08bdd5
+validators: []
+release_cycle: null
+rpc_endpoints:
+  - name: Mangata RPC
+    url: wss://kusama-rpc.mangata.online:443
+api_endpoints:
+  - name: subscan
+    url: https://mangatax.subscan.io/
+expectations: []
+features: []
+notes: []
