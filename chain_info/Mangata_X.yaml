@@ -1,0 +1,42 @@
+name: Mangata X
+network_type: mainnet
+chain:
+  type: parachain
+  consensus: PoS
+  sudo: true
+  para_id: 2110
+chainspec:
+  http_url: https://raw.githubusercontent.com/mangata-finance/chainspec/master/mangata-kusama-mainnet.json
+goals:
+  - An interchain DEX with the most capital-efficient and fair price structure for traders, liquidity providers and arbitrageurs.
+repository: https://github.com/mangata-finance/mangata-node
+validators:
+  - Community nodes
+release_cycle: roughly once a month
+specs:
+  block_time: 12
+  ed: 10000000000
+  decimals: 18
+  token: MGX
+  ss58_format: 42
+contacts:
+  - type: email
+    contact: "hello@mangata.finance"
+rpc_endpoints:
+  - name: Parity
+    url: wss://kusama-rpc.mangata.online:443
+api_endpoints:
+  - name: subscan
+    url: https://mangatax.api.subscan.io
+documentation:
+  - https://www.mangata.finance/
+  - https://mangata-finance.notion.site/Mangata-Public-Workspace-09bac178e4aa40069690f4f6cc08bdd5
+  - https://docs.mangata.finance/sdk/
+expectations: []
+features:
+  - "Gasless Swaps"
+  - "MEV and front-running mitigation with the Themis consensus extension"
+  - "Algorithmic Buy & Burn"
+  - "Time Incentivization"
+  - "Proof of Liquidity"
+notes: []
