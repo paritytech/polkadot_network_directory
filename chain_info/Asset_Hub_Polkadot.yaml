@@ -7,7 +7,7 @@ chain:
   sudo: false
   para_id: 1000
 chainspec:
-  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/statemint.json
+  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/asset-hub-polkadot.json
 goals:
   - Asset Hub Polkadot handles your assets, whether fungible or not (NFT)
 repository: https://github.com/paritytech/cumulus
