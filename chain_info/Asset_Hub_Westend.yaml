@@ -28,7 +28,7 @@ documentation:
   - https://github.com/paritytech/cumulus
 rpc_endpoints:
   - name: Parity
-    url: wss://westend-westmint-rpc.polkadot.io:443
+    url: wss://westend-westend-asset-hub-rpc.polkadot.io:443
 api_endpoints: []
 expectations:
   - "parity: Run collator nodes; upgrade runtime"

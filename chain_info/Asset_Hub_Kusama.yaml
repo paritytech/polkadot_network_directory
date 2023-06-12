@@ -29,7 +29,7 @@ documentation:
   - https://wiki.polkadot.network/docs/kusama-statemine
 rpc_endpoints:
   - name: Parity
-    url: wss://statemine-rpc.polkadot.io:443
+    url: wss://kusama-asset-hub-rpc.polkadot.io:443
 api_endpoints: []
 features: []
 notes: []
