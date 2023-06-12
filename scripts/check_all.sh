@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
 
+ENGINE=${ENGINE:-podman}
+
 function yc {
-    docker run --rm -t -v $PWD:/src docker.io/chevdor/yamlcheck $@
+    $ENGINE run --rm -t -v $PWD:/workdir docker.io/chevdor/yamlcheck $@
 }
 
-echo "Using yamlcheck $(yamlcheck --version)"
+echo "Using yamlcheck $(yc --version)"
 
 overall_tmp=$(mktemp)
 
 echo 0 > $overall_tmp
 find chain_info -name "*.yaml" | while read -r f; do
-    yamlcheck check -s ./schemas/pnd_chain-schema.json --file "$f" > /dev/null
+    yc check -s ./schemas/pnd_chain-schema.json --file "$f" > /dev/null
     res=$?
     if (( res == 0 )); then
         status="OK "

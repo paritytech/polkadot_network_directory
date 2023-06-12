@@ -49,6 +49,8 @@ jobs:
           submodules: recursive
 
       - name: Check against Schema
+        env:
+          ENGINE: docker
         run: |
           ./scripts/check_all.sh
 
