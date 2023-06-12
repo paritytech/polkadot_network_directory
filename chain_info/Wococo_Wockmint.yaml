@@ -35,5 +35,5 @@ documentation:
 expectations:
     - "parity: Run collator nodes; upgrade runtime"
     - "community: Test potential integrations with bridges and the Asset parachain"
-features: [] # Omited on purpose for testing
+features: []
 notes: []
