@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-if ! which yamlcheck >/dev/null; then
-    cargo install yamlcheck
-fi
+function yc {
+    docker run --rm -t -v $PWD:/src docker.io/chevdor/yamlcheck $@
+}
+
 echo "Using yamlcheck $(yamlcheck --version)"
 
 overall_tmp=$(mktemp)
