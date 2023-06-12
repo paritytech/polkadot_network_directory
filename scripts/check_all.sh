@@ -11,7 +11,7 @@ echo "Using yamlcheck $(yc --version)"
 overall_tmp=$(mktemp)
 
 echo 0 > $overall_tmp
-find chain_info -name "*.yaml" | while read -r f; do
+find chain_info -name "*.yaml" | sort | while read -r f; do
     yc check -s ./schemas/pnd_chain-schema.json --file "$f" > /dev/null
     res=$?
     if (( res == 0 )); then
