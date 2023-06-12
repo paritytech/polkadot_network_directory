@@ -1,4 +1,4 @@
-name: Statemine
+name: Asset hub Kusama
 network_type: canarynet
 chain:
   type: parachain
@@ -7,9 +7,9 @@ chain:
   sudo: false
   para_id: 1000
 chainspec:
-  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/statemine.json
+  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/asset-hub-kusama.json
 goals:
-  - Statemine handles your assets, whether fungible or not (NFT)
+  - Asset hub Kusama handles your assets, whether fungible or not (NFT)
 expectations: []
 repository: https://github.com/paritytech/cumulus
 validators:
