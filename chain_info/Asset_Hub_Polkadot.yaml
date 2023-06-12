@@ -28,7 +28,7 @@ documentation:
   - https://wiki.polkadot.network/docs/learn-statemint
 rpc_endpoints:
   - name: Parity
-    url: wss://statemint-rpc.polkadot.io:443
+    url: wss://polkadot-asset-hub-rpc.polkadot.io:443
 api_endpoints: []
 expectations: []
 features: []
