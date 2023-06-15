@@ -23,7 +23,7 @@ contacts:
   - type: email
     contact: "hello@mangata.finance"
 rpc_endpoints:
-  - name: Parity
+  - name: Mangata X RPC
     url: wss://kusama-rpc.mangata.online:443
 api_endpoints:
   - name: subscan
