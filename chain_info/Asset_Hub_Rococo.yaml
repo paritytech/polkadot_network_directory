@@ -32,6 +32,7 @@ rpc_endpoints:
 api_endpoints:
     - name: subscan
       url: https://rockmine.api.subscan.io
+bootnodes: []
 documentation:
     - https://github.com/paritytech/cumulus
 expectations:

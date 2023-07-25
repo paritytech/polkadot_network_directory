@@ -9,7 +9,7 @@ chain:
 chainspec:
   http_url: https://github.com/galacticcouncil/Basilisk-node/blob/master/node/res/basilisk.json
 goals:
-  - Brings permissionless liquidity to Kusama.
+  - Brings permission-less liquidity to Kusama.
   - Support young projects. Swap tokens or flip NFTs and earn rewards.
 repository: https://github.com/galacticcouncil/Basilisk-node
 specs:
@@ -31,6 +31,7 @@ rpc_endpoints:
   - name: Basilisk
     url: wss://rpc.basilisk.cloud:443
 api_endpoints: []
+bootnodes: []
 expectations: []
 features: []
 notes: []

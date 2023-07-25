@@ -42,6 +42,7 @@ rpc_endpoints:
   - name: Automata 1RPC
     url: wss://1rpc.io:443/aca
 api_endpoints: []
+bootnodes: []
 expectations: []
 features: []
 notes: []

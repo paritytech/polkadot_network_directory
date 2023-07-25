@@ -32,6 +32,7 @@ rpc_endpoints:
 api_endpoints:
   - name: subscan
     url: https://bifrost.subscan.io/
+bootnodes: []
 expectations: []
 features: []
 notes: []

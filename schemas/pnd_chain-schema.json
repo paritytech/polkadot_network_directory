@@ -3,6 +3,7 @@
     "title": "Polkadot Network Directory Schema",
     "description": "JSON Schema definition for Polkadot Gov Proposals",
     "type": "object",
+   	"additionalProperties": false,
     "properties": {
         "name": {
             "title": "Chain name",
@@ -87,6 +88,12 @@
             "type": "array",
             "items": {
                 "$ref": "#/$defs/api_endpoint"
+            }
+        },
+         "bootnodes": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/bootnode"
             }
         },
         "expectations": {
@@ -240,6 +247,20 @@
                 }
             }
         },
+           "bootnode": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "title": "Name of the Bootnode provider",
+                    "type": "string"
+                },
+                "url": {
+                    "title": "Bootnode URL",
+                    "type": "string",
+                    "pattern": ".*"
+                }
+            }
+        },
         "chain": {
             "type": "object",
             "description": "The chain.",
@@ -353,6 +374,7 @@
         "contacts",
         "rpc_endpoints",
         "api_endpoints",
+        "bootnodes",
         "documentation",
         "expectations",
         "features"

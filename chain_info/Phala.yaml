@@ -30,6 +30,7 @@ rpc_endpoints:
   - name: Phala
     url: wss://api.phala.network:443/ws
 api_endpoints: []
+bootnodes: []
 expectations: []
 features: []
 notes: []

@@ -29,6 +29,7 @@ rpc_endpoints:
     - name: Parity
       url: wss://wococo-rpc.polkadot.io:443
 api_endpoints: []
+bootnodes: []
 documentation:
     - https://github.com/paritytech/parity-bridges-common
 expectations:

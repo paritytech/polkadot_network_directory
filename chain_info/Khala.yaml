@@ -34,6 +34,7 @@ rpc_endpoints:
   - name: Pinknode
     url: wss://public-rpc.pinknode.io:443/khala
 api_endpoints: []
+bootnodes: []
 expectations: []
 features: []
 notes: []

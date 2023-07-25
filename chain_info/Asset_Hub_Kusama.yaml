@@ -31,5 +31,6 @@ rpc_endpoints:
   - name: Parity
     url: wss://kusama-asset-hub-rpc.polkadot.io:443
 api_endpoints: []
+bootnodes: []
 features: []
 notes: []

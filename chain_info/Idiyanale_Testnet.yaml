@@ -32,6 +32,7 @@ rpc_endpoints:
   - name: Idiyanale Testnet
     url: wss://idiyanale-testnet.anagolay.io:443
 api_endpoints: []
+bootnodes: []
 expectations: []
 features: []
 notes: []

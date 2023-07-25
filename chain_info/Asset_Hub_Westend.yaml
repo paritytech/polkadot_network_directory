@@ -30,6 +30,7 @@ rpc_endpoints:
   - name: Parity
     url: wss://westend-westend-asset-hub-rpc.polkadot.io:443
 api_endpoints: []
+bootnodes: []
 expectations:
   - "parity: Run collator nodes; upgrade runtime"
   - "community: Test potential integrations with the asset hub parachains"

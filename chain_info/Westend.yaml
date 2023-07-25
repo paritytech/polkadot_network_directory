@@ -7,7 +7,7 @@ chain:
 chainspec:
     http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/westend.json
 goals:
-    - Staging enviroment for Polkadot and Kusama.
+    - Staging environment for Polkadot and Kusama.
 repository: https://github.com/paritytech/polkadot
 validators:
     - 16 invulnerable validators ran by Parity and Community ran nodes (5 per cycle)
@@ -28,6 +28,11 @@ rpc_endpoints:
 api_endpoints:
     - name: subscan
       url: https://westend.api.subscan.io
+bootnodes:
+  - name: RadiumBlock
+    url: /dns/westend-bootnode.radiumblock.com/tcp/30335/wss/p2p/12D3KooWJBowJuX1TaWNWHt8Dz8z44BoCZunLCfFqxA2rLTn6TBD
+  - name: RadiumBlock
+    url: /dns/westend-bootnode.radiumblock.com/tcp/30333/p2p/12D3KooWJBowJuX1TaWNWHt8Dz8z44BoCZunLCfFqxA2rLTn6TBD
 documentation:
     - https://github.com/paritytech/polkadot
 expectations:

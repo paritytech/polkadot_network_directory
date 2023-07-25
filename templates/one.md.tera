@@ -69,7 +69,6 @@ No information provided.
 No RPC endpoint found
 {%- endif %}
 
-
 ## API Endpoints
 
 {%- if api_endpoints -%}
@@ -79,6 +78,17 @@ No RPC endpoint found
 {%- else %}
 No API endpoint found
 {%- endif %}
+
+## Bootnodes
+
+{%- if bootnodes -%}
+{% for bootnode in bootnodes %}
+- {{ bootnode.name }}: [`{{ bootnode.url | truncate(length=57) }}...`]({{ bootnode.url }})
+{%- endfor %}
+{%- else %}
+No Bootnode found
+{%- endif %}
+
 
 ## Release Cycle
 

@@ -7,7 +7,7 @@ chain:
 chainspec:
     http_url: https://raw.githubusercontent.com/AstarNetwork/Astar/master/bin/collator/res/tokyo.json
 goals:
-    - Astar Network testnet relay chain (for Shiubuya testnet)
+    - Astar Network testnet relay chain (for Shibuya testnet)
 repository: https://github.com/AstarNetwork/Astar
 validators:
     - Astar only
@@ -28,6 +28,7 @@ rpc_endpoints:
     - name: Astar
       url: wss://tokyo.astar.network:443
 api_endpoints: []
+bootnodes: []
 documentation:
   - https://docs.astar.network/
 expectations:

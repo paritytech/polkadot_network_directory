@@ -28,6 +28,7 @@ rpc_endpoints:
     - name: Parity
       url: wss://collectives-westmint-rpc.polkadot.io:443
 api_endpoints: []
+bootnodes: []
 documentation:
     - https://github.com/paritytech/cumulus
 expectations:
