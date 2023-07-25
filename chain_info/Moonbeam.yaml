@@ -45,6 +45,7 @@ api_endpoints:
       url: https://moonbeam.api.subscan.io
     - name: blockscout
       url: https://blockscout.moonbeam.network/
+bootnodes: []
 expectations: []
 features: []
 notes: []

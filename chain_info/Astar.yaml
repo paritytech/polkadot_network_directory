@@ -9,7 +9,7 @@ chain:
 chainspec:
   http_url: https://raw.githubusercontent.com/AstarNetwork/Astar/master/bin/collator/res/astar.json
 goals:
-  - The Future of Smart Contracts for Multichain
+  - The Future of Smart Contracts for Multi chain
 repository: https://github.com/AstarNetwork/Astar
 specs:
   block_time: 12
@@ -52,6 +52,7 @@ rpc_endpoints:
 api_endpoints:
   - name: subscan
     url: https://astar.subscan.io/
+bootnodes: []
 expectations: []
 features: []
 notes: []

@@ -45,6 +45,7 @@ rpc_endpoints:
 api_endpoints:
   - name: subscan
     url: https://shibuya.subscan.io/
+bootnodes: []
 expectations: []
 features: []
 notes: []

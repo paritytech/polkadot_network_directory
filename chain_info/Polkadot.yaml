@@ -47,6 +47,11 @@ rpc_endpoints:
 api_endpoints:
   - name: subscan
     url: https://polkadot.api.subscan.io
+bootnodes:
+  - name: RadiumBlock
+    url: /dns/polkadot-bootnode.radiumblock.com/tcp/30333/p2p/12D3KooWNwWNRrPrTk4qMah1YszudMjxNw2qag7Kunhw3Ghs9ea5
+  - name: RadiumBlock
+    url: /dns/polkadot-bootnode.radiumblock.com/tcp/30335/wss/p2p/12D3KooWNwWNRrPrTk4qMah1YszudMjxNw2qag7Kunhw3Ghs9ea5
 documentation:
   - https://polkadot.network/
   - https://forum.polkadot.network/

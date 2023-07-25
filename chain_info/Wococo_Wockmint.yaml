@@ -30,6 +30,8 @@ rpc_endpoints:
     - name: Parity
       url: wss://wococo-wockmint-rpc.polkadot.io:443
 api_endpoints: []
+bootnodes: []
+bootnodes: []
 documentation:
     - https://github.com/paritytech/cumulus
 expectations:

@@ -30,6 +30,7 @@ rpc_endpoints:
   - name: Parity
     url: wss://kusama-bridge-hub-rpc.polkadot.io:443
 api_endpoints: []
+bootnodes: []
 expectations: []
 features: []
 notes: []

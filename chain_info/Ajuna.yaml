@@ -29,6 +29,7 @@ rpc_endpoints:
   - name: RadiumBlock
     url: wss://ajuna.public.curie.radiumblock.co:443/ws
 api_endpoints: []
+bootnodes: []
 expectations: []
 features: []
 notes: []

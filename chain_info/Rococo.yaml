@@ -7,7 +7,7 @@ chain:
 chainspec:
     http_url: https://raw.githubusercontent.com/paritytech/polkadot/master/node/service/chain-specs/rococo.json
 goals:
-    - Community Parachain testnet enviroment
+    - Community Parachain testnet environment
     - XCM Playground for Parachains and Dapps on Parachains
 repository: https://github.com/paritytech/polkadot
 validators:
@@ -33,6 +33,7 @@ api_endpoints:
       url: https://rococo.api.subscan.io
 documentation:
     - https://substrate.io/developers/rococo-network/
+bootnodes: []
 expectations:
     - "parity: Run the nodes for the system; keep the system updated (runtime and nodes) in line with Kusama updates; manage parachain onboarding (see contacts)"
     - "community: Keep parachain updated; onboard their builders into their rococo parachain for testing; make the most out of XCM"
@@ -46,10 +47,10 @@ features:
 notes:
     - |
         Rococo is a community relay chain, to allow everyone to test it is functionality.
-        Different stages of parachains have different needs, and Rococo tries to accomodate
+        Different stages of parachains have different needs, and Rococo tries to accommodate
         to these as best as it can. Two type of parachain slots exist on Rococo: Long Lasting
         slots and Short term slots. As long as a project has a parachain on either Kusama or
-        Polkadot, they are entiteld to having a parachain on Rococo, running besides it.
+        Polkadot, they are entitled to having a parachain on Rococo, running besides it.
         This allows for all production chains to have a testing bed, as well as to onboard
         the projects working on their chains. If a project does not have a production parachain,
         then they will be assigned a short lease slot, which allows them to test the parachain

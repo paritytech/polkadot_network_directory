@@ -28,6 +28,7 @@ rpc_endpoints:
   - name: Tangle
     url: wss://tangle-rococo-archive.webb.tools:443
 api_endpoints: []
+bootnodes: []
 expectations: []
 features: []
 notes: []

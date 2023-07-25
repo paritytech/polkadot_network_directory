@@ -9,7 +9,7 @@ chain:
 chainspec:
   http_url: https://raw.githubusercontent.com/PureStake/moonbeam/master/specs/alphanet/parachain-embedded-specs-v8.json
 goals:
-  - Moonbeam testnet enviroment
+  - Moonbeam testnet environment
   - XCM Playground for Parachains who want to interact with Moonbeam or Moonriver
 repository: https://github.com/PureStake/moonbeam
 validators:
@@ -42,10 +42,11 @@ rpc_endpoints:
   - name: PinkNode
     url: wss://public-rpc.pinknode.io:443/alphanet
 api_endpoints:
-    - name: subscan
+    - name: Subscan
       url: https://moonbase.api.subscan.io
-    - name: blockscout
+    - name: Blockscout
       url: https://moonbase-blockscout.testnet.moonbeam.network/
+bootnodes: []
 expectations:
   - "purestake: Run the nodes for the system; keep the system updated (runtime and nodes) in line with Moonbeam/Moonriver updates; manage parachain onboarding (see contacts)"
   - "community: Test potential integrations with Moon* networks"

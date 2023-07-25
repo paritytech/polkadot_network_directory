@@ -22,11 +22,12 @@ faucet: null
 documentation:
   - https://github.com/aleph-zero-foundation/aleph-node
 rpc_endpoints:
-  - name: Aleph Zero Fundation
+  - name: Aleph Zero Foundation
     url: wss://ws.test.azero.dev:443
   - name: Dwellir
     url: wss://aleph-zero-testnet-rpc.dwellir.com:443
 api_endpoints: []
+bootnodes: []
 expectations: []
 features: []
 notes: []

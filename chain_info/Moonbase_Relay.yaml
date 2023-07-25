@@ -32,6 +32,7 @@ rpc_endpoints:
     - name: Purestake
       url: wss://frag-moonbase-relay-rpc-ws.g.moonbase.moonbeam.network:443
 api_endpoints: []
+bootnodes: []
 documentation:
   - https://github.com/PureStake/polkadot
 expectations:

@@ -31,6 +31,7 @@ rpc_endpoints:
   - name: OnFinality
     url: wss://bajun.api.onfinality.io:443/public-ws
 api_endpoints: []
+bootnodes: []
 expectations: []
 features: []
 notes: []

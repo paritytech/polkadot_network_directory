@@ -50,6 +50,7 @@ rpc_endpoints:
 api_endpoints:
   - name: subscan
     url: https://shiden.subscan.io/
+bootnodes: []
 expectations: []
 features: []
 notes: []

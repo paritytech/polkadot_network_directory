@@ -16,5 +16,19 @@
     ]
 {%- if not loop.last -%},{%- endif -%}
 {% endfor %}
+    },
+     "bootnodes": {
+{%- for chain in chains %}
+    "{{ chain.name }}": [
+{%- for bootnode in chain.bootnodes %}
+        {
+            "name": "{{ bootnode.name }}",
+            "url": "{{ bootnode.url }}"
+        }
+{%- if not loop.last -%},{%- endif -%}
+{% endfor %}
+    ]
+{%- if not loop.last -%},{%- endif -%}
+{% endfor %}
     }
 }
