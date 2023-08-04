@@ -1,0 +1,48 @@
+name: Polkadot Collectives
+network_type: mainnet
+chain:
+    type: parachain
+    parent: Polkadot
+    consensus: PoS
+    sudo: true
+    para_id: 1001
+chainspec:
+    http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/collectives-polkadot.json
+goals:
+    - This parachain is for collectives that serve the Polkadot network.
+repository: https://github.com/paritytech/cumulus
+validators:
+  - Open
+release_cycle: Following the Polkadot 3 weeks cycle
+specs:
+  block_time: 12
+  era: null
+  ed: 1000000000
+  lease_period: null
+  decimals: 10
+  token: DOT
+  ss58_format: null
+contacts: []
+faucet: null
+rpc_endpoints:
+  - name: Parity
+    url: wss://polkadot-collectives-rpc.polkadot.io:443
+  - name: IBP Network GeoDNS1
+    url: wss://sys.ibp.network:443/collectives-polkadot
+  - name: IBP Network GeoDNS2
+    url: wss://sys.dotters.network:443/collectives-polkadot
+  - name: LuckyFriday
+    url: wss://rpc-collectives-polkadot.luckyfriday.io:443
+  - name: OnFinality
+    url: wss://collectives.api.onfinality.io:443/public-ws
+  - name: RadiumBlock
+    url: wss://collectives.public.curie.radiumblock.co:443/ws
+  - name: Stakeworld
+    url: wss://dot-rpc.stakeworld.io:443/collectives
+api_endpoints: []
+bootnodes: []
+documentation:
+  - https://wiki.polkadot.network/docs/learn-system-chains#collectives
+expectations: []
+features: []
+notes: []

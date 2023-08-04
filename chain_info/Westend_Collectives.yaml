@@ -25,8 +25,12 @@ specs:
 contacts: []
 faucet: "#westend_faucet:matrix.org"
 rpc_endpoints:
-    - name: Parity
-      url: wss://collectives-westmint-rpc.polkadot.io:443
+  - name: Parity
+    url: wss://collectives-westmint-rpc.polkadot.io:443
+  - name: IBP Network GeoDNS1
+    url: wss://sys.ibp.network:443/collectives-westend
+  - name: IBP Network GeoDNS2
+    url: wss://sys.dotters.network:443/collectives-westend
 api_endpoints: []
 bootnodes: []
 documentation:

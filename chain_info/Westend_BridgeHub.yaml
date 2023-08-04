@@ -27,8 +27,12 @@ contacts:
       contact: https://github.com/paritytech/subport
 faucet: "#wococo-faucet:matrix.org"
 rpc_endpoints:
-    - name: Parity
-      url: wss://westend-bridge-hub-rpc.polkadot.io:443
+  - name: Parity
+    url: wss://westend-bridge-hub-rpc.polkadot.io:443
+  - name: IBP Network GeoDNS1
+    url: wss://sys.ibp.network:443/bridgehub-westend
+  - name: IBP Network GeoDNS2
+    url: wss://sys.dotters.network:443/bridgehub-westend
 api_endpoints: []
 bootnodes: []
 documentation:
