@@ -36,12 +36,16 @@ rpc_endpoints:
     url: wss://kusama-rpc.dwellir.com:443
   - name: Dwellir Tunisia
     url: wss://kusama-rpc-tn.dwellir.com:443
-  - name: IBP Network
+  - name: IBP Network GeoDNS1
     url: wss://rpc.ibp.network:443/kusama
-  - name: OnFinality
-    url: wss://kusama.api.onfinality.io:443/public-ws
+  - name: IBP Network GeoDNS2
+    url: wss://rpc.dotters.network:443/kusama
   - name: Radium Block
     url: wss://kusama.public.curie.radiumblock.co:443/ws
+  - name: Stakeworld
+    url: wss://ksm-rpc.stakeworld.io:443
+  - name: LuckyFriday
+    url: wss://rpc-kusama.luckyfriday.io:443
 api_endpoints:
   - name: subscan
     url: https://kusama.api.subscan.io
