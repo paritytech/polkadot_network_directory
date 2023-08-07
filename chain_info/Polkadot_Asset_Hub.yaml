@@ -29,6 +29,22 @@ documentation:
 rpc_endpoints:
   - name: Parity
     url: wss://polkadot-asset-hub-rpc.polkadot.io:443
+  - name: Dwellir
+    url: wss://statemint-rpc.dwellir.com:443
+  - name: Dwellir Tunisia
+    url: wss://statemint-rpc-tn.dwellir.com:443
+  - name: IBP Network GeoDNS1
+    url: wss://sys.ibp.network:443/statemint
+  - name: IBP Network GeoDNS2
+    url: wss://sys.dotters.network:443/statemint
+  - name: OnFinality
+    url: wss://statemint.api.onfinality.io:443/public-ws
+  - name: LuckyFriday
+    url: wss://rpc-asset-hub-polkadot.luckyfriday.io:443
+  - name: RadiumBlock
+    url: wss://statemint.public.curie.radiumblock.co:443/ws
+  - name: Stakeworld
+    url: wss://dot-rpc.stakeworld.io:443/assethub
 api_endpoints: []
 bootnodes: []
 expectations: []
