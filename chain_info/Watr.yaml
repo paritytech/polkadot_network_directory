@@ -1,0 +1,38 @@
+name: Watr
+network_type: testnet
+chain:
+    type: parachain
+    consensus: PoA
+    sudo: true
+chainspec:
+    http_url: https://raw.githubusercontent.com/Watr-Protocol/watr/main/chain-specs/devnet-raw.json
+goals:
+    - Watr testnet environment.
+repository: https://github.com/Watr-Protocol/watr
+validators:
+    - Watr only
+release_cycle: null
+specs:
+    block_time: 12
+    era: null
+    ed: null
+    lease_period: null
+    decimals: 18
+    token: WATRD
+    ss58_format: 19
+contacts:
+  - type: email
+    contact: ecosystem@watr.org
+faucet: null
+rpc_endpoints:
+    - name: Watr
+      url: wss://rpc.watr.org:443
+api_endpoints: []
+bootnodes: []
+documentation:
+  - https://watr.org/
+expectations:
+    - Watr gives developers, entrepreneurs and investors direct access to commodities as a platform.
+features:
+    - "Watr is the digital home for a new class of (physical) commodity flows: tokenized and programmable across supply chains, trade and financing"
+    - "Watr connects these flows and the industry pioneers behind them with a vibrant community of global developers, entrepreneurs and investors."
