@@ -4,6 +4,8 @@ chain:
     type: parachain
     consensus: PoA
     sudo: true
+    parent: Rococo
+    para_id: 2058
 chainspec:
     http_url: https://raw.githubusercontent.com/Watr-Protocol/watr/main/chain-specs/devnet-raw.json
 goals:
@@ -30,9 +32,9 @@ rpc_endpoints:
 api_endpoints: []
 bootnodes: []
 documentation:
-  - https://watr.org/
+    - https://watr.org/
 expectations:
     - Watr gives developers, entrepreneurs and investors direct access to commodities as a platform.
 features:
     - "Watr is the digital home for a new class of (physical) commodity flows: tokenized and programmable across supply chains, trade and financing"
-    - "Watr connects these flows and the industry pioneers behind them with a vibrant community of global developers, entrepreneurs and investors."
+    - Watr connects these flows and the industry pioneers behind them with a vibrant community of global developers, entrepreneurs and investors
