@@ -54,6 +54,18 @@ bootnodes:
     url: /dns/kusama-bootnode.radiumblock.com/tcp/30333/p2p/12D3KooWGzKffWe7JSXeKMQeSQC5xfBafZtgBDCuBVxmwe2TJRuc
   - name: RadiumBlock
     url: /dns/kusama-bootnode.radiumblock.com/tcp/30335/wss/p2p/12D3KooWGzKffWe7JSXeKMQeSQC5xfBafZtgBDCuBVxmwe2TJRuc
+  - name: Parity
+    url: "/dns/kusama-bootnode-0.polkadot.io/tcp/30333/p2p/12D3KooWSueCPH3puP2PcvqPJdNaDNF3jMZjtJtDiSy35pWrbt5h"
+  - name: Parity
+    url: "/dns/kusama-bootnode-0.polkadot.io/tcp/30334/ws/p2p/12D3KooWSueCPH3puP2PcvqPJdNaDNF3jMZjtJtDiSy35pWrbt5h"
+  - name: Parity
+    url: "/dns/kusama-bootnode-0.polkadot.io/tcp/443/wss/p2p/12D3KooWSueCPH3puP2PcvqPJdNaDNF3jMZjtJtDiSy35pWrbt5h"
+  - name: Parity
+    url: "/dns/kusama-bootnode-1.polkadot.io/tcp/30333/p2p/12D3KooWQKqane1SqWJNWMQkbia9qiMWXkcHtAdfW5eVF8hbwEDw"
+  - name: Parity
+    url: "/dns/kusama-bootnode-1.polkadot.io/tcp/30334/ws/p2p/12D3KooWQKqane1SqWJNWMQkbia9qiMWXkcHtAdfW5eVF8hbwEDw"
+  - name: Parity
+    url: "/dns/kusama-bootnode-1.polkadot.io/tcp/443/wss/p2p/12D3KooWQKqane1SqWJNWMQkbia9qiMWXkcHtAdfW5eVF8hbwEDw"
 documentation:
   - https://kusama.network/
 expectations: []
