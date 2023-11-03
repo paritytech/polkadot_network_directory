@@ -7,10 +7,10 @@ chain:
   sudo: true
   para_id: 1000
 chainspec:
-  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/asset-hub-westend.json
+  http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/cumulus/parachains/chain-specs/asset-hub-westend.json
 goals:
   - Westend's testnet parachain for Statemine and Statemint
-repository: https://github.com/paritytech/cumulus
+repository: https://github.com/paritytech/polkadot-sdk
 validators:
   - Parity Only
 release_cycle: Following the Polkadot 3 weeks cycle
