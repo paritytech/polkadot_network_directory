@@ -25,7 +25,7 @@ specs:
 contacts:
     - type: website
       contact: https://github.com/paritytech/subport
-faucet: "#wococo-faucet:matrix.org"
+faucet: "#westend-faucet:matrix.org"
 rpc_endpoints:
   - name: Parity
     url: wss://westend-bridge-hub-rpc.polkadot.io:443
