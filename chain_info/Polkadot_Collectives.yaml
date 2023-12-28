@@ -7,10 +7,10 @@ chain:
     sudo: true
     para_id: 1001
 chainspec:
-    http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/collectives-polkadot.json
+    http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/cumulus/parachains/chain-specs/collectives-polkadot.json
 goals:
     - This parachain is for collectives that serve the Polkadot network.
-repository: https://github.com/paritytech/cumulus
+repository: https://github.com/paritytech/polkadot-sdk
 validators:
   - Open
 release_cycle: Following the Polkadot 3 weeks cycle

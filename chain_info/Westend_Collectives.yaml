@@ -7,10 +7,10 @@ chain:
     sudo: true
     para_id: 1001
 chainspec:
-    http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/collectives-westend.json
+    http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/cumulus/parachains/chain-specs/collectives-westend.json
 goals:
     - Westends's testnet parachain for Collectives
-repository: https://github.com/paritytech/cumulus
+repository: https://github.com/paritytech/polkadot-sdk
 validators:
     - Parity Only
 release_cycle: Following the Polkadot 3 weeks cycle

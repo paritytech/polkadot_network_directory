@@ -7,10 +7,10 @@ chain:
   sudo: false
   para_id: 1002
 chainspec:
-  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/bridge-hub-kusama.json
+  http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/cumulus/parachains/chain-specs/bridge-hub-kusama.json
 goals:
   - BridgeHub, a blockchain to support message passing between Substrate based chains like Polkadot and Kusama networks.
-repository: https://github.com/paritytech/cumulus
+repository: https://github.com/paritytech/polkadot-sdk
 validators:
   - Open
 release_cycle: Following the Polkadot 3 weeks cycle

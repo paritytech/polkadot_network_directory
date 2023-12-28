@@ -8,7 +8,7 @@ chain:
     para_id: 1002
 goals:
     - Rococo's testnet parachain for Smart Contracts
-repository: https://github.com/paritytech/cumulus
+repository: https://github.com/paritytech/polkadot-sdk
 chainspec:
   http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/contracts-rococo.json
 validators:

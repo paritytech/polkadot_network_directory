@@ -1,15 +1,15 @@
-name: Westend BridgeHub
+name: Wococo BridgeHub
 network_type: testnet
 chain:
     type: parachain
-    parent: Westend
-    consensus: Aura
+    parent: Wococo
+    consensus: PoS
     sudo: true
-    para_id: 1002
+    para_id: 1014
 chainspec:
-    http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/cumulus/parachains/chain-specs/bridge-hub-westend.json
+    http_url: https://paritytech.github.io/chainspecs/wococo/parachain/bridge-hub/chainspec.json
 goals:
-    - Westend's testnet parachain for BridgeHub
+    - Wococo's testnet parachain for BridgeHub
 repository: https://github.com/paritytech/polkadot-sdk
 validators:
     - Parity Only
@@ -25,14 +25,10 @@ specs:
 contacts:
     - type: website
       contact: https://github.com/paritytech/subport
-faucet: "#westend-faucet:matrix.org"
+faucet: "#wococo-faucet:matrix.org"
 rpc_endpoints:
-  - name: Parity
-    url: wss://westend-bridge-hub-rpc.polkadot.io:443
-  - name: IBP Network GeoDNS1
-    url: wss://sys.ibp.network:443/bridgehub-westend
-  - name: IBP Network GeoDNS2
-    url: wss://sys.dotters.network:443/bridgehub-westend
+    - name: Parity
+      url: wss://wococo-bridge-hub-rpc.polkadot.io:443
 api_endpoints: []
 bootnodes: []
 documentation:
