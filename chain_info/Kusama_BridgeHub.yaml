@@ -29,6 +29,10 @@ documentation:
 rpc_endpoints:
   - name: Parity
     url: wss://kusama-bridge-hub-rpc.polkadot.io:443
+  - name: Dwellir
+    url: wss://kusama-bridge-hub-rpc.dwellir.com:443
+  - name: Dwellir Tunisia
+    url: wss://kusama-bridge-hub-rpc-tn.dwellir.com:443
   - name: IBP Network GeoDNS1
     url: wss://sys.ibp.network:443/bridgehub-kusama
   - name: IBP Network GeoDNS2
@@ -37,8 +41,6 @@ rpc_endpoints:
     url: wss://rpc-bridge-hub-kusama.luckyfriday.io:443
   - name: Stakeworld
     url: wss://ksm-rpc.stakeworld.io:443/bridgehub
-  - name: Onfinality
-    url: wss://bridgehub-kusama.api.onfinality.io:443/public-ws
 api_endpoints: []
 bootnodes: []
 expectations: []

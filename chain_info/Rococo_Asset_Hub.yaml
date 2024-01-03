@@ -29,12 +29,14 @@ faucet: "#rococo-faucet:matrix.org"
 rpc_endpoints:
     - name: Parity
       url: wss://rococo-asset-hub-rpc.polkadot.io:443
+    - name: Dwellir
+      url: wss://rococo-asset-hub-rpc.dwellir.com:443
 api_endpoints:
     - name: subscan
       url: https://rockmine.api.subscan.io
 bootnodes: []
 documentation:
-    - https://github.com/paritytech/cumulus
+    - https://github.com/paritytech/polkadot-sdk
 expectations:
     - "parity: Run collator nodes; upgrade runtime"
     - "community: Test potential integrations with Statemine/t parachain"

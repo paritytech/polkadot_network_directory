@@ -27,12 +27,16 @@ rpc_endpoints:
     url: wss://westend-rpc.polkadot.io:443
   - name: Dwellir
     url: wss://westend-rpc.dwellir.com:443
+  - name: Dwellir Tunisia
+    url: wss://westend-rpc-tn.dwellir.com:443
   - name: IBP Network GeoDNS1
     url: wss://rpc.ibp.network:443/westend
   - name: IBP Network GeoDNS2
     url: wss://rpc.dotters.network:443/westend
   - name: LuckyFriday
     url: wss://rpc-westend.luckyfriday.io:443
+  - name: OnFinality
+    url: wss://westend.api.onfinality.io:443/public-ws
   - name: RadiumBlock
     url: wss://westend.public.curie.radiumblock.co:443/ws
   - name: Stakeworld
@@ -46,7 +50,7 @@ bootnodes:
   - name: RadiumBlock
     url: /dns/westend-bootnode.radiumblock.com/tcp/30333/p2p/12D3KooWJBowJuX1TaWNWHt8Dz8z44BoCZunLCfFqxA2rLTn6TBD
 documentation:
-    - https://github.com/paritytech/polkadot
+    - https://github.com/paritytech/polkadot-sdk
 expectations:
     - "parity: Part of the release cycle of Polkadot and Kusama. Burn-ins are done in this network"
     - "community: Open for testing how to run nodes on a polkadot-like relay chain. No parachain testing here"

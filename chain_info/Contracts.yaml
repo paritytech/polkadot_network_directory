@@ -10,7 +10,7 @@ goals:
     - Rococo's testnet parachain for Smart Contracts
 repository: https://github.com/paritytech/polkadot-sdk
 chainspec:
-  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/contracts-rococo.json
+  http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/cumulus/parachains/chain-specs/contracts-rococo.json
 validators:
     - Parity Only
 release_cycle: Following the Polkadot 3 weeks cycle

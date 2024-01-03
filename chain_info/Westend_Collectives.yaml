@@ -27,6 +27,10 @@ faucet: "#westend_faucet:matrix.org"
 rpc_endpoints:
   - name: Parity
     url: wss://collectives-westmint-rpc.polkadot.io:443
+  - name: Dwellir
+    url: wss://westend-collectives-rpc.dwellir.com:443
+  - name: Dwellir Tunisia
+    url: wss://westend-collectives-rpc-tn.dwellir.com:443
   - name: IBP Network GeoDNS1
     url: wss://sys.ibp.network:443/collectives-westend
   - name: IBP Network GeoDNS2
@@ -34,7 +38,7 @@ rpc_endpoints:
 api_endpoints: []
 bootnodes: []
 documentation:
-    - https://github.com/paritytech/cumulus
+    - https://github.com/paritytech/polkadot-sdk
 expectations:
     - "parity: Run collator nodes; upgrade runtime"
     - "community: Test potential integrations with Statemine/t parachain"

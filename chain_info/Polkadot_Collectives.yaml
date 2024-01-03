@@ -27,6 +27,10 @@ faucet: null
 rpc_endpoints:
   - name: Parity
     url: wss://polkadot-collectives-rpc.polkadot.io:443
+  - name: Dwellir
+    url: wss://polkadot-collectives-rpc.dwellir.com:443
+  - name: Dwellir Tunisia
+    url: wss://polkadot-collectives-rpc-tn.dwellir.com:443
   - name: IBP Network GeoDNS1
     url: wss://sys.ibp.network:443/collectives-polkadot
   - name: IBP Network GeoDNS2

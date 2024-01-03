@@ -32,8 +32,12 @@ faucet: null
 documentation:
   - https://docs.moonbeam.network/
 rpc_endpoints:
+  - name: Automata 1RPC
+    url: wss://1rpc.io/glmr:443
   - name: Blast
     url: wss://moonbeam.public.blastapi.io:443
+  - name: Dwellir
+    url: wss://moonbeam-rpc.dwellir.com:443
   - name: Moonbeam Foundation
     url: wss://wss.api.moonbeam.moonbeam.network:443
   - name: OnFinality

@@ -5,7 +5,7 @@ chain:
   consensus: PoS
   sudo: true
 chainspec:
-  http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/polkadot/service/chain-specs/polkadot.json
+  http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/polkadot/node/service/chain-specs/polkadot.json
 goals: []
 repository: https://github.com/paritytech/polkadot-sdk
 validators:
@@ -28,12 +28,8 @@ contacts:
     contact: "#polkadot-watercooler:web3.foundation"
 faucet: null
 rpc_endpoints:
-  - name: Parity
-    url: wss://rpc.polkadot.io:443
   - name: Automata 1RPC
     url: wss://1rpc.io:443/dot
-  - name: Dotters Net
-    url: wss://rpc.dotters.network:443/polkadot
   - name: Dwellir
     url: wss://polkadot-rpc.dwellir.com:443
   - name: Dwellir Tunisia
@@ -42,6 +38,8 @@ rpc_endpoints:
     url: wss://rpc.ibp.network:443/polkadot
   - name: IBP Network GeoDNS2
     url: wss://rpc.dotters.network:443/polkadot
+  - name: LuckyFriday
+    url: wss://rpc-polkadot.luckyfriday.io:443
   - name: OnFinality
     url: wss://polkadot.api.onfinality.io:443/public-ws
   - name: Radium Block

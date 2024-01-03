@@ -28,6 +28,8 @@ rpc_endpoints:
     url: wss://rpc-parachain.ajuna.network:443
   - name: RadiumBlock
     url: wss://ajuna.public.curie.radiumblock.co:443/ws
+  - name: OnFinality
+    url: wss://ajuna.api.onfinality.io:443/public-ws
 api_endpoints: []
 bootnodes: []
 expectations: []

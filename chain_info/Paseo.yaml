@@ -1,0 +1,38 @@
+name: Paseo
+network_type: testnet
+chain:
+    type: relaychain
+    consensus: PoS
+    sudo: true
+chainspec:
+    http_url: https://github.com/paseo-network/runtimes/raw/main/chain-specs/paseo.raw.json
+goals:
+    - Community Testnet for Polkadot.
+repository: https://github.com/paseo-network/runtimes
+validators:
+    - validators ran by the community
+release_cycle: Following the Polkadot release cycle
+specs:
+    block_time: 6
+    era: null
+    ed: 10000000000
+    lease_period: 403200
+    decimals: 10
+    token: PAS
+    ss58_format: 42
+contacts: []
+faucet: "#paseo_faucet:matrix.org"
+rpc_endpoints:
+  - name: Amforc
+    url: wss://paseo.rpc.amforc.com:443
+api_endpoints: []
+bootnodes:
+  - name: Amforc
+    url: /dns/paseo.bootnode.amforc.com/tcp/30333/wss/p2p/12D3KooWFD81HC9memUwuGMLvhDDEfmXjn6jC4n7zyNs3vToXapS
+  - name: Amforc
+    url: /dns/paseo.bootnode.amforc.com/tcp/30344/p2p/12D3KooWFD81HC9memUwuGMLvhDDEfmXjn6jC4n7zyNs3vToXapS
+documentation:
+    - https://github.com/paseo-network/paseo-rfcs
+expectations: []
+features: []
+notes: []
