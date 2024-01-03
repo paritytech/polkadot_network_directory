@@ -2,8 +2,6 @@
 
 Documentation about Chains of the Polkadot and Kusama networks
 
-WARNING: THIS REPO IS WIP AND THE INFORMATION MAYBE NOT YET BE ACCURATE.
-
 ## Install tooling
 
 - [`yq`](https://github.com/mikefarah/yq)
