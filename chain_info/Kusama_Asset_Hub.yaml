@@ -7,11 +7,11 @@ chain:
   sudo: false
   para_id: 1000
 chainspec:
-  http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/asset-hub-kusama.json
+  http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/cumulus/parachains/chain-specs/asset-hub-kusama.json
 goals:
   - Asset hub Kusama handles your assets, whether fungible or not (NFT)
 expectations: []
-repository: https://github.com/paritytech/cumulus
+repository: https://github.com/paritytech/polkadot-sdk
 validators:
   - Open
 release_cycle: Following the Polkadot 3 weeks cycle
@@ -38,12 +38,8 @@ rpc_endpoints:
     url: wss://sys.ibp.network:443/statemine
   - name: IBP Network GeoDNS2
     url: wss://sys.dotters.network:443/statemine
-  - name: OnFinality
-    url: wss://statemine.api.onfinality.io:443/public-ws
   - name: LuckyFriday
     url: wss://rpc-asset-hub-kusama.luckyfriday.io:443
-  - name: RadiumBlock
-    url: wss://statemine.public.curie.radiumblock.co:443/ws
   - name: Stakeworld
     url: wss://ksm-rpc.stakeworld.io:443/assethub
 api_endpoints: []

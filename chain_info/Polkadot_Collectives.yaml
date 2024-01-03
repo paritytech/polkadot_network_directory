@@ -7,10 +7,10 @@ chain:
     sudo: true
     para_id: 1001
 chainspec:
-    http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/collectives-polkadot.json
+    http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/cumulus/parachains/chain-specs/collectives-polkadot.json
 goals:
     - This parachain is for collectives that serve the Polkadot network.
-repository: https://github.com/paritytech/cumulus
+repository: https://github.com/paritytech/polkadot-sdk
 validators:
   - Open
 release_cycle: Following the Polkadot 3 weeks cycle
@@ -27,6 +27,10 @@ faucet: null
 rpc_endpoints:
   - name: Parity
     url: wss://polkadot-collectives-rpc.polkadot.io:443
+  - name: Dwellir
+    url: wss://polkadot-collectives-rpc.dwellir.com:443
+  - name: Dwellir Tunisia
+    url: wss://polkadot-collectives-rpc-tn.dwellir.com:443
   - name: IBP Network GeoDNS1
     url: wss://sys.ibp.network:443/collectives-polkadot
   - name: IBP Network GeoDNS2

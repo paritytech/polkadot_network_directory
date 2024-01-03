@@ -7,10 +7,10 @@ chain:
     sudo: true
     para_id: 1001
 chainspec:
-    http_url: https://raw.githubusercontent.com/paritytech/cumulus/master/parachains/chain-specs/collectives-westend.json
+    http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/cumulus/parachains/chain-specs/collectives-westend.json
 goals:
     - Westends's testnet parachain for Collectives
-repository: https://github.com/paritytech/cumulus
+repository: https://github.com/paritytech/polkadot-sdk
 validators:
     - Parity Only
 release_cycle: Following the Polkadot 3 weeks cycle
@@ -27,6 +27,10 @@ faucet: "#westend_faucet:matrix.org"
 rpc_endpoints:
   - name: Parity
     url: wss://collectives-westmint-rpc.polkadot.io:443
+  - name: Dwellir
+    url: wss://westend-collectives-rpc.dwellir.com:443
+  - name: Dwellir Tunisia
+    url: wss://westend-collectives-rpc-tn.dwellir.com:443
   - name: IBP Network GeoDNS1
     url: wss://sys.ibp.network:443/collectives-westend
   - name: IBP Network GeoDNS2
@@ -34,7 +38,7 @@ rpc_endpoints:
 api_endpoints: []
 bootnodes: []
 documentation:
-    - https://github.com/paritytech/cumulus
+    - https://github.com/paritytech/polkadot-sdk
 expectations:
     - "parity: Run collator nodes; upgrade runtime"
     - "community: Test potential integrations with Statemine/t parachain"

@@ -1,4 +1,4 @@
-name: Rococo BridgeHub
+name: Rococo Coretime
 network_type: testnet
 chain:
     type: parachain
@@ -7,7 +7,7 @@ chain:
     sudo: true
     para_id: 1013
 chainspec:
-    http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/cumulus/parachains/chain-specs/bridge-hub-rococo.json
+    http_url: https://raw.githubusercontent.com/paritytech/polkadot-sdk/master/cumulus/parachains/chain-specs/coretime-rococo.json
 goals:
     - Rococo's testnet parachain for BridgeHub
 repository: https://github.com/paritytech/polkadot-sdk
@@ -28,9 +28,7 @@ contacts:
 faucet: "#rococo-faucet:matrix.org"
 rpc_endpoints:
     - name: Parity
-      url: wss://rococo-bridge-hub-rpc.polkadot.io:443
-    - name: Dwellir
-      url: wss://rococo-bridge-hub-rpc.dwellir.com:443
+      url: wss://rococo-coretime-rpc.polkadot.io:443
 api_endpoints: []
 bootnodes: []
 documentation:
