@@ -1,4 +1,11 @@
-# Polkadot Network Directory
+# DEPRECATED - Polkadot Network Directory
+
+This repository is deprecated in favour of [@polkadot-cloud](https://github.com/polkadot-cloud/polkadot_network_directory).
+
+
+
+
+
 
 Documentation about Chains of the Polkadot and Kusama networks
 
